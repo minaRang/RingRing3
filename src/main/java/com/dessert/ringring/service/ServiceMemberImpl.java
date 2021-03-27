@@ -13,8 +13,10 @@ import com.dessert.ringring.config.MailHandler;
 import com.dessert.ringring.config.TemKey;
 import com.dessert.ringring.domain.DTOMember;
 import com.dessert.ringring.mapper.MemberMapper;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class ServiceMemberImpl implements ServiceMember{ 
 //implements UserDetailsService{
 
@@ -35,7 +37,9 @@ public class ServiceMemberImpl implements ServiceMember{
 	public void joinMember(HttpServletRequest req) throws MessagingException, UnsupportedEncodingException {
 		member.setId(req.getParameter("id"));
 		member.setPassword(req.getParameter("password"));
-		member.setAddress(req.getParameter("address"));
+		member.setAddress1(req.getParameter("address1"));
+		member.setAddress2(req.getParameter("address2"));
+		member.setAddress3(req.getParameter("address3"));
 		member.setName((req.getParameter("name")));
 		member.setEmail((req.getParameter("email")));
 		
@@ -98,9 +102,15 @@ public class ServiceMemberImpl implements ServiceMember{
 		return 0;
 	}
 	@Override
-	public int updateMember() {
-		// TODO Auto-generated method stub
-		return 0;
+	public void updateMember(String id,HttpServletRequest req) {
+		member.setId(id);
+		member.setAddress1(req.getParameter("address1"));
+		member.setAddress2(req.getParameter("address2"));
+		member.setAddress3(req.getParameter("address3"));
+		member.setPassword(req.getParameter("password"));
+		int phone=Integer.parseInt(req.getParameter("phone"));
+		member.setPhone(phone);
+		mapper.updateMember(member);
 	}
 	
 	@Override

@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
@@ -20,6 +21,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.dessert.ringring.domain.DTOMember;
 import com.dessert.ringring.service.ServiceMember;
 
+@Slf4j
 @Controller
 public class JoinController {
 
@@ -73,7 +75,7 @@ public class JoinController {
 
 	@GetMapping("/join/verify")
 	public String joinSuccess(@ModelAttribute("member")DTOMember member,Model model) {
-		System.out.println("이메일 인증 처리");
+		log.debug("이메일 인증 처리");
 		String id = member.getId();
 		serviceMember.verifyMember(id);
 		

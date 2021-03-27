@@ -3,6 +3,7 @@ package com.dessert.ringring.controller1;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,7 +16,7 @@ import com.dessert.ringring.domain.DTOMember;
 import com.dessert.ringring.service.ServiceMember;
 
 
-
+@Slf4j
 @Controller
 public class LoginController {
 	
@@ -27,7 +28,7 @@ public class LoginController {
 	@RequestMapping("/logout")
 	public String logout(HttpSession session,RedirectAttributes redirect) {
 		
-		System.out.println("로그아웃");
+		log.debug("로그아웃");
 		session.invalidate();
 	
 		return "redirect:mainForm";	
@@ -43,7 +44,6 @@ public class LoginController {
 			redirect.addAttribute("contentPage","login/login.jsp");
 			return "redirect:mainForm";	
 		}else {
-			
 			return "redirect:mainForm";
 
 		}
@@ -62,23 +62,21 @@ public class LoginController {
 		
 		if(result<=0 ) {
 			System.out.println(member.getId());
-			System.out.println(result);
-			System.out.println("로그인 실패");
+			log.debug("로그인 실패");
 			model.addAttribute("msg","로그인 실패-아이디나 암호를 확인해주세요");
 			model.addAttribute("url","/login");
 			
 		}
 		else if(member.getIsEnable().equals("N")){
-			System.out.println("아직 이메일 인증 엑스");
-			
+			log.debug("아직 이메일 인증받지않은 상태");
 			model.addAttribute("msg","로그인 실패-이메일 인증해주세요");
 			model.addAttribute("url","/");
 			
 		}
 		else {
-			System.out.println("로그인 성공");
-			
+
 			HttpSession session=req.getSession();
+			session.setAttribute("member",member);
 			session.setAttribute("userId",member.getId());
 			session.setAttribute("userName",member.getName());
 

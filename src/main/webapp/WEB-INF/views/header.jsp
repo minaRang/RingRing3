@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,13 +26,14 @@
                 	<c:when test="${sessionScope.userId==null}">
                     <li><a href="/join">회원가입</a></li>
                     <li><a href="/login">로그인</a></li>
+                        <li><a href="/login">장바구니</a></li>
                     </c:when>
                     <c:otherwise>
-                    <li>${sessionScope.userName}님이 로그인중입니다.</li>
+                    <li><a href="/orderContents">안녕하세요 ${sessionScope.userName}님!</li>
                     <li><a href="${path}/logout">로그아웃</a></li>
+                        <li><a href="/cart">장바구니</a></li>
                     </c:otherwise>
                     </c:choose>
-                    <li><a href="">장바구니</a></li>
                     <li><a href="">고객센터</a></li>
                 </ul>
             </div>
@@ -57,11 +59,13 @@
                             <a href="">Alcohol</a>
                         </div>
                     </li>
-                    <li class="etc"><a href="">Etc</a></li>
+                    <li class="etc"><a href="/productList">Etc</a></li>
+                    <form method="post" action="/search">
                     <li class="search-container">
                         <input type="text" placeholder="Search" name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </li>
+                    </form>
                 </ul>
             </div>
         </div>

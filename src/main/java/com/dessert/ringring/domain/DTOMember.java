@@ -27,7 +27,9 @@ public class DTOMember {
 	@Size(min=4, max=10, message = "4글자 이상 10글자 미만입력해주세요")
 	private String id;
 	private int phone;
-	private String address;
+	private String address1;
+	private String address2;
+	private String address3;
 	private String email;
 	private String article;
 	private Date date;

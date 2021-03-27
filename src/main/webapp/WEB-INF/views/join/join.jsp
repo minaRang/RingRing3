@@ -7,15 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="css/joinjoin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        var selectAll = document.querySelector(".selectAllMembers");
+        selectAll.addEventListener('click', function(){
+            var objs = document.querySelectorAll(".memberChk");
+            for (var i = 0; i < objs.length; i++) {
+                objs[i].checked = selectAll.checked;
+            };
+        }, false);
+
+        var objs = document.querySelectorAll(".memberChk");
+        for(var i=0; i<objs.length ; i++){
+            objs[i].addEventListener('click', function(){
+                var selectAll = document.querySelector(".selectAllMembers");
+                for (var j = 0; j < objs.length; j++) {
+                    if (objs[j].checked === false) {
+                        selectAll.checked = false;
+                        return;
+                    };
+                };
+                selectAll.checked = true;
+            }, false);
+        }
+        //윈도우 팝업 (가운데정렬이 안먹힘...ㅠㅠ)
+        var win;
+        function winOpen(){
+            win=window.open('약관동의.html','child','toolbar=no,width=400px,height=550px,top="+(screen.availHeight/2-100)+",left="+(screen.availWidth/2-100)+"');
+        };
+    </script>
     <title>RingRing : 회원가입</title>
 </head>
 <body>
-    <div id="header">
-        <a href="index.html">
-            <h1 class="logo">logo</h1>
-        </a> 
-    </div>
     <div id="container">
         <div id="content">
             <div class="joinhead">
@@ -57,55 +81,94 @@
                 </tr>
                 <tr>
                     <th class="tt">주소</th>
-                    <td class="abcd"><a href="address" class="addressSearch"><i class="fa fa-search"></i>주소검색</a></td>
-                </tr>
-                <tr class="reg_agree">
-                    <th class="tt">이용약관 동의</th>
+                    <!-- td 하나로 통일 -->
                     <td>
-                        <div class="bg_dim"></div>
-                        <div class="check">
-                            <label for="" class="check_agree label_all_check label_block">
-                                <input type="checkbox" value name="agree_allcheck">
-                                <p>전체 동의합니다.</p>
-                            </label>
-                        </div>
-                        <div class="check_view">
-                            <label for="" class="check_agree label_block">
-                                <input type="checkbox" value name="agree" required label="이용약관">
-                                <p>이용약관 동의 (필수)</p>
-                            </label>
-                            <a href="#" class="link btn_link btn_agreement">
-                                <p class="st">약관보기</p>
-                            </a>
-                        </div>
-                        <div class="check_view">
-                            <label for="" class="check_agree label_block">
-                                <input type="checkbox" id="private1" name="private1"
-                                value="n" required label="개인정보처리방침" checked="checked">
-                                <p>개인정보처리방침 동의 (필수)</p>
-                            </label>
-                            <a href="#" class="link btn_link btn_agreement">
-                                <p class="st">약관보기</p>
-                            </a>
-                        </div>
-                        <div class="check_view">
-                            <label for="" class="check_agree label_block">
-                                <input type="checkbox" name="marketing">
-                                <p>무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</p>
-                            </label>
-                        </div>
-                        <div class="check_view">
-                            <label for="" class="check_agree label_block">
-                                <input type="checkbox" name="fourteen_chk" required label="만 14세 이상">
-                                <p>본인은 만 14세 이상입니다. (필수)</p>
-                            </label>
-                        </div>
+                        <input type="text" class="form-control" name="address1" id="address1" placeholder="우편번호">
+
+                        <button type="button" class="addressSearch" onclick="openZipSearch()">
+                            <i class="fa fa-search"></i>주소검색
+                        </button>
+                        <br>
+
+                        <input type="text" class="form-control" name="address2" id="address2" placeholder="주소" >
+
+                        <input type="text" class="form-control" name="address3" id="address3" placeholder="상세주소">
                     </td>
                 </tr>
+
+
             </table>
-            <div id="formSubmit">
-                <button type="submit" class="btn active btn_join tt">가입하기</button>
-            </div>
+
+                 <script>
+                     function openZipSearch() {
+                         new daum.Postcode({
+                             oncomplete: function(data) {
+                                 $('[id=address1]').val(data.zonecode); // 우편번호 (5자리)
+                                 $('[id=address2]').val(data.address);
+                                 $('[id=address3]').val(data.buildingName);
+                             }
+                         }).open();
+                     }
+                 </script>
+                 <div class="status under"></div>
+                 <div class="checkbox_group">
+                     <input class="form-check-input" type="checkbox" name="exampleRadios" id="check_all" value="option1">
+                     <label class="form-check-label" for="check_all">
+                         전체동의
+                     </label><br><br>
+
+                     <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
+                     <label class="form-check-label" for="exampleRadios1">
+                         이용약관 동의 (필수)
+                     </label>
+                     <a href="#" class="btn_agreement">
+                         <p class="st" onclick="winOpen();">약관보기</p>
+                     </a><br><br>
+
+                     <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
+                     <label class="form-check-label" for="exampleRadios2" >
+                         개인정보처리방침 (필수)
+                     </label>
+                     <a href="#" class="btn_agreement">
+                         <p class="st" onclick="winOpen();">약관보기</p>
+                     </a><br><br>
+
+                     <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option2">
+                     <label class="form-check-label" for="exampleRadios2">
+                         무료배송,할인 쿠폰 등 혜택/정보 수신 동의 (선택)
+                     </label><br><br>
+
+                     <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option2">
+                     <label class="form-check-label" for="exampleRadios2">
+                         본인은 만 14세 이상입니다 (필수)
+                     </label><br>
+                 </div>
+                 <div class="secondary">
+                     <button type="submit" class="btn btn_secondary tt">가입하기</button>
+                 </div>
+             </form>
+
+            <script src ="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script type="text/javascript" src="../static/js/bootstrap.js"></script>
+            <script>
+                //체크박스 전체선택
+                $(".checkbox_group").on("click", "#check_all", function () {
+                    $(this).parents(".checkbox_group").find('input').prop("checked", $(this).is(":checked"));
+                });
+
+                // 체크박스 개별 선택
+                $(".checkbox_group").on("click", ".form-check-input", function() {
+                    var is_checked = true;
+
+                    $(".checkbox_group .form-check-input").each(function(){
+                        is_checked = is_checked && $(this).is(":checked");
+                    });
+
+                    $("#check_all").prop("checked", is_checked);
+                });
+            </script>
+            <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+
         </div>
     </div>
 </body>

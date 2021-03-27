@@ -7,15 +7,17 @@
 <!-- 1. 회원가입 -->
 <insert id="insertMember" parameterType="com.dessert.ringring.domain.DTOMember" useGeneratedKeys="true" keyProperty="idx">
 	insert into user 
-		(id, name, pw, phone, address, email, article, date, pin, point, authority,isEnable)
+		(id, name, pw, phone, address1, address2, address3, email, article, date, pin, point, authority,isEnable)
 		values 
-		(#{id}, #{name}, #{password}, IFNULL(#{phone}, NULL) , IFNULL(#{address}, NULL), IFNULL(#{email}, NULL)
-		, IFNULL(#{article}, 'N'), now(), NULL, 0, IFNULL(#{authority}, 'member'), IFNULL(#{isEnable}, 'N'))
+		(#{id}, #{name}, #{password}, IFNULL(#{phone}, NULL) , IFNULL(#{address1}, NULL), IFNULL(#{address2}, NULL),
+		IFNULL(#{address3}, NULL), IFNULL(#{email}, NULL), IFNULL(#{article}, 'N'), now(), NULL, 0, IFNULL(#{authority}, 'member'), IFNULL(#{isEnable}, 'N'))
 </insert>
 
 
 <!-- 2. 회원정보 수정 -->
-<update id="updateMember" ></update>
+<update id="updateMember" parameterType="com.dessert.ringring.domain.DTOMember" >
+	UPDATE user set pw=#{password}, phone=#{phone}, address1=#{address1}, address2=#{address2}, address3=#{address3} where id=#{id}
+</update>
 
 
 

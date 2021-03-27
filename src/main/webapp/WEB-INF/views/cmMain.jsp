@@ -1,5 +1,9 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="com.dessert.ringring.domain.DTOGoods" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8"%>
+<%ArrayList<DTOGoods> list= (ArrayList<DTOGoods>) session.getAttribute("list");%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,97 +20,33 @@
 </head>
 <body>
 <div id="banner">
-        <div id="banner_inner">
-            <div class="bs-slider">
-                <div><a href="#"><img src="image/banner1.jpg" alt=""></a></div>
-                <div><a href="#"><img src="image/banner2.jpg" alt=""></a></div>
-                <div><a href="#"><img src="image/banner3.jpg" alt=""></a></div>
-            </div>
+    <div id="banner_inner">
+        <div class="bs-slider">
+            <div><a href="#"><img src="image/banner1.jpg" alt=""></a></div>
+            <div><a href="#"><img src="image/banner2.jpg" alt=""></a></div>
+            <div><a href="#"><img src="image/banner3.jpg" alt=""></a></div>
         </div>
     </div>
-    <div id="container">
-        <div id="container_inner">
+</div>
+<div id="container">
+    <div id="container_inner">
+        <form method="post">
             <div class="newfood">
                 <h2>NEW</h2>
                 <ul class="new_list">
-                    <li>
-                        <a href="#" target="_blank"><img src="image/content1.jpg" alt=""></a> 
-                        <h3 class="tt">플레인 스콘</h3>
-                        <p class="tt">2,800 원</p>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="image/content2.jpg" alt=""></a>
-                        <h3 class="tt">치즈 케이크</h3>
-                        <p class="tt">4,000 원</p>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="image/content3.jpg" alt=""></a>
-                        <h3 class="tt">녹차 쿠키</h3>
-                        <p class="tt">1,500 원</p>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="image/content4.jpg" alt=""></a>
-                        <h3 class="tt">딸기 케이크</h3>
-                        <p class="tt">5,600 원</p>     
-                    </li>
+                    <c:forEach var="list" items="${list}" begin="0" end="7" step="1">
+                        <li>
+                            <a href="goodsDetail?idx=${list.idx}"><img src="${list.img}"></a>
+                            <h3 class="tt">${list.name}</h3>
+                            <p class="tt">${list.price} 원</p>
+                        </li>
+                    </c:forEach>
                 </ul>
             </div>
-            <div class="newfood new2">
-                <ul class="new_list">
-                    <li>
-                        <a href="#" target="_blank"><img src="image/content1.jpg" alt=""></a> 
-                        <h3 class="tt">플레인 스콘</h3>
-                        <p class="tt">2,800 원</p>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="image/content2.jpg" alt=""></a>
-                        <h3 class="tt">치즈 케이크</h3>
-                        <p class="tt">4,000 원</p>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="image/content3.jpg" alt=""></a>
-                        <h3 class="tt">녹차 쿠키</h3>
-                        <p class="tt">1,500 원</p>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="image/content4.jpg" alt=""></a>
-                        <h3 class="tt">딸기 케이크</h3>
-                        <p class="tt">5,600 원</p>     
-                    </li>
-                </ul>
-            </div>
-        </div>    
-    </div> 
-    <span class="status"></span>
-    <div id="footer">   
-        <div class="footer_inner">
-            <div class="footer_left">
-                <h1 class="tt">고객센터</h1>
-                <table>
-                    <tr class="call">
-                        <td class="call_tt tt">0000-0000</th>
-                        <td>
-                            <div class="center">
-                                <h4>365 고객센터</h4>
-                                <p>오전 7시-오후 7시</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="qna">
-                        <td class="qna_tt tt"><p>1:1 문의</p></th>
-                        <td>
-                            <div class="center">
-                                <h4>365 고객센터</h4>
-                                <p>오전 7시-오후 7시</p>
-                            </div>
-                        </td>
-                    </tr> 
-                </table>
-                <ul class="sns">
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-                </ul>
-            </div>
+        </form>
+    </div>
+</div>
+<div style="height: 200px"></div>
+<span class="status"></span>
 </body>
 </html>

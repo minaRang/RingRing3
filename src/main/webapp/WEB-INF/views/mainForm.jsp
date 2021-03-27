@@ -25,10 +25,9 @@
         <jsp:include page="header.jsp" />
     </div>
 
-    <% if(contentPage.contains("myPage")) {%>
-    <%@include file="sidebar.jsp"%>
-    <%} %>
-
+<%--    <% if(contentPage.contains("myPage")) {%>--%>
+<%--    <%@include file="mypage.jsp"%>--%>
+<%--    <%} %>--%>
     <div id="main">
         <jsp:include page="<%=contentPage%>" />
     </div>

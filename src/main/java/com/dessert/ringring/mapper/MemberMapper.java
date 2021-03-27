@@ -5,6 +5,9 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 
 import com.dessert.ringring.domain.DTOMember;
+import org.springframework.stereotype.Repository;
+
+@Repository
 @Mapper
 public interface MemberMapper {
 	

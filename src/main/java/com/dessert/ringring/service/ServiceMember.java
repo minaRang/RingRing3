@@ -19,7 +19,7 @@ public interface ServiceMember {
 	public int deleteMember();
 	 
 	//회원정보 수정
-	public int updateMember();
+	public void updateMember(String id,HttpServletRequest req);
 	
 	//로그인
 	public int login(HttpServletRequest req);
