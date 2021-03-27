@@ -14,202 +14,20 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="initial commit 입니다!">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jQuery.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/aop/LoggerAspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/LoggerInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/MvcConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/TemKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/UploadFileUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/WebMvcConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/CartController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/MypageController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/OrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/PerAskController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/ProductController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/exception/AttachFileException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/exception/ExceptionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceCartImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceGoodsImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheetImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServicePerAskImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceProductSheetImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/util/FileUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/log4jdbc.log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/mybatis/CartMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/mybatis/GoodsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/mybatis/OrderSheetMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/mybatis/PerAskMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/mybatis/ProductSheetMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/joinjoin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/mypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/mypage_oderlist.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/mypage_oderlist_section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/mypage_sidebar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/oderform.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/pop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/product_list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/product_section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/question.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/shop-basket.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/css/shop-basket11.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/image/none.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/image/ringring_ver1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/2ae24d5f-e679-4500-adc1-e29a67936f7f_" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/c4de4bc1-1c8a-47f1-8228-107f3740456d_blueberries-3946230_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/f6492f72-b493-42a3-a215-e69207a85731_" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/f87ce28c-2df6-4eea-9e73-b9267aad5919_" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/s/s_c4de4bc1-1c8a-47f1-8228-107f3740456d_blueberries-3946230_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/37830840-1942-4d2a-aea5-d64451de1b3b_bread-5671124_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/99203714-0779-434d-8d3a-f74ef330fb13_bread-5671124_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/s/s_37830840-1942-4d2a-aea5-d64451de1b3b_bread-5671124_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/s/s_99203714-0779-434d-8d3a-f74ef330fb13_bread-5671124_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/dc2abb28-82b3-4083-b3bc-c679573ef987_cookies-3798903_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/ea7b5cb6-fc9b-4bb8-ae29-25adda945fde_cupcake-2588646_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/f598ccf1-8262-4b3f-86ad-260ac6b62468_apple-pie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/fa097e79-48e3-419d-9f13-a6ba6bef09fe_blueberries-3946230_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_dc2abb28-82b3-4083-b3bc-c679573ef987_cookies-3798903_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_ea7b5cb6-fc9b-4bb8-ae29-25adda945fde_cupcake-2588646_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_f598ccf1-8262-4b3f-86ad-260ac6b62468_apple-pie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_fa097e79-48e3-419d-9f13-a6ba6bef09fe_blueberries-3946230_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/2a0ecdcb-b61a-4822-87e9-84a0210041eb_pink-4536379_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/c6e754b6-75dc-426f-9871-8654fb7b0d12_pink-4536379_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/f5e5af04-b201-4ed7-9d93-59c1bb52412e_pink-4536379_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/f8e7de30-6cd1-4095-b868-a170ff4a988f_pink-4536379_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_2a0ecdcb-b61a-4822-87e9-84a0210041eb_pink-4536379_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_c6e754b6-75dc-426f-9871-8654fb7b0d12_pink-4536379_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_f5e5af04-b201-4ed7-9d93-59c1bb52412e_pink-4536379_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_f8e7de30-6cd1-4095-b868-a170ff4a988f_pink-4536379_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/19/90fea573-1463-4728-bcf4-4c78372a4f9b_cake-4910417_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/19/s/s_90fea573-1463-4728-bcf4-4c78372a4f9b_cake-4910417_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/1f658747-8163-4fdb-81d6-2523f1174085_blueberries-3946230_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/37b1409b-75e8-4c95-984a-fe9b7ba8c94c_cake-4910417_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/3ff56591-329c-4c53-a709-84513411ce8c_cookies-3798903_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/485434c3-f58c-4d56-b828-6e604dd96f9f_cookies-6012079_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/6e2e334f-c1bd-430c-b3e7-1b1b0746014b_cookies-5809181_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/6f3bc574-1105-454c-91bc-36bf8f8e2501_cupcake-2588646_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/708b6d9c-cdc0-4fa9-9e57-b8394b37722a_pink-4536379_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/798d9179-24ee-4db6-87c7-fb63c9ea512e_bread-5671124_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/d070747e-e4e2-4d2d-9a8a-9e123e4fc54d_rogues-1792221_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_1f658747-8163-4fdb-81d6-2523f1174085_blueberries-3946230_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_37b1409b-75e8-4c95-984a-fe9b7ba8c94c_cake-4910417_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_3ff56591-329c-4c53-a709-84513411ce8c_cookies-3798903_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_485434c3-f58c-4d56-b828-6e604dd96f9f_cookies-6012079_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_6e2e334f-c1bd-430c-b3e7-1b1b0746014b_cookies-5809181_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_6f3bc574-1105-454c-91bc-36bf8f8e2501_cupcake-2588646_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_708b6d9c-cdc0-4fa9-9e57-b8394b37722a_pink-4536379_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_798d9179-24ee-4db6-87c7-fb63c9ea512e_bread-5671124_640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_d070747e-e4e2-4d2d-9a8a-9e123e4fc54d_rogues-1792221_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/aop/LoggerAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/LoggerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/MvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/UploadFileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/WebMvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/MypageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/PerAskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller2/BoardController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/exception/AttachFileException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/exception/ExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceBoardImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceCartImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceOrderSheetImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServicePerAskImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceProductSheetImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/util/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/BoardMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/CartMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/OrderSheetMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/PerAskMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/ProductSheetMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/ReviewMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/joinjoin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/mypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/mypage_oderlist.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/mypage_oderlist_section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/mypage_sidebar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/notice.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/notice_section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/oderform.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/pop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/product_list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/product_section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/question.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/shop-basket.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/shop-basket11.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/image/none.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/image/ringring_ver1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardUpdate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardWrite.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/notice.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/notice_section.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsDetail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsInsert.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsModify.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/listGoods.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/order.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/searchGoods.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join/joinForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myInfoModify.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderContents.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderDetail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/listPerAsk.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/perAsk.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/replyPerAsk.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/mybatis/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/mybatis/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/DBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/JoinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/JoinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/homeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOOrderSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOOrderSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOPerAsk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOPerAsk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOProductSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOProductSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/BoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/BoardMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/CartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/CartMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/GoodsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/MemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/OrderSheetMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/OrderSheetMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/PerAskMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/PerAskMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/ProductSheetMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/ProductSheetMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/ReviewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/ReviewMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceGoods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceGoodsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceGoodsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceMemberImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceMemberImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceOrderSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceOrderSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServicePerAsk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServicePerAsk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceProductSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceProductSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/PerAskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/PerAskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/join.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/join.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cmMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cmMain.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join/join.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mainForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mainForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sidebar.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dessert/ringring/db/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dessert/ringring/db/DBConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,26 +62,14 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RingringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ringring.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dessert.ringring.RingringApplication" />
@@ -284,6 +90,7 @@
       <workItem from="1612227530842" duration="902000" />
       <workItem from="1612228553214" duration="412000" />
       <workItem from="1612229190921" duration="2526000" />
+      <workItem from="1616844362512" duration="441000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -292,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612232266659</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit 입니다!">
+      <created>1616843530499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616843530500</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +117,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -311,6 +137,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="호냥냥" />
     <MESSAGE value="initial commit 입니다!" />
     <option name="LAST_COMMIT_MESSAGE" value="initial commit 입니다!" />
@@ -320,10 +150,10 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612229566716" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1612230333251">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1616844815700">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612230333251" />
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616844815700" />
     <state x="646" y="309" key="Github.ShareDialog" timestamp="1612228301787">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
@@ -360,14 +190,14 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state width="739" height="180" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899162" />
-    <state x="277" y="44" key="SettingsEditor" timestamp="1612229953192">
+    <state x="277" y="44" key="SettingsEditor" timestamp="1616844850559">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="277" y="44" key="SettingsEditor/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612229953192" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612232586801">
+    <state x="277" y="44" key="SettingsEditor/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616844850559" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616843591576">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612232586801" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616843591576" />
     <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1616842327372">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
