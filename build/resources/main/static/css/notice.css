@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+/* 폰트 위계 */
+
+/*font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.tt{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.st{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(161, 161, 161);
+}
+input{
+    border: 0;
+    outline: 0;
+}
+button{
+    border: 0;
+    outline: 0;
+}
+.status{
+    background-color: #df404a;
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+/* =================content======================= */
+/* ========notice=========== */
+.notice{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+.notice h2{
+    font-size: 25px;
+}
+/* =======notice_list============= */
+.notice_list{
+    border-top: 2px solid #df404a;
+    border-bottom: 2px solid #df404a;
+    margin-top: 10px;
+}
+/* =========notice_table============ */
+.notice_table{
+    border-collapse: collapse;
+    width: 1000px;
+}
+.notice_table .title{
+    text-align: center;
+    /* border-top:2px solid #df404a; */
+    padding: 15px;
+}
+.notice_table td{
+    font-weight: 300;
+    padding: 10px;
+    border-bottom: 1px solid rgba(161, 161, 161, .3);
+}
+.notice_table td a{
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+.notice_table .first{
+    width: 50px;
+    text-align: center;
+}
+.notice_table .second{
+    width: 550px;
+}
+.notice_table .third{
+    width: 100px;
+    text-align: center;
+}
+.notice_table .fourth{
+    width: 100px;
+    text-align: center;
+}
