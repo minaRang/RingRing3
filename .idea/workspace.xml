@@ -17,15 +17,13 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/mina" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:mina" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="회원가입 ajax, js 수정">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="회원가입 ajax, js 수정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -293,10 +291,10 @@
     </state>
     <state x="277" y="44" key="SettingsEditor/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616844850559" />
     <state x="277" y="0" key="SettingsEditor/0.0.1536.826@0.0.1536.826" timestamp="1617543381353" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617554091629">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617554494113">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617554091629" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617554494113" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616843591576" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826@0.0.1536.826" timestamp="1617543721413" />
     <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1616842327372">
