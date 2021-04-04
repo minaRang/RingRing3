@@ -17,109 +17,14 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/mina" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="myPoint">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="회원가입 ajax, js 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/DBConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/DBConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/JoinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/JoinController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/PerAskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/PerAskController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/homeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOGoods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOMember.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOOrderSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOOrderSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOPerAsk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOPerAsk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOProductSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOProductSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/BoardMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/BoardMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/CartMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/CartMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/GoodsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/GoodsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/MemberMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/MemberMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/OrderSheetMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/OrderSheetMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/PerAskMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/PerAskMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/ProductSheetMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/ProductSheetMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/ReviewMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/ReviewMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/MailHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceGoods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceMember.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceMemberImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceMemberImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServicePerAsk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServicePerAsk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceProductSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceProductSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/join.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/css/join.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/2ae24d5f-e679-4500-adc1-e29a67936f7f_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/c4de4bc1-1c8a-47f1-8228-107f3740456d_blueberries-3946230_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/f6492f72-b493-42a3-a215-e69207a85731_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/f87ce28c-2df6-4eea-9e73-b9267aad5919_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/s/s_c4de4bc1-1c8a-47f1-8228-107f3740456d_blueberries-3946230_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/37830840-1942-4d2a-aea5-d64451de1b3b_bread-5671124_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/99203714-0779-434d-8d3a-f74ef330fb13_bread-5671124_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/s/s_37830840-1942-4d2a-aea5-d64451de1b3b_bread-5671124_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/s/s_99203714-0779-434d-8d3a-f74ef330fb13_bread-5671124_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/dc2abb28-82b3-4083-b3bc-c679573ef987_cookies-3798903_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/ea7b5cb6-fc9b-4bb8-ae29-25adda945fde_cupcake-2588646_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/f598ccf1-8262-4b3f-86ad-260ac6b62468_apple-pie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/fa097e79-48e3-419d-9f13-a6ba6bef09fe_blueberries-3946230_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_dc2abb28-82b3-4083-b3bc-c679573ef987_cookies-3798903_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_ea7b5cb6-fc9b-4bb8-ae29-25adda945fde_cupcake-2588646_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_f598ccf1-8262-4b3f-86ad-260ac6b62468_apple-pie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_fa097e79-48e3-419d-9f13-a6ba6bef09fe_blueberries-3946230_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/2a0ecdcb-b61a-4822-87e9-84a0210041eb_pink-4536379_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/c6e754b6-75dc-426f-9871-8654fb7b0d12_pink-4536379_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/f5e5af04-b201-4ed7-9d93-59c1bb52412e_pink-4536379_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/f8e7de30-6cd1-4095-b868-a170ff4a988f_pink-4536379_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_2a0ecdcb-b61a-4822-87e9-84a0210041eb_pink-4536379_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_c6e754b6-75dc-426f-9871-8654fb7b0d12_pink-4536379_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_f5e5af04-b201-4ed7-9d93-59c1bb52412e_pink-4536379_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_f8e7de30-6cd1-4095-b868-a170ff4a988f_pink-4536379_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/19/90fea573-1463-4728-bcf4-4c78372a4f9b_cake-4910417_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/19/s/s_90fea573-1463-4728-bcf4-4c78372a4f9b_cake-4910417_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/1f658747-8163-4fdb-81d6-2523f1174085_blueberries-3946230_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/37b1409b-75e8-4c95-984a-fe9b7ba8c94c_cake-4910417_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/3ff56591-329c-4c53-a709-84513411ce8c_cookies-3798903_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/485434c3-f58c-4d56-b828-6e604dd96f9f_cookies-6012079_1280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/6e2e334f-c1bd-430c-b3e7-1b1b0746014b_cookies-5809181_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/6f3bc574-1105-454c-91bc-36bf8f8e2501_cupcake-2588646_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/708b6d9c-cdc0-4fa9-9e57-b8394b37722a_pink-4536379_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/798d9179-24ee-4db6-87c7-fb63c9ea512e_bread-5671124_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/d070747e-e4e2-4d2d-9a8a-9e123e4fc54d_rogues-1792221_1280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_1f658747-8163-4fdb-81d6-2523f1174085_blueberries-3946230_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_37b1409b-75e8-4c95-984a-fe9b7ba8c94c_cake-4910417_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_3ff56591-329c-4c53-a709-84513411ce8c_cookies-3798903_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_485434c3-f58c-4d56-b828-6e604dd96f9f_cookies-6012079_1280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_6e2e334f-c1bd-430c-b3e7-1b1b0746014b_cookies-5809181_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_6f3bc574-1105-454c-91bc-36bf8f8e2501_cupcake-2588646_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_708b6d9c-cdc0-4fa9-9e57-b8394b37722a_pink-4536379_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_798d9179-24ee-4db6-87c7-fb63c9ea512e_bread-5671124_640.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_d070747e-e4e2-4d2d-9a8a-9e123e4fc54d_rogues-1792221_1280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/JoinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/JoinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceMemberImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceMemberImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join/join.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +123,7 @@
       <workItem from="1612228553214" duration="412000" />
       <workItem from="1612229190921" duration="2526000" />
       <workItem from="1616844362512" duration="441000" />
-      <workItem from="1617549232973" duration="4511000" />
+      <workItem from="1617549232973" duration="4860000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -262,7 +167,28 @@
       <option name="project" value="LOCAL" />
       <updated>1617543715642</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="회원가입 ajax, js 수정">
+      <created>1617553943396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617553943396</updated>
+    </task>
+    <task id="LOCAL-00008" summary="회원가입 ajax, js 수정">
+      <created>1617554001338</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617554001338</updated>
+    </task>
+    <task id="LOCAL-00009" summary="회원가입 ajax, js 수정">
+      <created>1617554025636</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617554025636</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +205,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/mina" />
                       </list>
                     </value>
                   </entry>
@@ -302,7 +228,8 @@
     <MESSAGE value="jsp 파일 수정" />
     <MESSAGE value="branch test" />
     <MESSAGE value="myPoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="myPoint" />
+    <MESSAGE value="회원가입 ajax, js 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="회원가입 ajax, js 수정" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1612229566716">
@@ -321,54 +248,55 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="646" y="309" key="Github.ShareDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612228301787" />
-    <state width="1492" height="129" key="GridCell.Tab.0.bottom" timestamp="1617553055761">
+    <state width="1492" height="333" key="GridCell.Tab.0.bottom" timestamp="1617553978557">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1492" height="129" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553055761" />
+    <state width="1492" height="333" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553978557" />
     <state width="739" height="180" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899161" />
-    <state width="1492" height="129" key="GridCell.Tab.0.center" timestamp="1617553055760">
+    <state width="1492" height="333" key="GridCell.Tab.0.center" timestamp="1617553978555">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1492" height="129" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553055760" />
+    <state width="1492" height="333" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553978555" />
     <state width="739" height="180" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899160" />
-    <state width="1492" height="129" key="GridCell.Tab.0.left" timestamp="1617553055760">
+    <state width="1492" height="333" key="GridCell.Tab.0.left" timestamp="1617553978553">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1492" height="129" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553055760" />
+    <state width="1492" height="333" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553978553" />
     <state width="739" height="180" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899159" />
-    <state width="1492" height="129" key="GridCell.Tab.0.right" timestamp="1617553055760">
+    <state width="1492" height="333" key="GridCell.Tab.0.right" timestamp="1617553978556">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1492" height="129" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553055760" />
+    <state width="1492" height="333" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553978556" />
     <state width="739" height="180" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899160" />
-    <state width="1492" height="129" key="GridCell.Tab.1.bottom" timestamp="1617553055761">
+    <state width="1492" height="333" key="GridCell.Tab.1.bottom" timestamp="1617553978558">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1492" height="129" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553055761" />
+    <state width="1492" height="333" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553978558" />
     <state width="739" height="180" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899162" />
-    <state width="1492" height="129" key="GridCell.Tab.1.center" timestamp="1617553055761">
+    <state width="1492" height="333" key="GridCell.Tab.1.center" timestamp="1617553978557">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1492" height="129" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553055761" />
+    <state width="1492" height="333" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553978557" />
     <state width="739" height="180" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899162" />
-    <state width="1492" height="129" key="GridCell.Tab.1.left" timestamp="1617553055761">
+    <state width="1492" height="333" key="GridCell.Tab.1.left" timestamp="1617553978557">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1492" height="129" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553055761" />
+    <state width="1492" height="333" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553978557" />
     <state width="739" height="180" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899161" />
-    <state width="1492" height="129" key="GridCell.Tab.1.right" timestamp="1617553055761">
+    <state width="1492" height="333" key="GridCell.Tab.1.right" timestamp="1617553978557">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1492" height="129" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553055761" />
+    <state width="1492" height="333" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617553978557" />
     <state width="739" height="180" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899162" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1617543381353">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="277" y="44" key="SettingsEditor/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616844850559" />
     <state x="277" y="0" key="SettingsEditor/0.0.1536.826@0.0.1536.826" timestamp="1617543381353" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617543721413">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617554091629">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617554091629" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616843591576" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826@0.0.1536.826" timestamp="1617543721413" />
     <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1616842327372">
