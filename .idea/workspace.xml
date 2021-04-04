@@ -23,13 +23,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="branch">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPoint.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-04-04__9_54__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-04-04__9_54__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-04-04__9_54__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-04-04__9_54__Default_Changelist_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/perAsk.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/perAsk.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="myPoint" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617542039807</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="myPoint">
+      <created>1617543338886</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617543338886</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +194,8 @@
     <MESSAGE value="initial commit 입니다!" />
     <MESSAGE value="jsp 파일 수정" />
     <MESSAGE value="branch test" />
-    <option name="LAST_COMMIT_MESSAGE" value="branch test" />
+    <MESSAGE value="myPoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="myPoint" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1612229566716">
@@ -244,14 +246,16 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state width="739" height="180" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899162" />
-    <state x="277" y="44" key="SettingsEditor" timestamp="1616844850559">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1617543381353">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="277" y="44" key="SettingsEditor/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616844850559" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616843591576">
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.826@0.0.1536.826" timestamp="1617543381353" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617543352256">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616843591576" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826@0.0.1536.826" timestamp="1617543352256" />
     <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1616842327372">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
