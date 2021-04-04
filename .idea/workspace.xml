@@ -23,7 +23,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="branch" />
+    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="branch">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPoint.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-04-04__9_54__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-04-04__9_54__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-04-04__9_54__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-04-04__9_54__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/perAsk.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/perAsk.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,6 +93,17 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RingringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ringring.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dessert.ringring.RingringApplication" />
