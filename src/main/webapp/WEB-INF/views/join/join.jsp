@@ -51,33 +51,34 @@
                 <tr>
                     <th class="tt">아이디</th>
                     <td>
-                        <input type="text" name="id" value maxlength="16" label="아이디" placeholder="6자 이상의  영문과 숫자를 조합해주세요">
-                        <a href="" class="btn default">중복확인</a>
+                        <input type="text" id="id" name="id" value maxlength="16" label="아이디" placeholder="6자 이상의  영문과 숫자를 조합해주세요">
+                        <button style="background-color: white" type="button" onclick="idCheck()" class="btn default">중복확인</button>
                     </td>
                 </tr>
                 <tr>
                     <th class="tt">비밀번호</th>
-                    <td><input type="text" name="password" value maxlength="16" label="비밀번호" placeholder="비밀번호를 입력해주세요"></td>
+                    <td><input type="password" id="pw1" name="password" value maxlength="16" label="비밀번호" placeholder="비밀번호를 입력해주세요"></td>
                 </tr>
                 <tr>
                     <th class="tt">비밀번호 확인</th>
-                    <td><input type="text" name="" value maxlength="16" label="비밀번호 확인" placeholder="비밀번호를 한번 더 입력해주세요"></td>
+                    <td><input type="password" id="pw2" name="" value maxlength="16" label="비밀번호 확인" placeholder="비밀번호를 한번 더 입력해주세요">
+                        <button style="background-color: white" type="button" class="btn default" onclick="match()">중복확인</button></td>
                 </tr>
                 <tr>
                     <th class="tt">이름</th>
-                    <td><input type="text" name="name" value maxlength="16" label="이름" placeholder="이름을 입력해주세요"></td>
+                    <td><input type="text" id="name" name="name" value maxlength="16" label="이름" placeholder="이름을 입력해주세요"></td>
                 </tr>
                 <tr>
                     <th class="tt">이메일</th>
                     <td>
-                        <input type="text" name="email" value maxlength="30" label="이메일" placeholder="예 : RingRing@dessert.com">
+                        <input type="text" id="email" name="email" value maxlength="30" label="이메일" placeholder="예 : RingRing@dessert.com">
                         <a href="" class="btn default">중복확인</a>
                     </td>
                     
                 </tr>
                 <tr>
                     <th class="tt">휴대폰</th>
-                    <td><input type="text" name="phone" value maxlength="16" label="휴대폰" placeholder="숫자만 입력해주세요"></td>
+                    <td><input type="text" id="phone" name="phone" value maxlength="16" label="휴대폰" placeholder="숫자만 입력해주세요"></td>
                 </tr>
                 <tr>
                     <th class="tt">주소</th>
@@ -109,7 +110,26 @@
                              }
                          }).open();
                      }
+
+                     function match(){
+                         var pw1=document.getElementById('pw1').value;
+                         var pw2=document.getElementById('pw2').value;
+
+                         if(pw1.length<6){
+                             alert("6글자 이상 입력해 주세요");
+                             return false;
+                         }
+                         if(pw1!=pw2){
+                             alert("비밀번호가 일치하지 않습니다");
+                             return false;
+                         }else{
+                             alert("비밀번호가 일치합니다");
+                             return true;
+                         }
+                     }
+
                  </script>
+
                  <div class="status under"></div>
                  <div class="checkbox_group">
                      <input class="form-check-input" type="checkbox" name="exampleRadios" id="check_all" value="option1">
@@ -143,12 +163,13 @@
                          본인은 만 14세 이상입니다 (필수)
                      </label><br>
                  </div>
-                 <div class="secondary">
-                     <button type="submit" class="btn btn_secondary tt">가입하기</button>
-                 </div>
              </form>
+            <div class="secondary">
+                <button type="button" id="submit" disabled="disabled" class="btn btn_secondary tt" onclick="blank()">가입하기</button>
+            </div>
 
             <script src ="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
             <script type="text/javascript" src="../static/js/bootstrap.js"></script>
             <script>
                 //체크박스 전체선택
@@ -166,6 +187,60 @@
 
                     $("#check_all").prop("checked", is_checked);
                 });
+
+                function idCheck(){
+                    var memberId=$("#id").val();
+
+                    if(memberId.search(/\s/)!=-1){
+                        alert("아이디에는 공백이 들어갈 수 없습니다");
+                    }else{
+                        $.ajax({
+                            async:true,
+                            type:'POST',
+                            data:memberId,
+                            url:"/idCheck",
+                            dataType:"json",
+                            contentType:"application/json; charset=UTF-8",
+                            success: function (count){
+                                if(count>0){
+                                    alert("해당 아이디는 존재합니다");
+                                    $("#submit").attr("disabled","disabled");
+                                    window.location.reload();
+                                }else{
+                                    alert("사용 가능한 아이디입니다");
+                                    $("#submit").removeAttr("disabled");
+                                }
+                            },
+                            error:function (error){
+                                alert("아이디를 입력해주세요");
+                            }
+                        });
+                    }
+                }
+                function blank(){
+                    if($.trim($('#id').val())==""){
+                        alert("아이디를 확인해주세요");
+                        return false;
+                    }
+                    if($.trim($('#name').val())==""){
+                        alert("이름을 확인해주세요");
+                        return false;
+                    }
+                    if($.trim($('#phone').val())==""){
+                        alert("핸드폰번호를 확인해주세요");
+                        return false;
+                    }
+                    if($.trim($('#email').val())==""){
+                        alert("이메일을 확인해주세요");
+                        return false;
+                    }
+
+                    if(confirm("회원가입을 하시겠습니까?")){
+                        alert("이메일 인증을 완료해주세요");
+                        $("form").submit();
+                    }
+
+                }
             </script>
             <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 

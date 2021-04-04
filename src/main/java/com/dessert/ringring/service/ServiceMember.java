@@ -25,7 +25,7 @@ public interface ServiceMember {
 	public int login(HttpServletRequest req);
 	 
 	//아이디중복확인
-	public int overLapId();
+	public int overLapId(String id);
 	 
 	//이메일 중복 확인
 	public int emailCheck();

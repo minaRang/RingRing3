@@ -114,9 +114,8 @@ public class ServiceMemberImpl implements ServiceMember{
 	}
 	
 	@Override
-	public int overLapId() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int overLapId(String id) {
+		return mapper.overlapId(id);
 	}
 	@Override
 	public int emailCheck() {
