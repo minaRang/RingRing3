@@ -82,6 +82,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
@@ -174,6 +177,10 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612229566716" />
+    <state x="249" y="0" key="#Project_Structure" timestamp="1617541637484">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.826@0.0.1536.826" timestamp="1617541637484" />
     <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1616844815700">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
