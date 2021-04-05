@@ -62,7 +62,7 @@
                 <tr>
                     <th class="tt">비밀번호 확인</th>
                     <td><input type="password" id="pw2" name="" value maxlength="16" label="비밀번호 확인" placeholder="비밀번호를 한번 더 입력해주세요">
-                        <button style="background-color: white" type="button" class="btn default" onclick="match()">중복확인</button></td>
+                        <button style="background-color: white" type="button" class="btn default" onclick="match()">확인</button></td>
                 </tr>
                 <tr>
                     <th class="tt">이름</th>
@@ -115,8 +115,8 @@
                          var pw1=document.getElementById('pw1').value;
                          var pw2=document.getElementById('pw2').value;
 
-                         if(pw1.length<6){
-                             alert("6글자 이상 입력해 주세요");
+                         if(pw1.length<10){
+                             alert("10글자 이상 입력해 주세요");
                              return false;
                          }
                          if(pw1!=pw2){
@@ -187,7 +187,7 @@
 
                     $("#check_all").prop("checked", is_checked);
                 });
-
+                //아이디 중복확인에 들어가는 function(ajax)
                 function idCheck(){
                     var memberId=$("#id").val();
 
@@ -217,21 +217,38 @@
                         });
                     }
                 }
+                //회원가입 submit시 공란확인, 정규식 확인하는 function
                 function blank(){
+                    var regEmail=/^([0-9a-zA-Z_-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+                    //특수문자,문자,숫자 포함 8~15자리 이내의 암호
+                    var pw=/^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+                    //핸드폰 번호는 01(0,1,9) - 0~9숫자 3,4개 - 0~9 숫자 4개, 구분자는 있어도 없어도 가능
+                    var phone=/^01([0|1|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+                    //
+                    if(!pw.test($('#pw1'))){
+                        alert("핸드폰번호 입력을 확인해주세요")
+                        return false;
+                    }
+
+                    if(!phone.test($('#phone'))){
+                        alert("핸드폰번호 입력을 확인해주세요")
+                        return false;
+                    }
+                    if(!regEmail.test($('#email'))){
+                        alert("이메일 양식을 확인해주세요")
+                        return false;
+                    }
+
                     if($.trim($('#id').val())==""){
-                        alert("아이디를 확인해주세요");
+                        alert("아이디를 입력해주세요");
                         return false;
                     }
                     if($.trim($('#name').val())==""){
-                        alert("이름을 확인해주세요");
+                        alert("이름을 입력해주세요");
                         return false;
                     }
                     if($.trim($('#phone').val())==""){
-                        alert("핸드폰번호를 확인해주세요");
-                        return false;
-                    }
-                    if($.trim($('#email').val())==""){
-                        alert("이메일을 확인해주세요");
+                        alert("핸드폰번호를 입력해주세요");
                         return false;
                     }
 
