@@ -42,9 +42,7 @@ public class JoinController {
 			return "redirect:mainForm";	
 			
 		}else {
-			
 			return "redirect:mainForm";
-
 		}
 	
 	}
@@ -64,7 +62,7 @@ public class JoinController {
 //		sendMail.setTo(vo.getEmail());
 //		sendMail.send();
 
-		redirect.addAttribute("contentPage","/mainForm");
+//		redirect.addAttribute("contentPage","/mainForm");
 
 		return "redirect:mainForm";
 	}

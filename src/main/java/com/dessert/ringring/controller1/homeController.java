@@ -20,11 +20,11 @@ public class homeController {
 	ServiceGoods serviceGoods;
 
 	 @GetMapping("/")
-	 public String main(HttpServletRequest req) {
+	 public String main(HttpServletRequest req,RedirectAttributes redirect) {
 		 List<DTOGoods> goods = serviceGoods.listGoods(); //상품 리스트 받아옴
 		 HttpSession session = req.getSession(); //세션 생성
 		 session.setAttribute("list",goods);
-	 	return "redirect:mainForm";
+		 return "redirect:mainForm";
 	 }
 	 
 	 @GetMapping("/mainForm")

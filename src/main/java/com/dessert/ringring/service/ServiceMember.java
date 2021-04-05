@@ -1,6 +1,7 @@
 package com.dessert.ringring.service;
 
 import java.io.UnsupportedEncodingException;
+import java.util.List;
 
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
@@ -32,7 +33,9 @@ public interface ServiceMember {
 	
 	//이메일 인증
 	public int verifyMember(String id);
-	
+
+	//모든 멤버조회
+	List<DTOMember> allUserInfo();
 
 	 
 

@@ -24,14 +24,14 @@ com/dessert/ringring/aop/LoggerAspect.java
  com.dessert.ringring.aop.LoggerAspect
 com/dessert/ringring/domain/DTOPoint.java
  com.dessert.ringring.domain.DTOPoint
-com/dessert/ringring/controller1/JoinController.java
- com.dessert.ringring.controller1.JoinController
+com/dessert/ringring/controller2/reviewController.java
+ com.dessert.ringring.controller2.reviewController
 com/dessert/ringring/RingringApplication.java
  com.dessert.ringring.RingringApplication
 com/dessert/ringring/domain/DTOGoods.java
  com.dessert.ringring.domain.DTOGoods
-com/dessert/ringring/service/ServiceMember.java
- com.dessert.ringring.service.ServiceMember
+com/dessert/ringring/config/UploadFileUtils.java
+ com.dessert.ringring.config.UploadFileUtils
 com/dessert/ringring/service/ServiceCart.java
  com.dessert.ringring.service.ServiceCart
 com/dessert/ringring/service/ServiceCoupon.java
@@ -44,18 +44,18 @@ com/dessert/ringring/domain/DTOProductSheet.java
  com.dessert.ringring.domain.DTOProductSheet
 com/dessert/ringring/config/MailHandler.java
  com.dessert.ringring.config.MailHandler
-com/dessert/ringring/controller1/homeController.java
- com.dessert.ringring.controller1.homeController
+com/dessert/ringring/controller1/MypageController.java
+ com.dessert.ringring.controller1.MypageController
 com/dessert/ringring/mapper/CouponMapper.java
  com.dessert.ringring.mapper.CouponMapper
 com/dessert/ringring/controller1/PerAskController.java
  com.dessert.ringring.controller1.PerAskController
 com/dessert/ringring/service/ServiceOrderSheetImpl.java
  com.dessert.ringring.service.ServiceOrderSheetImpl
-com/dessert/ringring/controller2/BoardController2.java
- com.dessert.ringring.controller2.BoardController2
-com/dessert/ringring/controller1/LoginController.java
- com.dessert.ringring.controller1.LoginController
+com/dessert/ringring/service/ServiceReviewImpl.java
+ com.dessert.ringring.service.ServiceReviewImpl
+com/dessert/ringring/service/ServicePoint.java
+ com.dessert.ringring.service.ServicePoint
 com/dessert/ringring/service/ServiceOrderSheet.java
  com.dessert.ringring.service.ServiceOrderSheet
 com/dessert/ringring/service/ServiceProductSheet.java
@@ -76,8 +76,8 @@ com/dessert/ringring/domain/DTOPerAsk.java
  com.dessert.ringring.domain.DTOPerAsk
 com/dessert/ringring/controller1/ProductController.java
  com.dessert.ringring.controller1.ProductController
-com/dessert/ringring/mapper/MemberMapper.java
- com.dessert.ringring.mapper.MemberMapper
+com/dessert/ringring/domain/DTOCart.java
+ com.dessert.ringring.domain.DTOCart
 com/dessert/ringring/util/FileUtils.java
  com.dessert.ringring.util.FileUtils
 com/dessert/ringring/service/ServiceBoardImpl.java
@@ -92,27 +92,33 @@ com/dessert/ringring/mapper/BoardMapper.java
  com.dessert.ringring.mapper.BoardMapper
 com/dessert/ringring/domain/DTOReview.java
  com.dessert.ringring.domain.DTOReview
-com/dessert/ringring/controller1/OrderController.java
- com.dessert.ringring.controller1.OrderController
+com/dessert/ringring/domain/DTOOrderSheet.java
+ com.dessert.ringring.domain.DTOOrderSheet
 com/dessert/ringring/service/ServicePerAskImpl.java
  com.dessert.ringring.service.ServicePerAskImpl
-com/dessert/ringring/service/ServiceMemberImpl.java
- com.dessert.ringring.service.ServiceMemberImpl
+com/dessert/ringring/config/MvcConfiguration.java
+ com.dessert.ringring.config.MvcConfiguration
 com/dessert/ringring/domain/DTOBoard.java
  com.dessert.ringring.domain.DTOBoard
 com/dessert/ringring/service/ServiceGoodsImpl.java
  com.dessert.ringring.service.ServiceGoodsImpl
 com/dessert/ringring/controller1/CartController.java
  com.dessert.ringring.controller1.CartController
-com/dessert/ringring/service/ServicePoint.java
- com.dessert.ringring.service.ServicePoint
-com/dessert/ringring/domain/DTOCart.java
- com.dessert.ringring.domain.DTOCart
-com/dessert/ringring/config/MvcConfiguration.java
- com.dessert.ringring.config.MvcConfiguration
-com/dessert/ringring/config/UploadFileUtils.java
- com.dessert.ringring.config.UploadFileUtils
-com/dessert/ringring/domain/DTOOrderSheet.java
- com.dessert.ringring.domain.DTOOrderSheet
-com/dessert/ringring/controller1/MypageController.java
- com.dessert.ringring.controller1.MypageController
+com/dessert/ringring/controller2/BoardController2.java
+ com.dessert.ringring.controller2.BoardController2
+com/dessert/ringring/controller1/LoginController.java
+ com.dessert.ringring.controller1.LoginController
+com/dessert/ringring/controller1/JoinController.java
+ com.dessert.ringring.controller1.JoinController
+com/dessert/ringring/controller1/OrderController.java
+ com.dessert.ringring.controller1.OrderController
+com/dessert/ringring/service/ServiceMember.java
+ com.dessert.ringring.service.ServiceMember
+com/dessert/ringring/service/ServiceMemberImpl.java
+ com.dessert.ringring.service.ServiceMemberImpl
+com/dessert/ringring/mapper/MemberMapper.java
+ com.dessert.ringring.mapper.MemberMapper
+com/dessert/ringring/controller1/homeController.java
+ com.dessert.ringring.controller1.homeController
+com/dessert/ringring/controller1/AdminSideBarController.java
+ com.dessert.ringring.controller1.AdminSideBarController
