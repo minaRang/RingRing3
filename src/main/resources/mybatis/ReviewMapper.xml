@@ -4,17 +4,27 @@
     <!--리뷰 생성-->
     <insert id="insertReview" parameterType="com.dessert.ringring.domain.DTOReview" useGeneratedKeys="true" keyProperty="idx">
         insert into review
-            (id,title,content,date,doAnswer,img,reComent,reDate,productIdx,doSecret)
+            (id,title,content,date,img,product_idx,do_secret,do_answer)
             value
-            (#{id},#{title},#{content},now(),#{doAnswer},IFNULL(#{img}, NULL),#{reContent},#{reDate},#{productIdx},#{doSecret})
+            (#{id},#{title},#{content},now(),IFNULL(#{img}, NULL),#{productIdx},IFNULL(#{doSecret}, "no"),IFNULL(#{doAnswer}, "x"))
     </insert>
 
-    <!--리뷰리스트조회-->
+    <!--리뷰리스트조회(상품으로)-->
     <select id="selectReviewList" parameterType="long" resultType="com.dessert.ringring.domain.DTOReview">
         SELECT*FROM review
+        WHERE product_idx=#{productIdx}
         ORDER BY
         idx DESC,
-        date DESC <!--desc는 내림차순.-->
+        date DESC<!--desc는 내림차순.-->
+    </select>
+
+    <!--리뷰리스트조회(아이디로)-->
+    <select id="selectMyReviewList" parameterType="String" resultType="com.dessert.ringring.domain.DTOReview">
+        SELECT*FROM review
+        WHERE id=#{id}
+        ORDER BY
+        idx DESC,
+        date DESC<!--desc는 내림차순.-->
     </select>
 
     <!--리뷰상세조회-->
@@ -28,13 +38,15 @@
         SET
             title = #{title}
           , content = #{content}
-          , doSecret = #{doSecret}
+          , do_secret = #{doSecret}
         WHERE
             idx = #{idx}
     </update>
 
+    <!--리뷰삭제-->
     <delete id="deleteReview" parameterType="long">
         DELETE from review
-        where idx=#{idx}
+        where idx=#{idx} and product_Idx=#{productIdx}
     </delete>
+
 </mapper>
