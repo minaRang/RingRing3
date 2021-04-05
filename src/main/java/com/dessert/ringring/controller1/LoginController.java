@@ -38,7 +38,6 @@ public class LoginController {
 	public String loginView(RedirectAttributes redirect,HttpSession session) {
 		
 		String id=(String) session.getAttribute("userId");
-
 		//로그인한 상태이면 로그인페이지에 접근 못함
 		if(id == null) {
 			redirect.addAttribute("contentPage","login/login.jsp");
@@ -79,7 +78,7 @@ public class LoginController {
 			session.setAttribute("member",member);
 			session.setAttribute("userId",member.getId());
 			session.setAttribute("userName",member.getName());
-
+			session.setAttribute("authority",member.getAuthority());
 			
 			model.addAttribute("msg",member.getId()+"님 로그인 되셨습니다");
 			model.addAttribute("url","/");

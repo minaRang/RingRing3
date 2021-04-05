@@ -21,7 +21,7 @@
         <h3 class="tt">마이링링</h3>
         <ul>
             <li><a href="/orderContents">주문 내역</a></li>
-            <li><a href="">상품 후기</a></li>
+            <li><a href="/productReview">상품 후기</a></li>
             <li><a href="">적립금</a></li>
             <li><a href="">쿠폰</a></li>
             <li class="last"><a href="/myInfoModify">개인 정보 수정</a></li>

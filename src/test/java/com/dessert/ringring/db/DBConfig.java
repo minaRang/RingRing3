@@ -2,6 +2,7 @@ package com.dessert.ringring.db;
 
 import com.dessert.ringring.domain.DTOCart;
 import com.dessert.ringring.domain.DTOGoods;
+import com.dessert.ringring.domain.DTOReview;
 import com.dessert.ringring.mapper.CartMapper;
 import com.dessert.ringring.mapper.GoodsMapper;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -41,6 +42,11 @@ public class DBConfig {
 
 	@Autowired
 	private CartMapper cartMapper;
+
+	@Test
+	public void testGetUserInfo(){
+		System.out.println("권한은"+serviceMember.getUserInfo("omming").getAuthority());
+	}
 
 	@Test
 	public void testByApplicationContext() {
@@ -116,6 +122,6 @@ public class DBConfig {
 		List<DTOCart> list=cartMapper.listCart("admin");
 		  System.out.println(list);
 	  }
-	  
+
 }
 

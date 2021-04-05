@@ -24,10 +24,141 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="initial commit 입니다!">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/PerAskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/PerAskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/aop/LoggerAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/aop/LoggerAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/DBConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/DBConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/TemKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/TemKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/UploadFileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/UploadFileUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/JoinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/JoinController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/MypageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/MypageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/PerAskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/PerAskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/homeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOCoupon.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOCoupon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOGoods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOOrderSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOOrderSheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOPerAsk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOPerAsk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOProductSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOProductSheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOReview.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOReview.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/BoardMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/BoardMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/CartMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/CartMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/GoodsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/GoodsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/MemberMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/MemberMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/OrderSheetMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/OrderSheetMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/PerAskMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/PerAskMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/ProductSheetMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/ProductSheetMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/ReviewMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/ReviewMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/MailHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceGoods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceMemberImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceMemberImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheetImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheetImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServicePerAsk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServicePerAsk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceProductSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceProductSheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceReview.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceReview.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/dessert/ringring/RingringApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/dessert/ringring/RingringApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/dessert/ringring/db/DBConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/dessert/ringring/db/DBConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.dessert.ringring.db.DBConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.dessert.ringring.db.DBConfig.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.dessert.ringring.db.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.dessert.ringring.db.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/join.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/css/join.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/2ae24d5f-e679-4500-adc1-e29a67936f7f_" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/c4de4bc1-1c8a-47f1-8228-107f3740456d_blueberries-3946230_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/f6492f72-b493-42a3-a215-e69207a85731_" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/f87ce28c-2df6-4eea-9e73-b9267aad5919_" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/24/s/s_c4de4bc1-1c8a-47f1-8228-107f3740456d_blueberries-3946230_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/37830840-1942-4d2a-aea5-d64451de1b3b_bread-5671124_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/99203714-0779-434d-8d3a-f74ef330fb13_bread-5671124_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/s/s_37830840-1942-4d2a-aea5-d64451de1b3b_bread-5671124_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/perAsk/2021/03/26/s/s_99203714-0779-434d-8d3a-f74ef330fb13_bread-5671124_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/dc2abb28-82b3-4083-b3bc-c679573ef987_cookies-3798903_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/ea7b5cb6-fc9b-4bb8-ae29-25adda945fde_cupcake-2588646_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/f598ccf1-8262-4b3f-86ad-260ac6b62468_apple-pie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/fa097e79-48e3-419d-9f13-a6ba6bef09fe_blueberries-3946230_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_dc2abb28-82b3-4083-b3bc-c679573ef987_cookies-3798903_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_ea7b5cb6-fc9b-4bb8-ae29-25adda945fde_cupcake-2588646_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_f598ccf1-8262-4b3f-86ad-260ac6b62468_apple-pie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/18/s/s_fa097e79-48e3-419d-9f13-a6ba6bef09fe_blueberries-3946230_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/2a0ecdcb-b61a-4822-87e9-84a0210041eb_pink-4536379_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/c6e754b6-75dc-426f-9871-8654fb7b0d12_pink-4536379_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/f5e5af04-b201-4ed7-9d93-59c1bb52412e_pink-4536379_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/f8e7de30-6cd1-4095-b868-a170ff4a988f_pink-4536379_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_2a0ecdcb-b61a-4822-87e9-84a0210041eb_pink-4536379_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_c6e754b6-75dc-426f-9871-8654fb7b0d12_pink-4536379_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_f5e5af04-b201-4ed7-9d93-59c1bb52412e_pink-4536379_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/02/21/s/s_f8e7de30-6cd1-4095-b868-a170ff4a988f_pink-4536379_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/19/90fea573-1463-4728-bcf4-4c78372a4f9b_cake-4910417_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/19/s/s_90fea573-1463-4728-bcf4-4c78372a4f9b_cake-4910417_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/1f658747-8163-4fdb-81d6-2523f1174085_blueberries-3946230_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/37b1409b-75e8-4c95-984a-fe9b7ba8c94c_cake-4910417_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/3ff56591-329c-4c53-a709-84513411ce8c_cookies-3798903_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/485434c3-f58c-4d56-b828-6e604dd96f9f_cookies-6012079_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/6e2e334f-c1bd-430c-b3e7-1b1b0746014b_cookies-5809181_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/6f3bc574-1105-454c-91bc-36bf8f8e2501_cupcake-2588646_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/708b6d9c-cdc0-4fa9-9e57-b8394b37722a_pink-4536379_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/798d9179-24ee-4db6-87c7-fb63c9ea512e_bread-5671124_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/d070747e-e4e2-4d2d-9a8a-9e123e4fc54d_rogues-1792221_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_1f658747-8163-4fdb-81d6-2523f1174085_blueberries-3946230_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_37b1409b-75e8-4c95-984a-fe9b7ba8c94c_cake-4910417_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_3ff56591-329c-4c53-a709-84513411ce8c_cookies-3798903_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_485434c3-f58c-4d56-b828-6e604dd96f9f_cookies-6012079_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_6e2e334f-c1bd-430c-b3e7-1b1b0746014b_cookies-5809181_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_6f3bc574-1105-454c-91bc-36bf8f8e2501_cupcake-2588646_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_708b6d9c-cdc0-4fa9-9e57-b8394b37722a_pink-4536379_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_798d9179-24ee-4db6-87c7-fb63c9ea512e_bread-5671124_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/upload/2021/03/26/s/s_d070747e-e4e2-4d2d-9a8a-9e123e4fc54d_rogues-1792221_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.dessert.ringring.db.DBConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.dessert.ringring.db.DBConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/MypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/MypageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller2/BoardController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller2/BoardController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/domain/DTOReview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/ReviewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/ReviewMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceReview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/ReviewMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/ReviewMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardWrite.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardWrite.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/notice_section.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/notice_section.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myInfoModify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myInfoModify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderContents.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderContents.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dessert/ringring/db/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dessert/ringring/db/DBConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +170,22 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <branch-grouping />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -66,10 +211,38 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\공부\spring\RingRing3\src\main\resources\static\css" />
+      <recent name="E:\공부\spring\RingRing3\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RingringApplication">
+    <configuration name="DBConfig.testGetUserInfo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.db.DBConfig.testGetUserInfo&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="RingringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ringring.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dessert.ringring.RingringApplication" />
@@ -77,6 +250,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.DBConfig.testGetUserInfo" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,6 +269,18 @@
       <workItem from="1612228553214" duration="412000" />
       <workItem from="1612229190921" duration="2526000" />
       <workItem from="1616844362512" duration="441000" />
+      <workItem from="1616948584812" duration="980000" />
+      <workItem from="1616982491086" duration="730000" />
+      <workItem from="1616983330103" duration="2591000" />
+      <workItem from="1617115997315" duration="289000" />
+      <workItem from="1617190938106" duration="8509000" />
+      <workItem from="1617245822233" duration="866000" />
+      <workItem from="1617437315420" duration="356000" />
+      <workItem from="1617437812973" duration="1337000" />
+      <workItem from="1617439175818" duration="235000" />
+      <workItem from="1617439461346" duration="30669000" />
+      <workItem from="1617542033282" duration="736000" />
+      <workItem from="1617600862950" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -144,63 +334,5 @@
     <MESSAGE value="호냥냥" />
     <MESSAGE value="initial commit 입니다!" />
     <option name="LAST_COMMIT_MESSAGE" value="initial commit 입니다!" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="395" y="91" key="#Inspections" timestamp="1612229566716">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="395" y="91" key="#Inspections/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612229566716" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1616844815700">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616844815700" />
-    <state x="646" y="309" key="Github.ShareDialog" timestamp="1612228301787">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="646" y="309" key="Github.ShareDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612228301787" />
-    <state width="739" height="180" key="GridCell.Tab.0.bottom" timestamp="1616841899161">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="739" height="180" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899161" />
-    <state width="739" height="180" key="GridCell.Tab.0.center" timestamp="1616841899160">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="739" height="180" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899160" />
-    <state width="739" height="180" key="GridCell.Tab.0.left" timestamp="1616841899159">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="739" height="180" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899159" />
-    <state width="739" height="180" key="GridCell.Tab.0.right" timestamp="1616841899160">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="739" height="180" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899160" />
-    <state width="739" height="180" key="GridCell.Tab.1.bottom" timestamp="1616841899162">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="739" height="180" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899162" />
-    <state width="739" height="180" key="GridCell.Tab.1.center" timestamp="1616841899162">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="739" height="180" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899162" />
-    <state width="739" height="180" key="GridCell.Tab.1.left" timestamp="1616841899161">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="739" height="180" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899161" />
-    <state width="739" height="180" key="GridCell.Tab.1.right" timestamp="1616841899162">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="739" height="180" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616841899162" />
-    <state x="277" y="44" key="SettingsEditor" timestamp="1616844850559">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="277" y="44" key="SettingsEditor/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616844850559" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616843591576">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616843591576" />
-    <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1616842327372">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616842327372" />
   </component>
 </project>

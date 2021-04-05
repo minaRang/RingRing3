@@ -1,7 +1,9 @@
 package com.dessert.ringring.controller2;
 
 import com.dessert.ringring.domain.DTOBoard;
+import com.dessert.ringring.domain.DTOMember;
 import com.dessert.ringring.service.ServiceBoard;
+import com.dessert.ringring.service.ServiceMember;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.context.request.SessionScope;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +24,12 @@ public class BoardController2 {
     @Autowired
     private ServiceBoard serviceBoard;
     @Autowired
+    private ServiceMember serviceMember;
+
+    @Autowired
     DTOBoard board;
+    @Autowired
+    DTOMember member;
 
     /*게시판 목록*/
     @GetMapping("/boardlist")
@@ -67,14 +75,17 @@ public class BoardController2 {
     @PostMapping("/boardWrite")
     String insertBoard(HttpServletRequest req, Model model, MultipartFile file) throws IOException{
         System.out.println("여기까지놨더"+file);
-            int result = serviceBoard.insertBoard(req, file);
-            if (result > 0) {
-                model.addAttribute("msg", "게시글이 등록되었습니다.");
-                model.addAttribute("url", "/");
-            } else {
-                model.addAttribute("msg", "게시글이 등록에 실패하였습니다.");
-                model.addAttribute("url", "/");
-            }
+        System.out.println(req.getParameter("title"));
+        System.out.println(req.getParameter("content"));
+        System.out.println(req.getParameter("boardType"));
+        int result = serviceBoard.insertBoard(req, file);
+        if (result > 0) {
+            model.addAttribute("msg", "게시글이 등록되었습니다.");
+            model.addAttribute("url", "/");
+        } else {
+            model.addAttribute("msg", "게시글이 등록에 실패하였습니다.");
+            model.addAttribute("url", "/");
+        }
         return "redirect";
     }
 
@@ -99,10 +110,10 @@ public class BoardController2 {
         String boardType=req.getParameter("boardType");
         if (result==true){
             model.addAttribute("msg","글이 삭제되었습니다");
-            model.addAttribute("url","/noticeList?"+boardType);}
+            model.addAttribute("url","/noticeList?id="+boardType);}
         else{
             model.addAttribute("msg","오류발생");
-            model.addAttribute("url","/noticeList?"+boardType);
+            model.addAttribute("url","/noticeList?id="+boardType);
         }
         return "redirect";
     }
