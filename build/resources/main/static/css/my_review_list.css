@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@300;500&display=swap');
+
+
+/* 폰트 위계 */
+
+/*font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.tt{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.st{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(161, 161, 161);
+}
+input{
+    border: 0;
+    outline: 0;
+}
+button{
+    border: 0;
+    outline: 0;
+}
+.status{
+    background-color: #df404a;
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+/* =====sidebar전용 .select class============= */
+.select{
+    background-color: rgba(161, 161, 161, .2);
+}
+/* ==========sidebar : mycategory ============ */
+.mycategory{
+    width: 170px;
+    position: absolute;
+    /* top: 50px; */
+    left: -200px;
+}
+.mycategory h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+.mycategory ul{
+    margin-top: 20px;
+}
+.mycategory li{
+    list-style: none;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 10px 20px;
+    border-bottom: none;
+}
+.mycategory .last{
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+.mycategory li a{
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+    font-weight: 400;
+}
+/* ==============content==================== */
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+/* ========notice=========== */
+.review{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.review h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+/* =======notice_list============= */
+.review_list{
+    border-top: 2px solid #df404a;
+    border-bottom: 2px solid #df404a;
+    margin-top: 10px;
+}
+/* =========notice_table============ */
+.review_table{
+    border-collapse: collapse;
+    width: 1000px;
+}
+.review_table .title{
+    text-align: center;
+    /* border-top:2px solid #df404a; */
+    padding: 15px;
+}
+.review_table td{
+    font-weight: 300;
+    padding: 10px;
+    border-bottom: 1px solid rgba(161, 161, 161, .3);
+}
+.review_table td a{
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+.review_table .first{
+    width: 50px;
+    text-align: center;
+}
+.review_table .second{
+    width: 550px;
+}
+.review_table .third{
+    width: 100px;
+    text-align: center;
+}
+.review_table .fourth{
+    width: 100px;
+    text-align: center;
+}
+/* ===글쓰기 버튼=== */
+#write{
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #df404a;
+    border: none;
+    line-height: 40px;
+    margin-top: 10px;
+    float: right;
+}
+#write a{
+    text-decoration: none;
+    color: white;
+}
+#write::after{
+    display: block;
+    content: '';
+    clear: both;
+}

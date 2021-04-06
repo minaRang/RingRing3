@@ -108,8 +108,8 @@ com/dessert/ringring/controller2/BoardController2.java
  com.dessert.ringring.controller2.BoardController2
 com/dessert/ringring/controller1/LoginController.java
  com.dessert.ringring.controller1.LoginController
-com/dessert/ringring/controller1/JoinController.java
- com.dessert.ringring.controller1.JoinController
+com/dessert/ringring/controller1/homeController.java
+ com.dessert.ringring.controller1.homeController
 com/dessert/ringring/controller1/OrderController.java
  com.dessert.ringring.controller1.OrderController
 com/dessert/ringring/service/ServiceMember.java
@@ -118,7 +118,7 @@ com/dessert/ringring/service/ServiceMemberImpl.java
  com.dessert.ringring.service.ServiceMemberImpl
 com/dessert/ringring/mapper/MemberMapper.java
  com.dessert.ringring.mapper.MemberMapper
-com/dessert/ringring/controller1/homeController.java
- com.dessert.ringring.controller1.homeController
+com/dessert/ringring/controller1/JoinController.java
+ com.dessert.ringring.controller1.JoinController
 com/dessert/ringring/controller1/AdminSideBarController.java
  com.dessert.ringring.controller1.AdminSideBarController
