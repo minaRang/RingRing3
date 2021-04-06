@@ -24,10 +24,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/homeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/GoodsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/GoodsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceGoodsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceGoodsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/homeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceGoods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceGoodsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceGoodsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/listGoods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/listGoods.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dessert/ringring/db/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dessert/ringring/db/DBConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,16 +102,60 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.RingringApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="DBConfig.listGoods" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.db.DBConfig.listGoods&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="DBConfig.productCategory" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.db.DBConfig.productCategory&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="DBConfig.testGetUserInfo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -132,6 +187,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DBConfig.listGoods" />
+        <item itemvalue="Gradle.DBConfig.productCategory" />
         <item itemvalue="Gradle.DBConfig.testGetUserInfo" />
       </list>
     </recent_temporary>
@@ -160,7 +217,8 @@
       <workItem from="1617439175818" duration="235000" />
       <workItem from="1617439461346" duration="30669000" />
       <workItem from="1617542033282" duration="736000" />
-      <workItem from="1617600862950" duration="1855000" />
+      <workItem from="1617600862950" duration="2867000" />
+      <workItem from="1617673674601" duration="12255000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -183,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617601465748</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="0405 다빈">
+      <created>1617607871389</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617607871392</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

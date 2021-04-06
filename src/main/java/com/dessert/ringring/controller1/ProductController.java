@@ -14,12 +14,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -41,21 +43,35 @@ public class ProductController {
 
     //상품 리스트 불러오기
     @GetMapping("/productList")
-    public String productList(HttpServletRequest req, RedirectAttributes redirect) {
+    public String productList(@RequestParam(value="category", required = false)String category,@RequestParam(value="sub", required = false)String sub,HttpServletRequest req, RedirectAttributes redirect) {
         log.debug("openBoardList");
 
-        List<DTOGoods> goodsList=goods.listGoods();
+        List<DTOGoods> goodsList=goods.listGoods(category,sub);
         req.getSession().setAttribute("list",goodsList);
+        if (category!=null){
+            List<String> subList=new ArrayList<String>();
+            if(category.equals("cookie")) {
+                subList.add("Butter");
+                subList.add("vegan");
+                subList.add("pet");
+            }
+            else if(category.equals("bread")) {
+                subList.add("Bread");
+                subList.add("Cake");
+            }
+            else if(category.equals("drink")) {
+                subList.add("Juice");
+                subList.add("Alcohol");
+            }
+            req.getSession().setAttribute("category",category);
+            req.getSession().setAttribute("subCategory",subList);
+        }
+
 
         redirect.addAttribute("contentPage","goods/listGoods.jsp");
         return "redirect:mainForm";
     }
 
-    //카테고리별로 불러오기
-    @GetMapping("/productCategory")
-    public String productCategory(HttpServletRequest req, RedirectAttributes redirect){
-        return "redirect:mainForm";
-    }
     //상품 디테일 불러오기
     @GetMapping("/goodsDetail")
     public String productDetail(HttpServletRequest req,RedirectAttributes redirect){

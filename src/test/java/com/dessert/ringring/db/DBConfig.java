@@ -110,7 +110,7 @@ public class DBConfig {
 
 	  @Test
 	public void listGoods(){
-		List<DTOGoods> list=goodsMapper.listGoods();
+		List<DTOGoods> list=goodsMapper.listGoods(null,null);
 
 		  System.out.println(list);
 		  System.out.println(goodsMapper.selectBoardTotalCount());
@@ -122,6 +122,7 @@ public class DBConfig {
 		List<DTOCart> list=cartMapper.listCart("admin");
 		  System.out.println(list);
 	  }
+
 
 }
 

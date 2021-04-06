@@ -40,23 +40,23 @@
             <a href="/"><div class="logo">logo</div></a>
             <div class="gnbMenu">
                 <ul class="gnb">
-                    <li class="cookie"><a href="">Cookie</a>
+                    <li class="cookie"><a href="/productList?category=cookie">Cookie</a>
                         <div class="cookie_sub">
-                            <a href="">Butter</a>
-                            <a href="">Vegan</a>
-                            <a href="">Pet</a>
+                            <a href="/productList?category=cookie&sub=butter">Butter</a>
+                            <a href="/productList?category=cookie&sub=vegan">Vegan</a>
+                            <a href="/productList?category=cookie&sub=pet">Pet</a>
                         </div>
                     </li>
-                    <li class="bread"><a href="">Bread</a>
+                    <li class="bread"><a href="/productList?category=bread">Bread</a>
                         <div class="bread_sub">
-                            <a href="">Bread</a>
-                            <a href="">Cake</a>
+                            <a href="/productList?category=bread&sub=bread">Bread</a>
+                            <a href="/productList?category=bread&sub=cake">Cake</a>
                         </div>
                     </li>
-                    <li class="drink"><a href="">Drink</a>
+                    <li class="drink"><a href="/productList?category=drink">Drink</a>
                         <div class="drink_sub">
-                            <a href="">Juice</a>
-                            <a href="">Alcohol</a>
+                            <a href="/productList?category=drink&sub=juice">Juice</a>
+                            <a href="/productList?category=drink&sub=alcohol">Alcohol</a>
                         </div>
                     </li>
                     <li class="etc"><a href="/productList">Etc</a></li>

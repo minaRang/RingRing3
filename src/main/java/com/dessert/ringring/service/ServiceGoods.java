@@ -13,7 +13,7 @@ public interface ServiceGoods {
 
 	public DTOGoods getInfoGoods(int idx);
 	
-	public List<DTOGoods> listGoods();
+	public List<DTOGoods> listGoods(String category1, String category2);
 	
 	public int deleteGoods(int idx);
 

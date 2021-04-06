@@ -3,7 +3,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%ArrayList<DTOGoods> list= (ArrayList<DTOGoods>) session.getAttribute("list");%>
+<%ArrayList<DTOGoods> list= (ArrayList<DTOGoods>) session.getAttribute("list");
+    String category=(String)session.getAttribute("category");
+    ArrayList<String> subCategory=(ArrayList<String>) session.getAttribute("subCategory");
+%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,11 +45,11 @@
 <div class="status"></div>
 <div id="product">
     <div id="product_inner">
-        <h2>cookie</h2>
+        <h2>${category}</h2>
         <ul class="product_list tt">
-            <li><a href="#">Vegan</a></li>
-            <li><a href="#">Butter</a></li>
-            <li><a href="#">Pet</a></li>
+            <c:forEach var="subCategory" items="${subCategory}">
+            <li><a href="/productList?category=${category}&sub=${subCategory}">${subCategory}</a></li>
+            </c:forEach>
         </ul>
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">추천순 <i class="fa fa-chevron-down"></i></button>

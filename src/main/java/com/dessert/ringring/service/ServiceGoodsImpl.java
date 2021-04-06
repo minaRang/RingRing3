@@ -83,11 +83,11 @@ public class ServiceGoodsImpl implements ServiceGoods {
 	}
 
 	@Override
-	public List<DTOGoods> listGoods() {
+	public List<DTOGoods> listGoods(String category1, String category2) {
 		List<DTOGoods> goodsList= Collections.emptyList();
 		int boardTotalCount = mapper.selectBoardTotalCount();
 		if(boardTotalCount>0){
-			goodsList=mapper.listGoods();
+			goodsList=mapper.listGoods(category1, category2);
 		}
 		return goodsList;
 	}
