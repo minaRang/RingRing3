@@ -24,7 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="페이징처리">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +270,7 @@
       <workItem from="1617600862950" duration="2867000" />
       <workItem from="1617673674601" duration="17472000" />
       <workItem from="1617783002564" duration="10715000" />
-      <workItem from="1617980621770" duration="12199000" />
+      <workItem from="1617980621770" duration="12497000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -314,7 +314,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618034701659</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="페이징처리">
+      <created>1618035537140</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618035537142</updated>
+    </task>
+    <task id="LOCAL-00008" summary="페이징처리">
+      <created>1618035716423</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618035716423</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
