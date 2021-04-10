@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dessert.ringring.db.DBConfig" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-31T12:46:43" hostname="DESKTOP-1NO9NUJ" time="0.829">
+<testsuite name="com.dessert.ringring.db.DBConfig" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-10T04:11:47" hostname="DESKTOP-1NO9NUJ" time="1.54">
   <properties/>
-  <testcase name="testGetUserInfo()" classname="com.dessert.ringring.db.DBConfig" time="0.829"/>
-  <system-out><![CDATA[21:46:34.419 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-21:46:34.445 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-21:46:34.488 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.dessert.ringring.db.DBConfig] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-21:46:34.500 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dessert.ringring.db.DBConfig], using SpringBootContextLoader
-21:46:34.507 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dessert.ringring.db.DBConfig]: class path resource [com/dessert/ringring/db/DBConfig-context.xml] does not exist
-21:46:34.508 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dessert.ringring.db.DBConfig]: class path resource [com/dessert/ringring/db/DBConfigContext.groovy] does not exist
-21:46:34.508 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.dessert.ringring.db.DBConfig]: no resource found for suffixes {-context.xml, Context.groovy}.
-21:46:34.509 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.dessert.ringring.db.DBConfig]: DBConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:46:34.567 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.dessert.ringring.db.DBConfig]
-21:46:34.649 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [E:\공부\spring\RingRing3\build\classes\java\main\com\dessert\ringring\RingringApplication.class]
-21:46:34.650 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.dessert.ringring.RingringApplication for test class com.dessert.ringring.db.DBConfig
-21:46:34.784 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.dessert.ringring.db.DBConfig]: using defaults.
-21:46:34.786 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-21:46:34.809 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@77949794, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3eab28b5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6405fca8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7d119bb7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e6a9bb6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@49e3e04e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2c8a566, org.springframework.test.context.event.EventPublishingTestExecutionListener@73754aab, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@938d858, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f0fb8a1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@18abc5b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4152f41f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@ee70e75, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2c0f65b8]
-21:46:34.815 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5b80a909 testClass = DBConfig, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@55498fd0 testClass = DBConfig, locations = '{}', classes = '{class com.dessert.ringring.RingringApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@27f9ab60, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@664b6292, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7b53413, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12e1f235, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@21cb3b41, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@66f120e3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
-21:46:34.875 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
-21:46:35,320 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-21:46:35,321 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
-21:46:35,334 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-21:46:35,372 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-21:46:35,373 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console-infolog]
-21:46:35,373 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-21:46:35,374 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [board] to DEBUG
-21:46:35,374 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1302bfaa - Propagating DEBUG level on Logger[board] onto the JUL framework
-21:46:35,376 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to OFF
-21:46:35,376 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1302bfaa - Propagating OFF level on Logger[ROOT] onto the JUL framework
-21:46:35,377 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
-21:46:35,378 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [jdbc.sqlonly] to INFO
-21:46:35,378 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1302bfaa - Propagating INFO level on Logger[jdbc.sqlonly] onto the JUL framework
-21:46:35,380 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [jdbc.resultsettable] to INFO
-21:46:35,381 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1302bfaa - Propagating INFO level on Logger[jdbc.resultsettable] onto the JUL framework
-21:46:35,383 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-21:46:35,384 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@3db441cf - Registering current configuration as safe fallback point
-21:46:35,409 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1302bfaa - Propagating INFO level on Logger[ROOT] onto the JUL framework
-21:46:35,409 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1302bfaa - Propagating INFO level on Logger[com.dessert.ringring] onto the JUL framework
-21:46:35,410 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@1302bfaa - Propagating DEBUG level on Logger[com.dessert.ringring.controller1] onto the JUL framework
+  <testcase name="pagingTest()" classname="com.dessert.ringring.db.DBConfig" time="1.54"/>
+  <system-out><![CDATA[13:11:35.847 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+13:11:35.906 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+13:11:36.104 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.dessert.ringring.db.DBConfig] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+13:11:36.156 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dessert.ringring.db.DBConfig], using SpringBootContextLoader
+13:11:36.186 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dessert.ringring.db.DBConfig]: class path resource [com/dessert/ringring/db/DBConfig-context.xml] does not exist
+13:11:36.187 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dessert.ringring.db.DBConfig]: class path resource [com/dessert/ringring/db/DBConfigContext.groovy] does not exist
+13:11:36.188 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.dessert.ringring.db.DBConfig]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:11:36.190 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.dessert.ringring.db.DBConfig]: DBConfig does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:11:36.394 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.dessert.ringring.db.DBConfig]
+13:11:36.597 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [E:\공부\spring\RingRing3\build\classes\java\main\com\dessert\ringring\RingringApplication.class]
+13:11:36.600 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.dessert.ringring.RingringApplication for test class com.dessert.ringring.db.DBConfig
+13:11:37.051 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.dessert.ringring.db.DBConfig]: using defaults.
+13:11:37.054 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+13:11:37.132 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2c8a566, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@73754aab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@938d858, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5f0fb8a1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@18abc5b3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4152f41f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ee70e75, org.springframework.test.context.event.EventPublishingTestExecutionListener@2c0f65b8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6acfabd7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3c6b489d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@a496dc3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5dbceb97, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4aba72e4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2c73f48e]
+13:11:37.147 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@583265c5 testClass = DBConfig, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@759af testClass = DBConfig, locations = '{}', classes = '{class com.dessert.ringring.RingringApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@76a64710, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3ace3e62, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@40d27efd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@26942d3c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3e67623a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@77637d47], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+13:11:37.299 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+13:11:38,141 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:11:38,142 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
+13:11:38,163 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:11:38,219 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:11:38,222 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console-infolog]
+13:11:38,223 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:11:38,226 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [board] to DEBUG
+13:11:38,226 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7398dabf - Propagating DEBUG level on Logger[board] onto the JUL framework
+13:11:38,229 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to OFF
+13:11:38,230 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7398dabf - Propagating OFF level on Logger[ROOT] onto the JUL framework
+13:11:38,232 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
+13:11:38,233 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [jdbc.sqlonly] to INFO
+13:11:38,233 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7398dabf - Propagating INFO level on Logger[jdbc.sqlonly] onto the JUL framework
+13:11:38,234 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [jdbc.resultsettable] to INFO
+13:11:38,234 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7398dabf - Propagating INFO level on Logger[jdbc.resultsettable] onto the JUL framework
+13:11:38,235 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:11:38,236 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@1a57c5f8 - Registering current configuration as safe fallback point
+13:11:38,289 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7398dabf - Propagating INFO level on Logger[ROOT] onto the JUL framework
+13:11:38,291 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7398dabf - Propagating INFO level on Logger[com.dessert.ringring] onto the JUL framework
+13:11:38,292 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7398dabf - Propagating DEBUG level on Logger[com.dessert.ringring.controller1] onto the JUL framework
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -47,152 +47,287 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.4.1)
 
-2021-03-31 21:46:35,519  INFO [com.dessert.ringring.db.DBConfig] Starting DBConfig using Java 11.0.10 on DESKTOP-1NO9NUJ with PID 6356 (started by DABIN in E:\공부\spring\RingRing3)
-2021-03-31 21:46:35,523  INFO [com.dessert.ringring.db.DBConfig] No active profile set, falling back to default profiles: default
-2021-03-31 21:46:35,537  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.1.6.Final
-2021-03-31 21:46:37,957  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2021-03-31 21:46:38,039  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 65 ms. Found 0 JDBC repository interfaces.
-2021-03-31 21:46:38,709  INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c73c0b23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-31 21:46:38,817  INFO [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2021-03-31 21:46:39,505  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-2021-03-31 21:46:40,015  INFO [jdbc.connection] 1. Connection opened
-2021-03-31 21:46:40,016  INFO [jdbc.audit] 1. Connection.new Connection returned 
-2021-03-31 21:46:40,016  INFO [jdbc.audit] 1. Connection.getNetworkTimeout() returned 0
-2021-03-31 21:46:40,018  INFO [jdbc.audit] 1. Connection.isReadOnly() returned false
-2021-03-31 21:46:40,019  INFO [jdbc.audit] 1. Connection.getAutoCommit() returned true
-2021-03-31 21:46:40,036  INFO [jdbc.audit] 1. Statement.new Statement returned 
-2021-03-31 21:46:40,037  INFO [jdbc.audit] 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@67d6656c
-2021-03-31 21:46:40,037  INFO [jdbc.sqlonly] SELECT NOW() FROM dual
+2021-04-10 13:11:38,476  INFO [com.dessert.ringring.db.DBConfig] Starting DBConfig using Java 11.0.10 on DESKTOP-1NO9NUJ with PID 12716 (started by DABIN in E:\공부\spring\RingRing3)
+2021-04-10 13:11:38,479  INFO [com.dessert.ringring.db.DBConfig] No active profile set, falling back to default profiles: default
+2021-04-10 13:11:38,501  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.1.6.Final
+2021-04-10 13:11:40,148  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-04-10 13:11:40,184  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 28 ms. Found 0 JDBC repository interfaces.
+2021-04-10 13:11:40,950  INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4815a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-10 13:11:41,075  INFO [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-04-10 13:11:41,893  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2021-04-10 13:11:42,326  INFO [jdbc.connection] 1. Connection opened
+2021-04-10 13:11:42,326  INFO [jdbc.audit] 1. Connection.new Connection returned 
+2021-04-10 13:11:42,326  INFO [jdbc.audit] 1. Connection.getNetworkTimeout() returned 0
+2021-04-10 13:11:42,328  INFO [jdbc.audit] 1. Connection.isReadOnly() returned false
+2021-04-10 13:11:42,329  INFO [jdbc.audit] 1. Connection.getAutoCommit() returned true
+2021-04-10 13:11:42,341  INFO [jdbc.audit] 1. Statement.new Statement returned 
+2021-04-10 13:11:42,341  INFO [jdbc.audit] 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@2f2a571c
+2021-04-10 13:11:42,342  INFO [jdbc.sqlonly] SELECT NOW() FROM dual
 
-2021-03-31 21:46:40,064  INFO [jdbc.sqltiming] SELECT NOW() FROM dual
- {executed in 27 msec}
-2021-03-31 21:46:40,065  INFO [jdbc.audit] 1. Statement.execute(SELECT NOW() FROM dual) returned true
-2021-03-31 21:46:40,067  INFO [jdbc.audit] 1. Statement.close() returned 
-2021-03-31 21:46:40,068  INFO [jdbc.audit] 1. Connection.getTransactionIsolation() returned 4
-2021-03-31 21:46:40,075  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-2021-03-31 21:46:40,207  INFO [jdbc.connection] 2. Connection opened
-2021-03-31 21:46:40,207  INFO [jdbc.audit] 2. Connection.new Connection returned 
-2021-03-31 21:46:40,208  INFO [jdbc.audit] 2. Connection.isReadOnly() returned false
-2021-03-31 21:46:40,209  INFO [jdbc.audit] 2. Connection.getAutoCommit() returned true
-2021-03-31 21:46:40,220  INFO [jdbc.connection] 3. Connection opened
-2021-03-31 21:46:40,220  INFO [jdbc.audit] 3. Connection.new Connection returned 
-2021-03-31 21:46:40,221  INFO [jdbc.audit] 3. Connection.isReadOnly() returned false
-2021-03-31 21:46:40,221  INFO [jdbc.audit] 3. Connection.getAutoCommit() returned true
-2021-03-31 21:46:40,229  INFO [jdbc.connection] 4. Connection opened
-2021-03-31 21:46:40,230  INFO [jdbc.audit] 4. Connection.new Connection returned 
-2021-03-31 21:46:40,230  INFO [jdbc.audit] 4. Connection.isReadOnly() returned false
-2021-03-31 21:46:40,231  INFO [jdbc.audit] 4. Connection.getAutoCommit() returned true
-2021-03-31 21:46:40,238  INFO [jdbc.connection] 5. Connection opened
-2021-03-31 21:46:40,239  INFO [jdbc.audit] 5. Connection.new Connection returned 
-2021-03-31 21:46:40,240  INFO [jdbc.audit] 5. Connection.isReadOnly() returned false
-2021-03-31 21:46:40,240  INFO [jdbc.audit] 5. Connection.getAutoCommit() returned true
-2021-03-31 21:46:40,251  INFO [jdbc.connection] 6. Connection opened
-2021-03-31 21:46:40,252  INFO [jdbc.audit] 6. Connection.new Connection returned 
-2021-03-31 21:46:40,253  INFO [jdbc.audit] 6. Connection.isReadOnly() returned false
-2021-03-31 21:46:40,253  INFO [jdbc.audit] 6. Connection.getAutoCommit() returned true
-2021-03-31 21:46:40,260  INFO [jdbc.connection] 7. Connection opened
-2021-03-31 21:46:40,261  INFO [jdbc.audit] 7. Connection.new Connection returned 
-2021-03-31 21:46:40,262  INFO [jdbc.audit] 7. Connection.isReadOnly() returned false
-2021-03-31 21:46:40,262  INFO [jdbc.audit] 7. Connection.getAutoCommit() returned true
-2021-03-31 21:46:40,270  INFO [jdbc.connection] 8. Connection opened
-2021-03-31 21:46:40,271  INFO [jdbc.audit] 8. Connection.new Connection returned 
-2021-03-31 21:46:40,272  INFO [jdbc.audit] 8. Connection.isReadOnly() returned false
-2021-03-31 21:46:40,273  INFO [jdbc.audit] 8. Connection.getAutoCommit() returned true
-2021-03-31 21:46:40,281  INFO [jdbc.connection] 9. Connection opened
-2021-03-31 21:46:40,282  INFO [jdbc.audit] 9. Connection.new Connection returned 
-2021-03-31 21:46:40,283  INFO [jdbc.audit] 9. Connection.isReadOnly() returned false
-2021-03-31 21:46:40,283  INFO [jdbc.audit] 9. Connection.getAutoCommit() returned true
-2021-03-31 21:46:40,296  INFO [jdbc.connection] 10. Connection opened
-2021-03-31 21:46:40,296  INFO [jdbc.audit] 10. Connection.new Connection returned 
-2021-03-31 21:46:40,297  INFO [jdbc.audit] 10. Connection.isReadOnly() returned false
-2021-03-31 21:46:40,297  INFO [jdbc.audit] 10. Connection.getAutoCommit() returned true
-2021-03-31 21:46:42,387  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-31 21:46:43,111  INFO [jdbc.audit] 1. Statement.new Statement returned 
-2021-03-31 21:46:43,111  INFO [jdbc.audit] 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@7f92b8a6
-2021-03-31 21:46:43,111  INFO [jdbc.sqlonly] SELECT NOW() FROM dual
+2021-04-10 13:11:42,359  INFO [jdbc.sqltiming] SELECT NOW() FROM dual
+ {executed in 17 msec}
+2021-04-10 13:11:42,360  INFO [jdbc.audit] 1. Statement.execute(SELECT NOW() FROM dual) returned true
+2021-04-10 13:11:42,361  INFO [jdbc.audit] 1. Statement.close() returned 
+2021-04-10 13:11:42,362  INFO [jdbc.audit] 1. Connection.getTransactionIsolation() returned 4
+2021-04-10 13:11:42,367  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2021-04-10 13:11:42,494  INFO [jdbc.connection] 2. Connection opened
+2021-04-10 13:11:42,495  INFO [jdbc.audit] 2. Connection.new Connection returned 
+2021-04-10 13:11:42,496  INFO [jdbc.audit] 2. Connection.isReadOnly() returned false
+2021-04-10 13:11:42,496  INFO [jdbc.audit] 2. Connection.getAutoCommit() returned true
+2021-04-10 13:11:42,506  INFO [jdbc.connection] 3. Connection opened
+2021-04-10 13:11:42,507  INFO [jdbc.audit] 3. Connection.new Connection returned 
+2021-04-10 13:11:42,508  INFO [jdbc.audit] 3. Connection.isReadOnly() returned false
+2021-04-10 13:11:42,508  INFO [jdbc.audit] 3. Connection.getAutoCommit() returned true
+2021-04-10 13:11:42,518  INFO [jdbc.connection] 4. Connection opened
+2021-04-10 13:11:42,518  INFO [jdbc.audit] 4. Connection.new Connection returned 
+2021-04-10 13:11:42,519  INFO [jdbc.audit] 4. Connection.isReadOnly() returned false
+2021-04-10 13:11:42,520  INFO [jdbc.audit] 4. Connection.getAutoCommit() returned true
+2021-04-10 13:11:42,530  INFO [jdbc.connection] 5. Connection opened
+2021-04-10 13:11:42,530  INFO [jdbc.audit] 5. Connection.new Connection returned 
+2021-04-10 13:11:42,531  INFO [jdbc.audit] 5. Connection.isReadOnly() returned false
+2021-04-10 13:11:42,531  INFO [jdbc.audit] 5. Connection.getAutoCommit() returned true
+2021-04-10 13:11:42,540  INFO [jdbc.connection] 6. Connection opened
+2021-04-10 13:11:42,541  INFO [jdbc.audit] 6. Connection.new Connection returned 
+2021-04-10 13:11:42,542  INFO [jdbc.audit] 6. Connection.isReadOnly() returned false
+2021-04-10 13:11:42,542  INFO [jdbc.audit] 6. Connection.getAutoCommit() returned true
+2021-04-10 13:11:42,549  INFO [jdbc.connection] 7. Connection opened
+2021-04-10 13:11:42,549  INFO [jdbc.audit] 7. Connection.new Connection returned 
+2021-04-10 13:11:42,550  INFO [jdbc.audit] 7. Connection.isReadOnly() returned false
+2021-04-10 13:11:42,551  INFO [jdbc.audit] 7. Connection.getAutoCommit() returned true
+2021-04-10 13:11:42,561  INFO [jdbc.connection] 8. Connection opened
+2021-04-10 13:11:42,561  INFO [jdbc.audit] 8. Connection.new Connection returned 
+2021-04-10 13:11:42,562  INFO [jdbc.audit] 8. Connection.isReadOnly() returned false
+2021-04-10 13:11:42,563  INFO [jdbc.audit] 8. Connection.getAutoCommit() returned true
+2021-04-10 13:11:42,573  INFO [jdbc.connection] 9. Connection opened
+2021-04-10 13:11:42,574  INFO [jdbc.audit] 9. Connection.new Connection returned 
+2021-04-10 13:11:42,575  INFO [jdbc.audit] 9. Connection.isReadOnly() returned false
+2021-04-10 13:11:42,576  INFO [jdbc.audit] 9. Connection.getAutoCommit() returned true
+2021-04-10 13:11:42,585  INFO [jdbc.connection] 10. Connection opened
+2021-04-10 13:11:42,585  INFO [jdbc.audit] 10. Connection.new Connection returned 
+2021-04-10 13:11:42,586  INFO [jdbc.audit] 10. Connection.isReadOnly() returned false
+2021-04-10 13:11:42,586  INFO [jdbc.audit] 10. Connection.getAutoCommit() returned true
+2021-04-10 13:11:45,274  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 13:11:46,700  INFO [jdbc.audit] 1. Statement.new Statement returned 
+2021-04-10 13:11:46,701  INFO [jdbc.audit] 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@2d8d0fe3
+2021-04-10 13:11:46,701  INFO [jdbc.sqlonly] SELECT NOW() FROM dual
 
-2021-03-31 21:46:43,112  INFO [jdbc.sqltiming] SELECT NOW() FROM dual
+2021-04-10 13:11:46,702  INFO [jdbc.sqltiming] SELECT NOW() FROM dual
  {executed in 1 msec}
-2021-03-31 21:46:43,112  INFO [jdbc.audit] 1. Statement.execute(SELECT NOW() FROM dual) returned true
-2021-03-31 21:46:43,113  INFO [jdbc.audit] 1. Statement.close() returned 
-2021-03-31 21:46:43,128  INFO [jdbc.audit] 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema@69cbd28a
-2021-03-31 21:46:43,144  INFO [jdbc.audit] 1. Connection.clearWarnings() returned 
-2021-03-31 21:46:43,483  INFO [com.dessert.ringring.db.DBConfig] Started DBConfig in 8.584 seconds (JVM running for 11.296)
-2021-03-31 21:46:44,195  INFO [jdbc.audit] 1. Statement.new Statement returned 
-2021-03-31 21:46:44,196  INFO [jdbc.audit] 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@5405dd08
-2021-03-31 21:46:44,196  INFO [jdbc.sqlonly] SELECT NOW() FROM dual
+2021-04-10 13:11:46,703  INFO [jdbc.audit] 1. Statement.execute(SELECT NOW() FROM dual) returned true
+2021-04-10 13:11:46,704  INFO [jdbc.audit] 1. Statement.close() returned 
+2021-04-10 13:11:46,723  INFO [jdbc.audit] 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema@70259325
+2021-04-10 13:11:46,747  INFO [jdbc.audit] 1. Connection.clearWarnings() returned 
+2021-04-10 13:11:47,189  INFO [com.dessert.ringring.db.DBConfig] Started DBConfig in 9.864 seconds (JVM running for 14.056)
+2021-04-10 13:11:48,505  INFO [jdbc.audit] 1. Statement.new Statement returned 
+2021-04-10 13:11:48,505  INFO [jdbc.audit] 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@6bf3d5f4
+2021-04-10 13:11:48,505  INFO [jdbc.sqlonly] SELECT NOW() FROM dual
 
-2021-03-31 21:46:44,198  INFO [jdbc.sqltiming] SELECT NOW() FROM dual
+2021-04-10 13:11:48,506  INFO [jdbc.sqltiming] SELECT NOW() FROM dual
  {executed in 1 msec}
-2021-03-31 21:46:44,198  INFO [jdbc.audit] 1. Statement.execute(SELECT NOW() FROM dual) returned true
-2021-03-31 21:46:44,199  INFO [jdbc.audit] 1. Statement.close() returned 
-2021-03-31 21:46:44,203  INFO [jdbc.audit] 1. Connection.getAutoCommit() returned true
-2021-03-31 21:46:44,204  INFO [jdbc.audit] 1. Connection.setAutoCommit(false) returned 
-2021-03-31 21:46:44,238  INFO [jdbc.audit] 1. Connection.getAutoCommit() returned false
-2021-03-31 21:46:44,259  INFO [jdbc.audit] 1. PreparedStatement.new PreparedStatement returned 
-2021-03-31 21:46:44,259  INFO [jdbc.audit] 1. Connection.prepareStatement(SELECT * FROM user WHERE id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@9359390
-2021-03-31 21:46:44,264  INFO [jdbc.audit] 1. PreparedStatement.setString(1, "omming") returned 
-2021-03-31 21:46:44,265  INFO [jdbc.sqlonly] SELECT * FROM user WHERE id='omming'
+2021-04-10 13:11:48,506  INFO [jdbc.audit] 1. Statement.execute(SELECT NOW() FROM dual) returned true
+2021-04-10 13:11:48,506  INFO [jdbc.audit] 1. Statement.close() returned 
+2021-04-10 13:11:48,507  INFO [jdbc.audit] 1. Connection.getAutoCommit() returned true
+2021-04-10 13:11:48,527  INFO [jdbc.audit] 1. PreparedStatement.new PreparedStatement returned 
+2021-04-10 13:11:48,527  INFO [jdbc.audit] 1. Connection.prepareStatement(SELECT * FROM board WHERE board_type = ?
+		ORDER BY
+		idx DESC,date DESC) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@33a2f7c3
+2021-04-10 13:11:48,533  INFO [jdbc.audit] 1. PreparedStatement.setString(1, "공지") returned 
+2021-04-10 13:11:48,534  INFO [jdbc.sqlonly] SELECT * FROM board WHERE board_type = '공지'
+		ORDER BY
+		idx DESC,date DESC
 
-2021-03-31 21:46:44,268  INFO [jdbc.sqltiming] SELECT * FROM user WHERE id='omming'
- {executed in 3 msec}
-2021-03-31 21:46:44,269  INFO [jdbc.audit] 1. PreparedStatement.execute() returned true
-2021-03-31 21:46:44,278  INFO [jdbc.resultset] 1. ResultSet.new ResultSet returned 
-2021-03-31 21:46:44,278  INFO [jdbc.audit] 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@6a480562
-2021-03-31 21:46:44,287  INFO [jdbc.resultset] 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@61920ce7 - Field level information: 
-	com.mysql.cj.result.Field@664fc2f2[dbName=ringring,tableName=user,originalTableName=user,columnName=id,originalColumnName=id,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags= PRIMARY_KEY, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@5df6228d[dbName=ringring,tableName=user,originalTableName=user,columnName=name,originalColumnName=name,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@616b7623[dbName=ringring,tableName=user,originalTableName=user,columnName=pw,originalColumnName=pw,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@10efabdd[dbName=ringring,tableName=user,originalTableName=user,columnName=phone,originalColumnName=phone,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@8afb360[dbName=ringring,tableName=user,originalTableName=user,columnName=address1,originalColumnName=address1,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@64210ab2[dbName=ringring,tableName=user,originalTableName=user,columnName=email,originalColumnName=email,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@5e41a27b[dbName=ringring,tableName=user,originalTableName=user,columnName=article,originalColumnName=article,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@331d5b2d[dbName=ringring,tableName=user,originalTableName=user,columnName=date,originalColumnName=date,mysqlType=12(FIELD_TYPE_DATETIME),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@46dcca9d[dbName=ringring,tableName=user,originalTableName=user,columnName=pin,originalColumnName=pin,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@2a442c6e[dbName=ringring,tableName=user,originalTableName=user,columnName=point,originalColumnName=point,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@79451127[dbName=ringring,tableName=user,originalTableName=user,columnName=authority,originalColumnName=authority,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@20d8f911[dbName=ringring,tableName=user,originalTableName=user,columnName=isAccountNonExpired,originalColumnName=isAccountNonExpired,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@f047b5[dbName=ringring,tableName=user,originalTableName=user,columnName=isAccountNonLocked,originalColumnName=isAccountNonLocked,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@b5c3c99[dbName=ringring,tableName=user,originalTableName=user,columnName=isCredentialsNonExpired,originalColumnName=isCredentialsNonExpired,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@5a41c8fc[dbName=ringring,tableName=user,originalTableName=user,columnName=isEnable,originalColumnName=isEnable,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@3d36a2d4[dbName=ringring,tableName=user,originalTableName=user,columnName=address2,originalColumnName=address2,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@3f798728[dbName=ringring,tableName=user,originalTableName=user,columnName=address3,originalColumnName=address3,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-2021-03-31 21:46:44,299  INFO [jdbc.resultset] 1. ResultSet.getType() returned 1003
-2021-03-31 21:46:44,300  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
-2021-03-31 21:46:44,300  INFO [jdbc.resultset] 1. ResultSet.next() returned true
-2021-03-31 21:46:44,305  INFO [jdbc.resultset] 1. ResultSet.getString(id) returned omming
-2021-03-31 21:46:44,306  INFO [jdbc.resultset] 1. ResultSet.getString(name) returned 김다빈
-2021-03-31 21:46:44,306  INFO [jdbc.resultset] 1. ResultSet.getInt(phone) returned 0
-2021-03-31 21:46:44,307  INFO [jdbc.resultset] 1. ResultSet.wasNull() returned false
-2021-03-31 21:46:44,307  INFO [jdbc.resultset] 1. ResultSet.getString(address1) returned 경기안산시
-2021-03-31 21:46:44,307  INFO [jdbc.resultset] 1. ResultSet.getString(email) returned omming@naver.com
-2021-03-31 21:46:44,307  INFO [jdbc.resultset] 1. ResultSet.getString(article) returned Y
-2021-03-31 21:46:44,310  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-01 06:38:07.0
-2021-03-31 21:46:44,310  INFO [jdbc.resultset] 1. ResultSet.getString(pin) returned void
-2021-03-31 21:46:44,311  INFO [jdbc.resultset] 1. ResultSet.getInt(point) returned 0
-2021-03-31 21:46:44,311  INFO [jdbc.resultset] 1. ResultSet.wasNull() returned false
-2021-03-31 21:46:44,311  INFO [jdbc.resultset] 1. ResultSet.getString(authority) returned admin
-2021-03-31 21:46:44,311  INFO [jdbc.resultset] 1. ResultSet.getString(isEnable) returned Y
-2021-03-31 21:46:44,311  INFO [jdbc.resultset] 1. ResultSet.getString(address2) returned 상록구본삼로
-2021-03-31 21:46:44,311  INFO [jdbc.resultset] 1. ResultSet.getString(address3) returned 신안2차
-2021-03-31 21:46:44,312  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
-2021-03-31 21:46:44,317  INFO [jdbc.resultsettable] 
-|-------|-----|---------|------|---------|-----------------|--------|----------------------|----|------|----------|--------------------|-------------------|------------------------|---------|---------|---------|
-|id     |name |pw       |phone |address1 |email            |article |date                  |pin |point |authority |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenable |address2 |address3 |
-|-------|-----|---------|------|---------|-----------------|--------|----------------------|----|------|----------|--------------------|-------------------|------------------------|---------|---------|---------|
-|omming |김다빈  |[unread] |0     |경기안산시    |omming@naver.com |Y       |2021-04-01 06:38:07.0 |null|0     |admin     |[unread]            |[unread]           |[unread]                |Y        |상록구본삼로   |신안2차     |
-|-------|-----|---------|------|---------|-----------------|--------|----------------------|----|------|----------|--------------------|-------------------|------------------------|---------|---------|---------|
+2021-04-10 13:11:48,583  INFO [jdbc.sqltiming] SELECT * FROM board WHERE board_type = '공지'
+		ORDER BY
+		idx DESC,date DESC
+ {executed in 49 msec}
+2021-04-10 13:11:48,583  INFO [jdbc.audit] 1. PreparedStatement.execute() returned true
+2021-04-10 13:11:48,597  INFO [jdbc.resultset] 1. ResultSet.new ResultSet returned 
+2021-04-10 13:11:48,597  INFO [jdbc.audit] 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@106dccd2
+2021-04-10 13:11:48,606  INFO [jdbc.resultset] 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@1f0bbcd0 - Field level information: 
+	com.mysql.cj.result.Field@606adf4f[dbName=ringring,tableName=board,originalTableName=board,columnName=idx,originalColumnName=idx,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= AUTO_INCREMENT PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@2eb86239[dbName=ringring,tableName=board,originalTableName=board,columnName=title,originalColumnName=title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@78dff0af[dbName=ringring,tableName=board,originalTableName=board,columnName=date,originalColumnName=date,mysqlType=12(FIELD_TYPE_DATETIME),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@3a702e58[dbName=ringring,tableName=board,originalTableName=board,columnName=content,originalColumnName=content,mysqlType=252(FIELD_TYPE_TEXT),sqlType=-1,flags= BLOB, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@c561efe[dbName=ringring,tableName=board,originalTableName=board,columnName=img,originalColumnName=img,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@61920ce7[dbName=ringring,tableName=board,originalTableName=board,columnName=board_type,originalColumnName=board_type,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+2021-04-10 13:11:48,609  INFO [jdbc.resultset] 1. ResultSet.getType() returned 1003
+2021-04-10 13:11:48,609  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,609  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,615  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 76
+2021-04-10 13:11:48,615  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,617  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:26:20.0
+2021-04-10 13:11:48,618  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,619  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,620  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,621  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,622  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,622  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 75
+2021-04-10 13:11:48,622  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,623  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:26:18.0
+2021-04-10 13:11:48,623  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,623  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,623  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,623  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,623  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,624  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 74
+2021-04-10 13:11:48,624  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,625  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:26:15.0
+2021-04-10 13:11:48,625  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,625  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,625  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,625  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,625  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,626  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 73
+2021-04-10 13:11:48,626  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,626  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:26:13.0
+2021-04-10 13:11:48,627  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,627  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,627  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,627  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,627  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,628  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 72
+2021-04-10 13:11:48,628  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,628  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:26:11.0
+2021-04-10 13:11:48,629  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,629  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,629  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,629  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,630  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,630  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 71
+2021-04-10 13:11:48,630  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,630  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:26:08.0
+2021-04-10 13:11:48,630  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,631  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,631  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,631  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,631  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,631  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 70
+2021-04-10 13:11:48,631  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,632  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:26:04.0
+2021-04-10 13:11:48,632  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,632  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,632  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,633  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,633  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,633  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 69
+2021-04-10 13:11:48,634  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,634  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:26:02.0
+2021-04-10 13:11:48,635  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,635  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,635  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,635  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,635  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,636  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 68
+2021-04-10 13:11:48,636  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,637  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:26:00.0
+2021-04-10 13:11:48,637  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,637  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,638  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,638  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,638  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,638  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 67
+2021-04-10 13:11:48,638  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,639  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:25:57.0
+2021-04-10 13:11:48,639  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,639  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,639  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,639  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,639  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,640  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 66
+2021-04-10 13:11:48,640  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,640  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:25:53.0
+2021-04-10 13:11:48,641  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,641  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,641  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,641  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,641  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,642  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 65
+2021-04-10 13:11:48,642  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,643  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:25:51.0
+2021-04-10 13:11:48,643  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,643  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,644  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,644  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,644  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,644  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 64
+2021-04-10 13:11:48,645  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,645  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:25:49.0
+2021-04-10 13:11:48,645  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,645  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,645  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,645  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,646  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,646  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 63
+2021-04-10 13:11:48,646  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,647  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:25:47.0
+2021-04-10 13:11:48,648  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,648  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,649  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,649  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,649  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,650  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 62
+2021-04-10 13:11:48,650  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 테스트
+2021-04-10 13:11:48,651  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-08 02:25:41.0
+2021-04-10 13:11:48,651  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 테스트
+2021-04-10 13:11:48,652  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,652  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,653  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,653  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,654  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 61
+2021-04-10 13:11:48,655  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned aaaaa
+2021-04-10 13:11:48,658  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-04 03:11:49.0
+2021-04-10 13:11:48,660  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned dfadfsdf
+2021-04-10 13:11:48,662  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,662  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,664  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,664  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,664  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 60
+2021-04-10 13:11:48,665  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 김다빈 (20181103, 컴
+2021-04-10 13:11:48,666  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-04-04 03:10:17.0
+2021-04-10 13:11:48,669  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned dfd
+2021-04-10 13:11:48,669  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned void
+2021-04-10 13:11:48,669  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,669  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,670  INFO [jdbc.resultset] 1. ResultSet.next() returned true
+2021-04-10 13:11:48,670  INFO [jdbc.resultset] 1. ResultSet.getInt(idx) returned 54
+2021-04-10 13:11:48,670  INFO [jdbc.resultset] 1. ResultSet.getString(title) returned 반품 언제 가져가시죠?
+2021-04-10 13:11:48,671  INFO [jdbc.resultset] 1. ResultSet.getTimestamp(date) returned 2021-03-21 02:53:51.0
+2021-04-10 13:11:48,671  INFO [jdbc.resultset] 1. ResultSet.getString(content) returned 반품 언제 가져가염?
+2021-04-10 13:11:48,671  INFO [jdbc.resultset] 1. ResultSet.getString(img) returned /upload/2021/03/20/6729bfcc-b322-4f2c-92b3-4cc4fed7b2d9_WIN_20191125_10_01_31_Pro.jpg
+2021-04-10 13:11:48,672  INFO [jdbc.resultset] 1. ResultSet.getString(board_type) returned 공지
+2021-04-10 13:11:48,672  INFO [jdbc.resultset] 1. ResultSet.isClosed() returned false
+2021-04-10 13:11:48,682  INFO [jdbc.resultsettable] 
+|----|-----------------|----------------------|------------|--------------------------------------------------------------------------------------|-----------|
+|idx |title            |date                  |content     |img                                                                                   |board_type |
+|----|-----------------|----------------------|------------|--------------------------------------------------------------------------------------|-----------|
+|76  |테스트              |2021-04-08 02:26:20.0 |테스트         |null                                                                                  |공지         |
+|75  |테스트              |2021-04-08 02:26:18.0 |테스트         |null                                                                                  |공지         |
+|74  |테스트              |2021-04-08 02:26:15.0 |테스트         |null                                                                                  |공지         |
+|73  |테스트              |2021-04-08 02:26:13.0 |테스트         |null                                                                                  |공지         |
+|72  |테스트              |2021-04-08 02:26:11.0 |테스트         |null                                                                                  |공지         |
+|71  |테스트              |2021-04-08 02:26:08.0 |테스트         |null                                                                                  |공지         |
+|70  |테스트              |2021-04-08 02:26:04.0 |테스트         |null                                                                                  |공지         |
+|69  |테스트              |2021-04-08 02:26:02.0 |테스트         |null                                                                                  |공지         |
+|68  |테스트              |2021-04-08 02:26:00.0 |테스트         |null                                                                                  |공지         |
+|67  |테스트              |2021-04-08 02:25:57.0 |테스트         |null                                                                                  |공지         |
+|66  |테스트              |2021-04-08 02:25:53.0 |테스트         |null                                                                                  |공지         |
+|65  |테스트              |2021-04-08 02:25:51.0 |테스트         |null                                                                                  |공지         |
+|64  |테스트              |2021-04-08 02:25:49.0 |테스트         |null                                                                                  |공지         |
+|63  |테스트              |2021-04-08 02:25:47.0 |테스트         |null                                                                                  |공지         |
+|62  |테스트              |2021-04-08 02:25:41.0 |테스트         |null                                                                                  |공지         |
+|61  |aaaaa            |2021-04-04 03:11:49.0 |dfadfsdf    |null                                                                                  |공지         |
+|60  |김다빈 (20181103, 컴 |2021-04-04 03:10:17.0 |dfd         |null                                                                                  |공지         |
+|54  |반품 언제 가져가시죠?     |2021-03-21 02:53:51.0 |반품 언제 가져가염? |/upload/2021/03/20/6729bfcc-b322-4f2c-92b3-4cc4fed7b2d9_WIN_20191125_10_01_31_Pro.jpg |공지         |
+|----|-----------------|----------------------|------------|--------------------------------------------------------------------------------------|-----------|
 
-2021-03-31 21:46:44,317  INFO [jdbc.resultset] 1. ResultSet.next() returned false
-2021-03-31 21:46:44,318  INFO [jdbc.resultset] 1. ResultSet.close() returned void
-2021-03-31 21:46:44,318  INFO [jdbc.audit] 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema@29710d8c
-2021-03-31 21:46:44,318  INFO [jdbc.audit] 1. PreparedStatement.getMoreResults() returned false
-2021-03-31 21:46:44,318  INFO [jdbc.audit] 1. PreparedStatement.getUpdateCount() returned -1
-2021-03-31 21:46:44,319  INFO [jdbc.audit] 1. PreparedStatement.close() returned 
-2021-03-31 21:46:44,323  INFO [jdbc.audit] 1. Connection.commit() returned 
-2021-03-31 21:46:44,324  INFO [jdbc.audit] 1. Connection.setAutoCommit(true) returned 
-2021-03-31 21:46:44,325  INFO [jdbc.audit] 1. Connection.clearWarnings() returned 
-권한은admin
+2021-04-10 13:11:48,696  INFO [jdbc.resultset] 1. ResultSet.next() returned false
+2021-04-10 13:11:48,697  INFO [jdbc.resultset] 1. ResultSet.close() returned void
+2021-04-10 13:11:48,725  INFO [jdbc.audit] 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema@2ea7d8bf
+2021-04-10 13:11:48,727  INFO [jdbc.audit] 1. PreparedStatement.getMoreResults() returned false
+2021-04-10 13:11:48,727  INFO [jdbc.audit] 1. PreparedStatement.getUpdateCount() returned -1
+2021-04-10 13:11:48,727  INFO [jdbc.audit] 1. PreparedStatement.close() returned 
+2021-04-10 13:11:48,730  INFO [jdbc.audit] 1. Connection.clearWarnings() returned 
+[DTOBoard(idx=68, title=테스트, date=Thu Apr 08 02:26:00 KST 2021, content=테스트, img=null, boardType=공지), DTOBoard(idx=67, title=테스트, date=Thu Apr 08 02:25:57 KST 2021, content=테스트, img=null, boardType=공지), DTOBoard(idx=66, title=테스트, date=Thu Apr 08 02:25:53 KST 2021, content=테스트, img=null, boardType=공지), DTOBoard(idx=65, title=테스트, date=Thu Apr 08 02:25:51 KST 2021, content=테스트, img=null, boardType=공지)]
 ]]></system-out>
   <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
 ]]></system-err>

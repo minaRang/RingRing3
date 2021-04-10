@@ -59,7 +59,7 @@
                             <a href="/productList?category=drink&sub=alcohol">Alcohol</a>
                         </div>
                     </li>
-                    <li class="etc"><a href="/productList">Etc</a></li>
+                    <li class="etc"><a href="/productList?category=Etc">Etc</a></li>
                     <form method="post" action="/search">
                     <li class="search-container">
                         <input type="text" placeholder="Search" name="search">

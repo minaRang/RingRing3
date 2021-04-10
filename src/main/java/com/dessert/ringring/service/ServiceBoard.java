@@ -16,4 +16,6 @@ public interface ServiceBoard {
     public boolean deleteBoard(long idx);
 
     public List<DTOBoard> getBoardList(String id);
+    public int countBoardList(String id);
+
 }

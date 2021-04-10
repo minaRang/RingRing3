@@ -81,4 +81,10 @@ public class ServiceBoardImpl implements ServiceBoard{
         boardList = boardMapper.selectBoardList(id);
         return boardList;
     }
+
+    //게시글 수 조회
+    @Override
+    public int countBoardList(String id){
+        return boardMapper.countBoard(id);
+    }
 }

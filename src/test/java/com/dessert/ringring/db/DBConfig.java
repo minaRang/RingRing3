@@ -1,24 +1,26 @@
 package com.dessert.ringring.db;
 
-import com.dessert.ringring.domain.DTOCart;
-import com.dessert.ringring.domain.DTOGoods;
-import com.dessert.ringring.domain.DTOReview;
+import com.dessert.ringring.domain.*;
+import com.dessert.ringring.mapper.BoardMapper;
 import com.dessert.ringring.mapper.CartMapper;
 import com.dessert.ringring.mapper.GoodsMapper;
+import com.dessert.ringring.util.PagingUtils;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 
-import com.dessert.ringring.domain.DTOMember;
 import com.dessert.ringring.mapper.MemberMapper;
 import com.dessert.ringring.service.ServiceMember;
-
 import java.util.List;
 
 @SpringBootTest
 public class DBConfig {
+
+	@Autowired
+	private PagingUtils pagingUtils;
+
 	@Autowired
 	private ApplicationContext context;
 	
@@ -42,6 +44,11 @@ public class DBConfig {
 
 	@Autowired
 	private CartMapper cartMapper;
+	@Autowired
+	private BoardMapper boardMapper;
+	@Autowired
+	private DTOBoard dtoBoard;
+
 
 	@Test
 	public void testGetUserInfo(){
@@ -123,6 +130,25 @@ public class DBConfig {
 		  System.out.println(list);
 	  }
 
+	  @Test
+	public void testBoardList(){
+		List<DTOBoard> boardList=boardMapper.selectBoardList("공지");
+		  System.out.println(boardList);
+	  }
+
+	  @Test
+	public void testCountBoard(){
+		int c=boardMapper.countBoard("공지");
+		  System.out.println("글 개수는"+c);
+	  }
+
+	  @Test
+	public void pagingTest(){
+		List<DTOBoard> boardList=boardMapper.selectBoardList("공지");
+		pagingUtils.setPaging(4,boardList);
+		List<DTOBoard> pagingBoard=(List<DTOBoard>)pagingUtils.getPaging(3);
+		System.out.println(pagingBoard);
+	}
 
 }
 

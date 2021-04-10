@@ -4,6 +4,7 @@ import com.dessert.ringring.domain.DTOBoard;
 import com.dessert.ringring.domain.DTOMember;
 import com.dessert.ringring.service.ServiceBoard;
 import com.dessert.ringring.service.ServiceMember;
+import com.dessert.ringring.util.PagingUtils;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,11 +26,12 @@ public class BoardController2 {
     private ServiceBoard serviceBoard;
     @Autowired
     private ServiceMember serviceMember;
-
     @Autowired
-    DTOBoard board;
+    private PagingUtils pagingUtils;
     @Autowired
-    DTOMember member;
+    private DTOBoard board;
+    @Autowired
+    private DTOMember member;
 
     /*게시판 목록*/
     @GetMapping("/boardlist")
@@ -40,14 +42,23 @@ public class BoardController2 {
 
     /*리스트 출력*/
     @GetMapping("/noticeList")
-    public String BoardNotice(@RequestParam(value = "id",required = false) String id, HttpServletRequest req, RedirectAttributes redirect) {
+    public String BoardNotice(@RequestParam(value = "id",required = false) String id,HttpServletRequest req, RedirectAttributes redirect) {
         //HttpServletRequest = 클라이언트의 요청 정보를 확인하기 위함.
         System.out.println("게시판 항목은"+id);
-        List<DTOBoard> boardList=serviceBoard.getBoardList(id); //게시글리스트 받아옴
-        System.out.println(boardList);
+        pagingUtils.setPaging(10,serviceBoard.getBoardList(id));
+
         HttpSession session = req.getSession(); //세션 생성
-        session.setAttribute("list",boardList);
+        session.setAttribute("list",(List<DTOBoard>)pagingUtils.getPaging(1));//게시글리스트 받아옴
         session.setAttribute("boardId",id);
+        session.setAttribute("pageNum",(int)Math.ceil(pagingUtils.countPaging()/10.0));
+        redirect.addAttribute("contentPage","board/notice.jsp");
+        return "redirect:mainForm";
+    }
+    @GetMapping("/noticePage")
+    public String pagingNotice(@RequestParam(value = "button",required = false) int button,HttpServletRequest req, RedirectAttributes redirect){
+        System.out.println("버튼 항목은"+button);
+        HttpSession session = req.getSession(); //세션 생성
+        session.setAttribute("list",(List<DTOBoard>)pagingUtils.getPaging(button));//게시글리스트 받아옴
         redirect.addAttribute("contentPage","board/notice.jsp");
         return "redirect:mainForm";
     }

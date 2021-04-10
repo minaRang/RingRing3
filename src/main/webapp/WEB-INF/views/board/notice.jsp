@@ -1,14 +1,17 @@
-<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <%@ page import="com.dessert.ringring.domain.DTOBoard" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%ArrayList<DTOBoard> list= (ArrayList<DTOBoard>) session.getAttribute("list");
-String id=(String)session.getAttribute("boardId");%>
+<%List<DTOBoard> list= (List<DTOBoard>) session.getAttribute("list");
+String id=(String)session.getAttribute("boardId");
+int pageNum=(int) session.getAttribute("pageNum");%>
 <% System.out.println(list);
-    System.out.println(id);%>
+    System.out.println(id);
+    System.out.println(pageNum);%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +44,13 @@ String id=(String)session.getAttribute("boardId");%>
                     <td class="fourth tt"><fmt:formatDate value="${list.date}" pattern="yyyy-MM-dd"/></td>
                 </tr>
                 </c:forEach>
-
+                <tr>
+                    <td>
+                        <%for(int i=1;i<=pageNum;i++){%>
+                        <a href="/noticePage?button=<%=i%>"><%=i%></a>
+                        <%}%>
+                    </td>
+                </tr>
             </table>
         </div>
     </div>

@@ -5,102 +5,91 @@
  <head>
  <meta charset="UTF-8">
  <title>Insert title here</title>
+  <link rel="stylesheet" href="css/notice_write.css">
  </head>
  <body>
- <form method="post" id="authForm" action="/insertGoods" enctype="multipart/form-data">
-  <div class="status"></div>
-  <table class="joinform">
 
-   <tr>
-    <td>
-     <div class="input-group mb-1">
-      <div class="input-group-prepend">
-       <span class="input-group-text">대표이미지</span>
-      </div>
+<!--업데이트-->
+ <div class="content">
+  <div id="notice">
+   <h3 class="tt">상품 등록하기</h3>
+   <form action="/insertGoods" method="POST" name="notice" enctype="multipart/form-data">
+    <div class="notice">
+     <table class="tt">
+      <tr>
+       <td class="tit">상품명</td>
+       <td class="sub title">
+        <input type="text" name="name" value maxlength="16" label="이름" placeholder="상품명을 입력해주세요">
+       </td>
+      </tr>
 
-      <div class="custom-file">
-       <input type="file" name="file" id="file" aria-describedby="inputGroupFileAddon01">
-       <label class="custom-file-label" for="inputGroupFile01"></label>
-      </div>
-     </div>
-     <%=request.getRealPath("/")%>
-     <script>
-      $("#file").change(function(){
-       if(this.files&&this.files[0]){
-        var reader=new FileReader;
-        reader.onload=function (data){
-         $(".select_img img").attr("src",data.target.result).width(400);
-        }
-        reader.readAsDataURL(this.files[0]);
-       }
-      });
-     </script>
+      <tr>
+      <td class="tit">가격</td>
+       <td>
+        <input type="text" name="price" value maxlength="16" label="가격" placeholder="상품명을 입력해주세요">
+       </td>
+      </tr>
 
+      <tr>
+       <td class="tit">중량</td>
+       <td>
+        <input type="text" name="weight" value maxlength="16" label="중량" placeholder="중량을 입력해주세요">
+       </td>
+      </tr>
 
+      <tr>
+       <td class="tit">재고</td>
+       <td>
+        <input type="text" name="stock" value maxlength="16" label="재고" placeholder="숫자 입력해주세요"></td>
+      </tr>
 
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <div class="input-group mb-1">
-      <div class="input-group-prepend">
-       <span class="input-group-text" id="inputGroupFileAddon01">상세이미지</span>
-      </div>
-      <div class="custom-file">
-       <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-       <label class="custom-file-label" for="inputGroupFile01"></label>
-      </div>
-     </div>
+      <tr>
+       <td class="tit">설명</td>
+       <td><input type="text" name="detail" value maxlength="16" label="설명" placeholder="설명 입력해주세요"></td>
+      </tr>
 
-   <tr>
-    <th class="tt">이름</th>
-    <td>
-     <input type="text" name="name" value maxlength="16" label="이름">
-    </td>
-   </tr>
+      <tr>
+       <td class="tit">짧은설명</td>
+       <td><input type="text" name="shortDetail" value maxlength="16" label="짧은설명" plaeholder="짧은설명 입력해주세요"></td>
+      </tr>
 
-   <tr>
-    <th class="tt">가격</th>
-    <td><input type="text" name="price" value maxlength="16" label="가격" placeholder="가격 입력해주세요"></td>
-   </tr>
+      <tr>
+       <td class="tit">대분류</td>
+       <td><input type="text" name="category1" value maxlength="16" label="대분류" plaeholder="대분류 입력해주세요"></td>
+      </tr>
 
+      <tr>
+       <td class="tit">소분류</td>
+       <td><input type="text" name="category2" value maxlength="16" label="소분류" plaeholder="소분류 입력해주세요"></td>
+      </tr>
 
-   <tr>
-    <th class="tt">중량</th>
-    <td><input type="text" name="weight" value maxlength="16" label="중량" placeholder="중량을 입력해주세요"></td>
-   </tr>
+      <tr>
+       <td class="tit">대표 이미지</td>
+       <td>
+        <!--파일 선택-->
+        <div class="custom-file">
+         <input type="file" name="file" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+         <label class="custom-file" for="inputGroupFile01"></label>
+        </div>
+       </td>
+      </tr>
 
+      <tr>
+       <td class="tit">상세 이미지</td>
+       <td>
+        <!--파일 선택-->
+        <div class="custom-file">
+         <input type="file" class="custom-file-input" id="" aria-describedby="inputGroupFileAddon01">
+         <label class="custom-file" for="inputGroupFile01"></label>
+        </div>
+       </td>
+      </tr>
 
-   <tr>
-    <th class="tt">재고</th>
-    <td><input type="text" name="stock" value maxlength="16" label="재고" placeholder="숫자 입력해주세요"></td>
-   </tr>
-
-   <tr>
-    <th class="tt">설명</th>
-    <td><input type="text" name="detail" value maxlength="16" label="설명" placeholder="설명 입력해주세요"></td>
-   </tr>
-
-   <tr>
-    <th class="tt">짧은설명</th>
-    <td><input type="text" name="shortDetail" value maxlength="16" label="짧은설명" plaeholder="짧은설명 입력해주세요"></td>
-   </tr>
-
-   <tr>
-    <th class="tt">대분류</th>
-    <td><input type="text" name="category1" value maxlength="16" label="대분류" plaeholder="대분류 입력해주세요"></td>
-   </tr>
-
-   <tr>
-    <th class="tt">소분류</th>
-    <td><input type="text" name="category2" value maxlength="16" label="소분류" plaeholder="소분류 입력해주세요"></td>
-   </tr>
-
-  </table>
-  <div id="formSubmit">
-   <button type="submit">등록하기</button>
+     </table>
+    </div>
+    <button class="enroll_btn" type="submit">등록하기</button>
+   </form>
   </div>
- </form>
-
+ </div>
  </body>
  </html>

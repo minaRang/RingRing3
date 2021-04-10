@@ -47,7 +47,7 @@ String authority=(String) session.getAttribute("authority");
             </div>
 
             <!-- 목록 되돌아가기 버튼 -->
-            <button type="button" class="notice_btn tt"><a href="/noticeList">목록</a></button>
+            <button type="button" class="notice_btn tt"><a href="/noticeList?id=${board.boardType}">목록</a></button>
             <c:if test="${authority eq 'admin'}">
                 <!-- 수정하기 버튼 -->
                 <button type="button" class="notice_btn tt"><a href="/boardUpdate">수정</a></button>
