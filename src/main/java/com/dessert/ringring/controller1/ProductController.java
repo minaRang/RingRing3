@@ -2,8 +2,10 @@ package com.dessert.ringring.controller1;
 
 import com.dessert.ringring.domain.DTOGoods;
 import com.dessert.ringring.domain.DTOMember;
+import com.dessert.ringring.domain.DTOReview;
 import com.dessert.ringring.service.ServiceCart;
 import com.dessert.ringring.service.ServiceGoods;
+import com.dessert.ringring.service.ServiceReview;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,12 +34,15 @@ public class ProductController {
     DTOMember member;
     @Autowired
     ServiceCart cart;
+    @Autowired
+    DTOReview review;
+    @Autowired
+    ServiceReview serviceReview;
+
     //상품 리스트 불러오기
     @GetMapping("/productList")
     public String productList(HttpServletRequest req, RedirectAttributes redirect) {
         log.debug("openBoardList");
-        String category1 = req.getParameter("category1");
-        String category2 = req.getParameter("category2");
 
         List<DTOGoods> goodsList=goods.listGoods();
         req.getSession().setAttribute("list",goodsList);
@@ -46,13 +51,25 @@ public class ProductController {
         return "redirect:mainForm";
     }
 
+    //카테고리별로 불러오기
+    @GetMapping("/productCategory")
+    public String productCategory(HttpServletRequest req, RedirectAttributes redirect){
+        return "redirect:mainForm";
+    }
     //상품 디테일 불러오기
     @GetMapping("/goodsDetail")
     public String productDetail(HttpServletRequest req,RedirectAttributes redirect){
+        int productIdx=Integer.parseInt(req.getParameter("idx"));
 
-        int idx=Integer.parseInt(req.getParameter("idx"));
-        dtoGoods=goods.getInfoGoods(idx);
+        dtoGoods=goods.getInfoGoods(productIdx);
+        System.out.println(dtoGoods);
         req.getSession().setAttribute("goods",dtoGoods);
+        req.getSession().setAttribute("productIdx",productIdx);
+
+        //리뷰불러오기
+        List<DTOReview> reviews=serviceReview.getReviewList(productIdx);
+        req.getSession().setAttribute("reviews",reviews);
+
         redirect.addAttribute("contentPage","goods/goodsDetail.jsp");
         return "redirect:mainForm";
     }

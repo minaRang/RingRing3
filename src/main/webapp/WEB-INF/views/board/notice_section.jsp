@@ -5,7 +5,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <%DTOBoard board=(DTOBoard) session.getAttribute("board");
-    System.out.println(board);%>
+String authority=(String) session.getAttribute("authority");
+    System.out.println(board);
+    System.out.println("권한은"+authority);
+%>
+<c:set var="authority" value="${authority}"></c:set>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,12 +45,15 @@
                 <p class="notice_p tt">${board.content}</p>
                 <img src="${board.img}">
             </div>
+
             <!-- 목록 되돌아가기 버튼 -->
             <button type="button" class="notice_btn tt"><a href="/noticeList">목록</a></button>
-            <!-- 수정하기 버튼 *나중에 권한에 따라 보이고 안보이고 설정해야함 -->
-            <button type="button" class="notice_btn tt"><a href="/boardUpdate">수정</a></button>
-            <!-- 삭제하기 버튼 *나중에 권한에 따라 보이고 안보이고 설정해야함-->
-            <button type="button" class="notice_btn tt"><a href="/boardDelete?idx=${board.idx}&boardType=${board.boardType}">삭제</a></button>
+            <c:if test="${authority eq 'admin'}">
+                <!-- 수정하기 버튼 -->
+                <button type="button" class="notice_btn tt"><a href="/boardUpdate">수정</a></button>
+                <!-- 삭제하기 버튼 -->
+                <button type="button" class="notice_btn tt"><a href="/boardDelete?idx=${board.idx}&boardType=${board.boardType}">삭제</a></button>
+            </c:if>
         </div>
     </form>
 

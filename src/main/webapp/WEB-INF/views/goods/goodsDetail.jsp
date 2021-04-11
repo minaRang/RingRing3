@@ -1,56 +1,31 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page import="com.dessert.ringring.domain.DTOGoods" %>
+<%@ page import="com.dessert.ringring.domain.DTOReview" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
  <!DOCTYPE html>
  <html lang="en">
  <head>
   <% DTOGoods goods= (DTOGoods) session.getAttribute("goods"); %>
-        <meta charset="UTF-8">
+     <% ArrayList<DTOReview> reviews = (ArrayList<DTOReview>) session.getAttribute("reviews");
+         System.out.println("reviewPage:"+reviews);
+     %>
+
+     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/product_section.css">
-  <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
-  <script>
-   $(document).ready(function () {
-    // $(".put_btn").click(function () {
-    //  alert($(".put_btn").attr("text"));
-    // });
-    $(".plus").on("click",(function(){
-     var num = $(".numBox").val();
-     var plusNum = Number(num) + 1;
-
-     if(plusNum >= ${goods.stock}+1) {
-      $(".numBox").val(num);
-     } else {
-      $(".numBox").val(plusNum);
-     }
-    }));
-    $(".minus").click(function(){
-     var num = $(".numBox").val();
-     var minusNum = Number(num) - 1;
-
-     if(minusNum <= 1) {
-      $(".numBox").val(num);
-     } else {
-      $(".numBox").val(minusNum);
-     }
-    });
-   });
-
-
-  </script>
-
   <title>product_section</title>
  </head>
+
+
+
  <body>
-
-
-
  <div class="status"></div>
-
-
  <div id="product_section">
   <div class="section_inner">
    <div class="section_view">
@@ -146,6 +121,8 @@
                   <a href="" class="goods_view_information">고객후기</a>
               </li>
           </ul>
+
+<!--             후기                 -->
           <div class="goods_img"></div>
           <ul class="goods_information tt">
               <li class="goods_view">
@@ -166,96 +143,43 @@
                       <td class="first writer">작성자</td>
                       <td class="first date">작성일</td>
                   </tr>
-                  <tr class="item">
-                      <td class="number">00</td>
-                      <td class="title">크레이지카츠 먹고싶어요~</td>
-                      <td class="writer">경이</td>
-                      <td class="date">2021-03-26</td>
-                  </tr>
-                  <tr class="hide">
-                      <td colspan="4">
-                          <divc class="hide_review">
-                              <h3>[미나하우스] 초희귀 케이크</h3>
-                              <p>케이크 먹기전에 크레이지카츠 먹고싶어요.<br><br>연남동 키친숲 들려서 카레 먹고 아오이토리 가서 빵 산 다음에 합정역 크레이지카츠가서 카레퐁듀 조집시다.당신과함께하고싶소...♥<br><br>-괴도키드-</p>
+                  <c:forEach var="reviews" items="${reviews}">
+                      <tr class="item">
+                          <td class="number">${reviews.idx}</td>
+                          <td class="title">${reviews.title}</td>
+                          <td class="writer">${reviews.id}</td>
+                          <td class="date"><fmt:formatDate value="${reviews.date}" pattern="yyyy-MM-dd"/></td>
+                      </tr>
+                      <tr class="hide">
+                        <td colspan="4">
+                          <div class="hide_review">
+                            <img src="${reviews.img}">
+                            <p>${reviews.content}</p>
+                          </div>
+                        </td>
+                      </tr>
+                  </c:forEach>
+              </table>
           </div>
-          </td>
-          </tr>
-          <tr class="item">
-              <td class="number">00</td>
-              <td class="title">크레이지카츠 먹고싶어요~</td>
-              <td class="writer">경이</td>
-              <td class="date">2021-03-26</td>
-          </tr>
-          <tr class="hide">
-              <td colspan="4">
-                  <divc class="hide_review">
-                      <h3>[미나하우스] 초희귀 케이크</h3>
-                      <p>케이크 먹기전에 크레이지카츠 먹고싶어요.<br><br>연남동 키친숲 들려서 카레 먹고 아오이토리 가서 빵 산 다음에 합정역 크레이지카츠가서 카레퐁듀 조집시다.당신과함께하고싶소...♥<br><br>-괴도키드-</p>
-      </div>
-      </td>
-      </tr>
-      <tr class="item">
-          <td class="number">00</td>
-          <td class="title">크레이지카츠 먹고싶어요~</td>
-          <td class="writer">경이</td>
-          <td class="date">2021-03-26</td>
-      </tr>
-      <tr class="hide">
-          <td colspan="4">
-              <divc class="hide_review">
-                  <h3>[미나하우스] 초희귀 케이크</h3>
-                  <p>케이크 먹기전에 크레이지카츠 먹고싶어요.<br><br>연남동 키친숲 들려서 카레 먹고 아오이토리 가서 빵 산 다음에 합정역 크레이지카츠가서 카레퐁듀 조집시다.당신과함께하고싶소...♥<br><br>-괴도키드-</p>
-  </div>
-     </td>
-     </tr>
-     <tr class="item">
-         <td class="number">00</td>
-         <td class="title">크레이지카츠 먹고싶어요~</td>
-         <td class="writer">경이</td>
-         <td class="date">2021-03-26</td>
-     </tr>
-     <tr class="hide">
-         <td colspan="4">
-             <divc class="hide_review">
-                 <h3>[미나하우스] 초희귀 케이크</h3>
-                 <p>케이크 먹기전에 크레이지카츠 먹고싶어요.<br><br>연남동 키친숲 들려서 카레 먹고 아오이토리 가서 빵 산 다음에 합정역 크레이지카츠가서 카레퐁듀 조집시다.당신과함께하고싶소...♥<br><br>-괴도키드-</p>
- </div>
- </td>
- </tr>
 
- <tr class="item">
-     <td class="number">00</td>
-     <td class="title">크레이지카츠 먹고싶어요~</td>
-     <td class="writer">경이</td>
-     <td class="date">2021-03-26</td>
- </tr>
- <tr class="hide">
-     <td colspan="4">
-         <div class="hide_review">
-             <h3>[미나하우스] 초희귀 케이크</h3>
-             <p>케이크 먹기전에 크레이지카츠 먹고싶어요.<br><br>연남동 키친숲 들려서 카레 먹고 아오이토리 가서 빵 산 다음에 합정역 크레이지카츠가서 카레퐁듀 조집시다.당신과함께하고싶소...♥<br><br>-괴도키드-</p>
-         </div>
-     </td>
- </tr>
- </table>
- </div>
- <!-- 아코디언 js -->
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
- <script type="text/javascript">
-     $(function(){
-         var article = (".recruit .show");
-         $(".recruit .item  td").click(function() {
-             var myArticle =$(this).parents().next("tr");
-             if($(myArticle).hasClass('hide')) {
-                 $(article).removeClass('show').addClass('hide');
-                 $(myArticle).removeClass('hide').addClass('show');
-             }
-             else {
-                 $(myArticle).addClass('hide').removeClass('show');
-             }
-         });
-     });
- </script>
+
+          <!-- 아코디언 js -->
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+          <script type="text/javascript">
+              $(function(){
+                  var article = (".recruit .show");
+                  $(".recruit .item  td").click(function() {
+                      var myArticle =$(this).parents().next("tr");
+                      if($(myArticle).hasClass('hide')) {
+                          $(article).removeClass('show').addClass('hide');
+                          $(myArticle).removeClass('hide').addClass('show');
+                      }
+                      else {
+                          $(myArticle).addClass('hide').removeClass('show');
+                      }
+                  });
+              });
+          </script>
  </div>
  </div>
  </div>
