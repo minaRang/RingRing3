@@ -122,5 +122,3 @@ com/dessert/ringring/domain/DTOOrderSheet.java
  com.dessert.ringring.domain.DTOOrderSheet
 com/dessert/ringring/service/ServicePerAsk.java
  com.dessert.ringring.service.ServicePerAsk
-com/dessert/ringring/ServletInitializer.java
- com.dessert.ringring.ServletInitializer
