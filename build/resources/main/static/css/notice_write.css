@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@300;500&display=swap');
+
+
+/* 폰트 위계 */
+
+/*font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.tt{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.st{
+    color: rgb(161, 161, 161);
+}
+input{
+    /* border: 0; */
+    outline: 0;
+}
+button{
+    /* border: 0; */
+    outline: 0;
+}
+textarea{
+    outline: 0;
+}
+select{
+    outline: 0;
+}
+.status{
+    background-color: #df404a;
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+/* =====sidebar전용 .select class============= */
+.select{
+    background-color: rgba(161, 161, 161, .2);
+}
+/* ==========sidebar : mycategory ============ */
+.mycategory{
+    width: 170px;
+    position: absolute;
+    /* top: 50px; */
+    left: -200px;
+}
+.mycategory h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+.mycategory ul{
+    margin-top: 20px;
+}
+.mycategory li{
+    list-style: none;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 10px 20px;
+    border-bottom: none;
+}
+.mycategory .last{
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+.mycategory li a{
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+    font-weight: 400;
+}
+/* ==============content==================== */
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+/* =========question css=============== */
+#notice{
+    margin-top: 50px;
+}
+#notice h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.notice{
+    border-top: 1px solid #df404a;
+    border-bottom: 1px solid #df404a;
+    margin-top: 35px;
+}
+.notice table{
+    border-collapse: collapse;
+
+}
+.notice td{
+    border: 1px solid rgb(161, 161, 161);
+}
+.notice .tit{
+    width: 200px;
+    text-align: center;
+    background-color:rgba(161, 161, 161, .1);
+}
+.notice .sub{
+    width: 800px;
+}
+/* ===제목=== */
+.notice .title{
+    height: 80px;
+}
+#title_select{
+    width: 110px;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.notice .title input{
+    height: 20px;
+    width: 600px;
+    margin-left: 10px; /* .question input에 모두 적용  */
+}
+/* ===내용=== */
+.notice .inquiries{
+    height: 300px;
+}
+.notice .inquiries p{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.notice .inquiries textarea{
+    width: 600px;
+    height: 250px;
+    margin-left: 10px;
+    resize: none; /* 사이즈 조정 X */
+}
+/* ===등록하기 버튼=== */
+.enroll_btn{
+    width: 200px;
+    height: 40px;
+    margin: 30px 400px 0 ;
+    background-color: #df404a;
+    color: white;
+    border: none;
+}
