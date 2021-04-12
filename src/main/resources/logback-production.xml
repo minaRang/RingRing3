@@ -11,7 +11,9 @@
             <Pattern>%d %5p %m%n</Pattern>
         </encoder>
     </appender>
-
+    <springProfile name="production">
+        <logger name="board" level="ERROR" appender-ref="console"/>
+    </springProfile>
     <!--로거-->
     <logger name="board" level="DEBUG" appender-ref="console"/>
 <!--    루트로거-->

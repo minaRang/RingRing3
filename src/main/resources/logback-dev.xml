@@ -12,10 +12,11 @@
         </encoder>
     </appender>
 
+
     <!--로거-->
     <logger name="board" level="DEBUG" appender-ref="console"/>
 <!--    루트로거-->
-    <root level="off">
+    <root level="error">
         <appender-ref ref="console"/>
     </root>
     <logger name="jdbc.sqlonly" level="INFO" appender-ref="console-infolog"/>

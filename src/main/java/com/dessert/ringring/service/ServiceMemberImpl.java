@@ -27,7 +27,7 @@ public class ServiceMemberImpl implements ServiceMember{
 //	PasswordEncoder passwordEncoder;
 	
 	@Autowired
-	private JavaMailSender mailSender;
+	JavaMailSender mailSender;
 	@Autowired
 	MemberMapper mapper;
 	@Autowired
