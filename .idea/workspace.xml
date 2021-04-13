@@ -17,13 +17,13 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/mina" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="0413">
+    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="test 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,31 +42,19 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ringring" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
+        <projects_view />
       </state>
     </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/mina" />
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="dabin" />
   </component>
   <component name="Git.Settings">
     <branch-grouping />
@@ -76,6 +64,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -91,6 +80,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -99,24 +89,36 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\공부\spring\RingRing3\src\main\resources\static\css" />
-      <recent name="E:\공부\spring\RingRing3\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\minaring\Desktop\RingRing\ringring\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.RingringApplication">
-    <configuration name="DBConfig.listGoods" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.RingringApplicationTests">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBConfig.testByApplicationContext" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.db.DBConfig.listGoods&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.db.DBConfig.testByApplicationContext&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -127,17 +129,15 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="DBConfig.pagingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RingringApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.db.DBConfig.pagingTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.RingringApplicationTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -148,95 +148,29 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="DBConfig.productCategory" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.db.DBConfig.productCategory&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="DBConfig.testBoardList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.db.DBConfig.testBoardList&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="DBConfig.testCountBoard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.db.DBConfig.testCountBoard&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="RingringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ringring.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dessert.ringring.RingringApplication" />
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.DBConfig.pagingTest" />
-        <item itemvalue="Gradle.DBConfig.testCountBoard" />
-        <item itemvalue="Gradle.DBConfig.testBoardList" />
-        <item itemvalue="Gradle.DBConfig.listGoods" />
-        <item itemvalue="Gradle.DBConfig.productCategory" />
+        <item itemvalue="Gradle.RingringApplicationTests" />
+        <item itemvalue="Gradle.DBConfig.testByApplicationContext" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="0413" />
+      <changelist id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="" />
       <created>1611515841767</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -246,22 +180,15 @@
       <workItem from="1612228553214" duration="412000" />
       <workItem from="1612229190921" duration="2526000" />
       <workItem from="1616844362512" duration="441000" />
-      <workItem from="1616948584812" duration="980000" />
-      <workItem from="1616982491086" duration="730000" />
-      <workItem from="1616983330103" duration="2591000" />
-      <workItem from="1617115997315" duration="289000" />
-      <workItem from="1617190938106" duration="8509000" />
-      <workItem from="1617245822233" duration="866000" />
-      <workItem from="1617437315420" duration="356000" />
-      <workItem from="1617437812973" duration="1337000" />
-      <workItem from="1617439175818" duration="235000" />
-      <workItem from="1617439461346" duration="30669000" />
-      <workItem from="1617542033282" duration="736000" />
-      <workItem from="1617600862950" duration="2867000" />
-      <workItem from="1617673674601" duration="17472000" />
-      <workItem from="1617783002564" duration="10715000" />
-      <workItem from="1617980621770" duration="12497000" />
-      <workItem from="1618354660139" duration="660000" />
+      <workItem from="1617549232973" duration="4860000" />
+      <workItem from="1617604768553" duration="17229000" />
+      <workItem from="1617696745774" duration="862000" />
+      <workItem from="1617802729986" duration="1378000" />
+      <workItem from="1618163640312" duration="655000" />
+      <workItem from="1618164615945" duration="3234000" />
+      <workItem from="1618168293419" duration="7102000" />
+      <workItem from="1618328544569" duration="453000" />
+      <workItem from="1618331970420" duration="2425000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -277,70 +204,161 @@
       <option name="project" value="LOCAL" />
       <updated>1616843530500</updated>
     </task>
-    <task id="LOCAL-00003" summary="0405 다빈">
-      <created>1617601465748</created>
+    <task id="LOCAL-00003" summary="jsp 파일 수정">
+      <created>1617540124275</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1617601465748</updated>
+      <updated>1617540124275</updated>
     </task>
-    <task id="LOCAL-00004" summary="0405 다빈">
-      <created>1617607871389</created>
+    <task id="LOCAL-00004" summary="branch test">
+      <created>1617542039807</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1617607871392</updated>
+      <updated>1617542039807</updated>
     </task>
-    <task id="LOCAL-00005" summary="0406 다빈">
-      <created>1617689926308</created>
+    <task id="LOCAL-00005" summary="myPoint">
+      <created>1617543338886</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1617689926308</updated>
+      <updated>1617543338886</updated>
     </task>
-    <task id="LOCAL-00006" summary="페이징처리">
-      <created>1618034701659</created>
+    <task id="LOCAL-00006" summary="myPoint">
+      <created>1617543715642</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1618034701659</updated>
+      <updated>1617543715642</updated>
     </task>
-    <task id="LOCAL-00007" summary="페이징처리">
-      <created>1618035537140</created>
+    <task id="LOCAL-00007" summary="회원가입 ajax, js 수정">
+      <created>1617553943396</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1618035537142</updated>
+      <updated>1617553943396</updated>
     </task>
-    <task id="LOCAL-00008" summary="페이징처리">
-      <created>1618035716423</created>
+    <task id="LOCAL-00008" summary="회원가입 ajax, js 수정">
+      <created>1617554001338</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1618035716423</updated>
+      <updated>1617554001338</updated>
     </task>
-    <task id="LOCAL-00009" summary="0413">
-      <created>1618324534967</created>
+    <task id="LOCAL-00009" summary="회원가입 ajax, js 수정">
+      <created>1617554025636</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1618324534967</updated>
+      <updated>1617554025636</updated>
     </task>
-    <task id="LOCAL-00010" summary="0413">
-      <created>1618354741865</created>
+    <task id="LOCAL-00010" summary="x">
+      <created>1617554769955</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1618354741865</updated>
+      <updated>1617554769955</updated>
     </task>
-    <task id="LOCAL-00011" summary="0413">
-      <created>1618355214826</created>
+    <task id="LOCAL-00011" summary="유효성검사 정규식추가">
+      <created>1617603661993</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1618355214826</updated>
+      <updated>1617603661993</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="유효성검사 정규식추가">
+      <created>1617603677219</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1617603677219</updated>
+    </task>
+    <task id="LOCAL-00013" summary="유효성검사 정규식추가">
+      <created>1617603688328</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1617603688328</updated>
+    </task>
+    <task id="LOCAL-00014" summary="workspace xml">
+      <created>1617604955369</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1617604955369</updated>
+    </task>
+    <task id="LOCAL-00015" summary="21.04.06">
+      <created>1617638861889</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1617638861889</updated>
+    </task>
+    <task id="LOCAL-00016" summary="admin productList,userInfo 수정">
+      <created>1617647372263</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1617647372263</updated>
+    </task>
+    <task id="LOCAL-00017" summary="admin productList,userInfo 수정">
+      <created>1617682705797</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617682705798</updated>
+    </task>
+    <task id="LOCAL-00018" summary="배포">
+      <created>1618220975383</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1618220975383</updated>
+    </task>
+    <task id="LOCAL-00019" summary="배포">
+      <created>1618220990692</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1618220990692</updated>
+    </task>
+    <task id="LOCAL-00020" summary="배포2">
+      <created>1618222092704</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1618222092704</updated>
+    </task>
+    <task id="LOCAL-00021" summary="배포2">
+      <created>1618296145151</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1618296145151</updated>
+    </task>
+    <task id="LOCAL-00022" summary="sql ip">
+      <created>1618332138530</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1618332138530</updated>
+    </task>
+    <task id="LOCAL-00023" summary="sql ip">
+      <created>1618332820013</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1618332820013</updated>
+    </task>
+    <task id="LOCAL-00024" summary="test 수정">
+      <created>1618333751375</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1618333751375</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,13 +375,33 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/mina" />
                       </list>
                     </value>
                   </entry>
                 </map>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="mina" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/mina" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -377,10 +415,148 @@
     </ignored-roots>
     <MESSAGE value="호냥냥" />
     <MESSAGE value="initial commit 입니다!" />
-    <MESSAGE value="0405 다빈" />
-    <MESSAGE value="0406 다빈" />
-    <MESSAGE value="페이징처리" />
-    <MESSAGE value="0413" />
-    <option name="LAST_COMMIT_MESSAGE" value="0413" />
+    <MESSAGE value="jsp 파일 수정" />
+    <MESSAGE value="branch test" />
+    <MESSAGE value="myPoint" />
+    <MESSAGE value="회원가입 ajax, js 수정" />
+    <MESSAGE value="x" />
+    <MESSAGE value="유효성검사 정규식추가" />
+    <MESSAGE value="workspace xml" />
+    <MESSAGE value="21.04.06" />
+    <MESSAGE value="admin productList,userInfo 수정" />
+    <MESSAGE value="배포" />
+    <MESSAGE value="배포2" />
+    <MESSAGE value="sql ip" />
+    <MESSAGE value="test 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="test 수정" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="91" key="#Inspections" timestamp="1612229566716">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="395" y="91" key="#Inspections/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612229566716" />
+    <state x="361" y="53" key="#Plugins" timestamp="1618164564901">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="361" y="53" key="#Plugins/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618164564901" />
+    <state x="249" y="0" key="#Project_Structure" timestamp="1617541637484">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.826@0.0.1536.826" timestamp="1617541637484" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618166130294">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618166130294" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1618166852150">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618166852150" />
+    <state x="549" y="279" width="437" height="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618220693597">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="549" y="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618220693597" />
+    <state x="549" y="279" width="437" height="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.826@0.0.1536.826" timestamp="1617696661885" />
+    <state x="381" y="0" key="CommitChangelistDialog2" timestamp="1617604895905">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="381" y="0" key="CommitChangelistDialog2/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617604895905" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1618168475809">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618168475809" />
+    <state x="646" y="309" key="Github.ShareDialog" timestamp="1612228301787">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="646" y="309" key="Github.ShareDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612228301787" />
+    <state width="1492" height="192" key="GridCell.Tab.0.bottom" timestamp="1618333676907">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="180" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
+    <state width="1492" height="192" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618333676907" />
+    <state width="1492" height="192" key="GridCell.Tab.0.bottom/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
+    <state width="1492" height="192" key="GridCell.Tab.0.center" timestamp="1618333676907">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="180" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681865" />
+    <state width="1492" height="192" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618333676907" />
+    <state width="1492" height="192" key="GridCell.Tab.0.center/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
+    <state width="1492" height="192" key="GridCell.Tab.0.left" timestamp="1618333676906">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="180" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681865" />
+    <state width="1492" height="192" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618333676906" />
+    <state width="1492" height="192" key="GridCell.Tab.0.left/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
+    <state width="1492" height="192" key="GridCell.Tab.0.right" timestamp="1618333676907">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="180" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681865" />
+    <state width="1492" height="192" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618333676907" />
+    <state width="1492" height="192" key="GridCell.Tab.0.right/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
+    <state width="1492" height="192" key="GridCell.Tab.1.bottom" timestamp="1618332695625">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="180" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
+    <state width="1492" height="192" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695625" />
+    <state width="1492" height="192" key="GridCell.Tab.1.bottom/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
+    <state width="1492" height="192" key="GridCell.Tab.1.center" timestamp="1618332695624">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="180" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
+    <state width="1492" height="192" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695624" />
+    <state width="1492" height="192" key="GridCell.Tab.1.center/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
+    <state width="1492" height="192" key="GridCell.Tab.1.left" timestamp="1618332695624">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="180" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
+    <state width="1492" height="192" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695624" />
+    <state width="1492" height="192" key="GridCell.Tab.1.left/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
+    <state width="1492" height="192" key="GridCell.Tab.1.right" timestamp="1618332695625">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="180" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
+    <state width="1492" height="192" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695625" />
+    <state width="1492" height="192" key="GridCell.Tab.1.right/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
+    <state x="414" y="163" key="IDE.errors.dialog" timestamp="1618221063671">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="414" y="163" key="IDE.errors.dialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618221063671" />
+    <state x="399" y="173" width="940" height="480" key="MultipleFileMergeDialog" timestamp="1617638927526">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="399" y="173" width="940" height="480" key="MultipleFileMergeDialog/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617605048552" />
+    <state x="399" y="173" key="MultipleFileMergeDialog/0.0.1536.826@0.0.1536.826" timestamp="1617638927526" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1617543381353">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="277" y="44" key="SettingsEditor/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616844850559" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.826@0.0.1536.826" timestamp="1617543381353" />
+    <state x="361" y="145" width="810" height="535" key="Vcs.Push.Dialog.v2" timestamp="1618333761933">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617603807805" />
+    <state x="361" y="145" width="810" height="535" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618333761933" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826@0.0.1536.826" timestamp="1618296163605" />
+    <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1616842327372">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616842327372" />
+    <state x="0" y="103" width="1280" height="809" key="dock-window-1" timestamp="1618296131428">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="480" y="89" width="1056" height="647" key="dock-window-1/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618219316124" />
+    <state x="0" y="103" width="1280" height="809" key="dock-window-1/0.0.1536.826@0.0.1536.826" timestamp="1618296131428" />
+    <state x="561" y="280" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1617554745774">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="561" y="280" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617554745774" />
+    <state x="180" y="73" key="new project wizard" timestamp="1618168477391">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="180" y="73" key="new project wizard/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618168477391" />
+    <state x="431" y="147" width="672" height="678" key="search.everywhere.popup" timestamp="1618166004040">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="431" y="147" width="672" height="678" key="search.everywhere.popup/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618166004040" />
   </component>
 </project>

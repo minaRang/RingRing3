@@ -22,52 +22,42 @@ font-family: 'Montserrat', sans-serif; */
     font-family: 'Noto Sans KR', sans-serif;
     color: rgb(161, 161, 161);
 }
-input{
-    border: 0;
-    outline: 0;
-}
 button{
     border: 0;
     outline: 0;
 }
-.status{
-    background-color: #df404a;
-    width: 100%;
-    height: 2px;
-    display: block;
-}
-/* =====sidebar전용 .select class============= */
-.select{
-    background-color: rgba(161, 161, 161, .2);
-}
-/* ==========sidebar============ */
-.mycategory{
+/* =============admincategory================ */
+.admincategory{
     width: 170px;
     position: absolute;
     /* top: 50px; */
     left: -200px;
 }
-.mycategory h3{
+.admincategory h3{
     font-size: 30px;
     font-weight: 400;
 }
-.mycategory ul{
+.admincategory ul{
     margin-top: 20px;
 }
-.mycategory li{
+.admincategory li{
     list-style: none;
     border: 1px solid rgb(161, 161, 161);
     padding: 10px 20px;
     border-bottom: none;
 }
-.mycategory .last{
+.admincategory .last{
     border-bottom: 1px solid rgb(161, 161, 161);
 }
-.mycategory li a{
+.admincategory li a{
     text-decoration: none;
     font-family: 'Noto Sans KR', sans-serif;
     color: rgb(60, 60, 60);
     font-weight: 400;
+}
+/* =====sidebar전용 .select class============= */
+.select{
+    background-color: rgba(161, 161, 161, .2);
 }
 /* ====content================= */
 .content{
@@ -107,6 +97,10 @@ button{
     margin-bottom: 10px;
     font-size: 16px;
 }
+#detail h3 a{
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
 #detail .s_status{
     width: 100%;
     height: 1px;
@@ -132,26 +126,18 @@ button{
     padding-top: 5px;
 }
 .detail_btn{
+    position: absolute;
+    top: 100px;
+    right: 25px;
     padding: 10px;
     width: 120px;
     border: 2px solid #df404a;
     background-color: white;
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 10px;
 }
 .detail_btn a{
     text-align: center;
     text-decoration: none;
     color: #df404a;
-}
-#detail_btn{
-    width: 120px;
-    float: right;
-    margin-top: 15px;
-}
-#detail_btn::after{
-    clear: both;
-    content: '';
-    display: block;
 }

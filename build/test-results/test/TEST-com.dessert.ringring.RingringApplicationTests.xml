@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dessert.ringring.RingringApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-13T17:08:24" hostname="MINA" time="1.34">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.dessert.ringring.RingringApplicationTests" time="1.34"/>
+  <system-out><![CDATA[02:08:04.497 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+02:08:04.530 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+02:08:04.611 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.dessert.ringring.RingringApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+02:08:04.643 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dessert.ringring.RingringApplicationTests], using SpringBootContextLoader
+02:08:04.657 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dessert.ringring.RingringApplicationTests]: class path resource [com/dessert/ringring/RingringApplicationTests-context.xml] does not exist
+02:08:04.658 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dessert.ringring.RingringApplicationTests]: class path resource [com/dessert/ringring/RingringApplicationTestsContext.groovy] does not exist
+02:08:04.658 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.dessert.ringring.RingringApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+02:08:04.660 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.dessert.ringring.RingringApplicationTests]: RingringApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:08:05.016 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.dessert.ringring.RingringApplicationTests]
+02:08:05.617 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\minaring\Desktop\RingRing\ringring\build\classes\java\main\com\dessert\ringring\RingringApplication.class]
+02:08:05.639 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.dessert.ringring.RingringApplication for test class com.dessert.ringring.RingringApplicationTests
+02:08:06.510 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.dessert.ringring.RingringApplicationTests]: using defaults.
+02:08:06.518 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+02:08:06.701 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e3465bf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4295deb3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@37f3ba92, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1a276447, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2703f321, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b0fc134, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6102d5ed, org.springframework.test.context.event.EventPublishingTestExecutionListener@40a690d6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7884f918, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4d37815d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3a6d98ab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4e398f10, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@11aae3f6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6066b5f7]
+02:08:06.746 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3248723c testClass = RingringApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@131b17b4 testClass = RingringApplicationTests, locations = '{}', classes = '{class com.dessert.ringring.RingringApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@645fda79, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@51116574, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7400d15c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5f38e4c8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1cfe3101, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1d56d038], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+02:08:06.905 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.1)
+
+2021-04-14 02:08:07.647  INFO 16724 --- [    Test worker] c.d.ringring.RingringApplicationTests    : Starting RingringApplicationTests using Java 1.8.0_261 on mina with PID 16724 (started by 미나 in C:\Users\minaring\Desktop\RingRing\ringring)
+2021-04-14 02:08:07.652  INFO 16724 --- [    Test worker] c.d.ringring.RingringApplicationTests    : No active profile set, falling back to default profiles: default
+2021-04-14 02:08:11.400  INFO 16724 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-04-14 02:08:11.538  INFO 16724 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 0 JDBC repository interfaces.
+2021-04-14 02:08:12.406  INFO 16724 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e7d5faeb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-14 02:08:12.675  INFO 16724 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-04-14 02:08:14.681  INFO 16724 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-14 02:08:15.403  INFO 16724 --- [    Test worker] jdbc.connection                          : 1. Connection opened
+2021-04-14 02:08:15.403  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Connection.new Connection returned 
+2021-04-14 02:08:15.404  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Connection.getNetworkTimeout() returned 0
+2021-04-14 02:08:15.412  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Connection.isReadOnly() returned false
+2021-04-14 02:08:15.413  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Connection.getAutoCommit() returned true
+2021-04-14 02:08:15.425  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Statement.new Statement returned 
+2021-04-14 02:08:15.425  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@e90cee3
+2021-04-14 02:08:15.426  INFO 16724 --- [    Test worker] jdbc.sqlonly                             : SELECT NOW() FROM dual
+
+2021-04-14 02:08:15.457  INFO 16724 --- [    Test worker] jdbc.sqltiming                           : SELECT NOW() FROM dual
+ {executed in 30 msec}
+2021-04-14 02:08:15.457  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Statement.execute(SELECT NOW() FROM dual) returned true
+2021-04-14 02:08:15.458  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Statement.close() returned 
+2021-04-14 02:08:15.466  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Connection.getTransactionIsolation() returned 4
+2021-04-14 02:08:15.487  INFO 16724 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-14 02:08:15.685  INFO 16724 --- [onnection adder] jdbc.connection                          : 2. Connection opened
+2021-04-14 02:08:15.688  INFO 16724 --- [onnection adder] jdbc.audit                               : 2. Connection.new Connection returned 
+2021-04-14 02:08:15.695  INFO 16724 --- [onnection adder] jdbc.audit                               : 2. Connection.isReadOnly() returned false
+2021-04-14 02:08:15.696  INFO 16724 --- [onnection adder] jdbc.audit                               : 2. Connection.getAutoCommit() returned true
+2021-04-14 02:08:15.754  INFO 16724 --- [onnection adder] jdbc.connection                          : 3. Connection opened
+2021-04-14 02:08:15.755  INFO 16724 --- [onnection adder] jdbc.audit                               : 3. Connection.new Connection returned 
+2021-04-14 02:08:15.762  INFO 16724 --- [onnection adder] jdbc.audit                               : 3. Connection.isReadOnly() returned false
+2021-04-14 02:08:15.763  INFO 16724 --- [onnection adder] jdbc.audit                               : 3. Connection.getAutoCommit() returned true
+2021-04-14 02:08:15.816  INFO 16724 --- [onnection adder] jdbc.connection                          : 4. Connection opened
+2021-04-14 02:08:15.817  INFO 16724 --- [onnection adder] jdbc.audit                               : 4. Connection.new Connection returned 
+2021-04-14 02:08:15.823  INFO 16724 --- [onnection adder] jdbc.audit                               : 4. Connection.isReadOnly() returned false
+2021-04-14 02:08:15.825  INFO 16724 --- [onnection adder] jdbc.audit                               : 4. Connection.getAutoCommit() returned true
+2021-04-14 02:08:15.882  INFO 16724 --- [onnection adder] jdbc.connection                          : 5. Connection opened
+2021-04-14 02:08:15.884  INFO 16724 --- [onnection adder] jdbc.audit                               : 5. Connection.new Connection returned 
+2021-04-14 02:08:15.890  INFO 16724 --- [onnection adder] jdbc.audit                               : 5. Connection.isReadOnly() returned false
+2021-04-14 02:08:15.891  INFO 16724 --- [onnection adder] jdbc.audit                               : 5. Connection.getAutoCommit() returned true
+2021-04-14 02:08:15.946  INFO 16724 --- [onnection adder] jdbc.connection                          : 6. Connection opened
+2021-04-14 02:08:15.947  INFO 16724 --- [onnection adder] jdbc.audit                               : 6. Connection.new Connection returned 
+2021-04-14 02:08:15.955  INFO 16724 --- [onnection adder] jdbc.audit                               : 6. Connection.isReadOnly() returned false
+2021-04-14 02:08:15.955  INFO 16724 --- [onnection adder] jdbc.audit                               : 6. Connection.getAutoCommit() returned true
+2021-04-14 02:08:16.012  INFO 16724 --- [onnection adder] jdbc.connection                          : 7. Connection opened
+2021-04-14 02:08:16.013  INFO 16724 --- [onnection adder] jdbc.audit                               : 7. Connection.new Connection returned 
+2021-04-14 02:08:16.019  INFO 16724 --- [onnection adder] jdbc.audit                               : 7. Connection.isReadOnly() returned false
+2021-04-14 02:08:16.020  INFO 16724 --- [onnection adder] jdbc.audit                               : 7. Connection.getAutoCommit() returned true
+2021-04-14 02:08:16.081  INFO 16724 --- [onnection adder] jdbc.connection                          : 8. Connection opened
+2021-04-14 02:08:16.081  INFO 16724 --- [onnection adder] jdbc.audit                               : 8. Connection.new Connection returned 
+2021-04-14 02:08:16.088  INFO 16724 --- [onnection adder] jdbc.audit                               : 8. Connection.isReadOnly() returned false
+2021-04-14 02:08:16.089  INFO 16724 --- [onnection adder] jdbc.audit                               : 8. Connection.getAutoCommit() returned true
+2021-04-14 02:08:16.145  INFO 16724 --- [onnection adder] jdbc.connection                          : 9. Connection opened
+2021-04-14 02:08:16.146  INFO 16724 --- [onnection adder] jdbc.audit                               : 9. Connection.new Connection returned 
+2021-04-14 02:08:16.153  INFO 16724 --- [onnection adder] jdbc.audit                               : 9. Connection.isReadOnly() returned false
+2021-04-14 02:08:16.154  INFO 16724 --- [onnection adder] jdbc.audit                               : 9. Connection.getAutoCommit() returned true
+2021-04-14 02:08:16.209  INFO 16724 --- [onnection adder] jdbc.connection                          : 10. Connection opened
+2021-04-14 02:08:16.210  INFO 16724 --- [onnection adder] jdbc.audit                               : 10. Connection.new Connection returned 
+2021-04-14 02:08:16.218  INFO 16724 --- [onnection adder] jdbc.audit                               : 10. Connection.isReadOnly() returned false
+2021-04-14 02:08:16.219  INFO 16724 --- [onnection adder] jdbc.audit                               : 10. Connection.getAutoCommit() returned true
+2021-04-14 02:08:21.653  INFO 16724 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-14 02:08:23.600  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Statement.new Statement returned 
+2021-04-14 02:08:23.602  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@2d0145b8
+2021-04-14 02:08:23.602  INFO 16724 --- [    Test worker] jdbc.sqlonly                             : SELECT NOW() FROM dual
+
+2021-04-14 02:08:23.611  INFO 16724 --- [    Test worker] jdbc.sqltiming                           : SELECT NOW() FROM dual
+ {executed in 7 msec}
+2021-04-14 02:08:23.612  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Statement.execute(SELECT NOW() FROM dual) returned true
+2021-04-14 02:08:23.612  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Statement.close() returned 
+2021-04-14 02:08:23.629  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@77994c62
+2021-04-14 02:08:23.657  INFO 16724 --- [    Test worker] jdbc.audit                               : 1. Connection.clearWarnings() returned 
+2021-04-14 02:08:24.363  INFO 16724 --- [    Test worker] c.d.ringring.RingringApplicationTests    : Started RingringApplicationTests in 17.443 seconds (JVM running for 23.66)
+]]></system-out>
+  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+]]></system-err>
+</testsuite>

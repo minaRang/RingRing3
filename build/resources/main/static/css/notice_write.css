@@ -17,9 +17,6 @@ font-family: 'Montserrat', sans-serif; */
     font-family: 'Noto Sans KR', sans-serif;
     color: rgb(60, 60, 60);
 }
-.tt td{
-    margin-left: 10px;
-}
 .st{
     color: rgb(161, 161, 161);
 }
@@ -101,7 +98,6 @@ select{
 }
 .notice td{
     border: 1px solid rgb(161, 161, 161);
-    vertical-align: middle;
 }
 .notice .tit{
     width: 200px;
@@ -124,9 +120,8 @@ select{
 .notice .title input{
     height: 20px;
     width: 600px;
-    /*margin-left: 10px; .question input에 모두 적용  */
+    margin-left: 10px; /* .question input에 모두 적용  */
 }
-
 /* ===내용=== */
 .notice .inquiries{
     height: 300px;
