@@ -19,59 +19,59 @@ import java.util.List;
 
 @SpringBootTest
 public class DBConfig {
-	@Autowired
-	private ApplicationContext context;
-	
-	@Autowired
-	private SqlSessionFactory sessionFactory;
-	
-	@Autowired
-	private MemberMapper mapper;
-	
-	@Autowired
-	private ServiceMember serviceMember;
-	
-	@Autowired
-	private DTOMember member;
-
-	@Autowired
-	private DTOGoods goods;
-
-	@Autowired
-	private GoodsMapper goodsMapper;
-
-	@Autowired
-	private CartMapper cartMapper;
-
-	@Test
-	public void testGetUserInfo(){
-		System.out.println("권한은"+serviceMember.getUserInfo("omming").getAuthority());
-	}
-
-	@Test
-	public void testByApplicationContext() {
-		try {
-            System.out.println("=========================");
-            System.out.println(context.getBean("sqlSessionFactory"));
-            System.out.println("=========================");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-		
-	}
-	
-	  @Test
-	    public void testBySqlSessionFactory() {
-	        try {
-	            System.out.println("=========================");
-	            System.out.println(sessionFactory.toString());
-	            System.out.println("=========================");
-
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	        }
-}
+//	@Autowired
+//	private ApplicationContext context;
+//
+//	@Autowired
+//	private SqlSessionFactory sessionFactory;
+//
+//	@Autowired
+//	private MemberMapper mapper;
+//
+//	@Autowired
+//	private ServiceMember serviceMember;
+//
+//	@Autowired
+//	private DTOMember member;
+//
+//	@Autowired
+//	private DTOGoods goods;
+//
+//	@Autowired
+//	private GoodsMapper goodsMapper;
+//
+//	@Autowired
+//	private CartMapper cartMapper;
+//
+//	@Test
+//	public void testGetUserInfo(){
+//		System.out.println("권한은"+serviceMember.getUserInfo("omming").getAuthority());
+//	}
+//
+//	@Test
+//	public void testByApplicationContext() {
+//		try {
+//            System.out.println("=========================");
+//            System.out.println(context.getBean("sqlSessionFactory"));
+//            System.out.println("=========================");
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//	}
+//
+//	  @Test
+//	    public void testBySqlSessionFactory() {
+//	        try {
+//	            System.out.println("=========================");
+//	            System.out.println(sessionFactory.toString());
+//	            System.out.println("=========================");
+//
+//	        } catch (Exception e) {
+//	            e.printStackTrace();
+//	        }
+//}
 //	  @Test
 //	  public void testUser() {
 //		  member.setId("admin");
@@ -101,27 +101,27 @@ public class DBConfig {
 //		 
 //		  System.out.println(member.getId());
 //	  }
-	  @Test
-	  public void email() {
-		  int result =mapper.updateAct("satam_1@naver.com");
-		  
-		  System.out.println(result);
-	  }
-
-	  @Test
-	public void listGoods(){
-		List<DTOGoods> list=goodsMapper.listGoods();
-
-		  System.out.println(list);
-		  System.out.println(goodsMapper.selectBoardTotalCount());
-
-	  }
-
-	  @Test
-	public void listCart(){
-		List<DTOCart> list=cartMapper.listCart("admin");
-		  System.out.println(list);
-	  }
+//	  @Test
+//	  public void email() {
+//		  int result =mapper.updateAct("satam_1@naver.com");
+//
+//		  System.out.println(result);
+//	  }
+//
+//	  @Test
+//	public void listGoods(){
+//		List<DTOGoods> list=goodsMapper.listGoods();
+//
+//		  System.out.println(list);
+//		  System.out.println(goodsMapper.selectBoardTotalCount());
+//
+//	  }
+//
+//	  @Test
+//	public void listCart(){
+//		List<DTOCart> list=cartMapper.listCart("admin");
+//		  System.out.println(list);
+//	  }
 
 }
 
