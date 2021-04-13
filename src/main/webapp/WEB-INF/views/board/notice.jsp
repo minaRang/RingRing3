@@ -21,12 +21,21 @@ int pageNum=(int) session.getAttribute("pageNum");%>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/notice.css">
+    <link rel="stylesheet" href="css/my_review_list.css">
     <title>RingRing</title>
 </head>
 
 <body>
 
 <div class="content">
+        <div class="mycategory tt">
+            <h3 class="tt">고객센터</h3>
+            <ul>
+                <li><a href="/noticeList?id=공지">공지사항</a></li>
+                <li><a href="/noticeList?id=이벤트">이벤트</a></li>
+                <li class="last"><a href="/noticeList?id=질문">자주묻는 질문</a></li>
+            </ul>
+        </div>
     <div class="notice">
         <h2 class="tt">${id}</h2>
         <div class="notice_list">

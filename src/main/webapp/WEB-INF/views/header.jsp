@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,13 +29,19 @@
                     <li><a href="/login">로그인</a></li>
                         <li><a href="/login">장바구니</a></li>
                     </c:when>
+                    <c:when test="${'admin' eq sessionScope.member.authority}">
+                    <li>안녕하세요 관리자님!</li>
+                    <li><a href="/adminProduct">관리자 메뉴</a></li>
+                    <li><a href="${path}/logout">로그아웃</a></li>
+                     </c:when>
                     <c:otherwise>
-                    <li><a href="/orderContents">안녕하세요 ${sessionScope.userName}님!</li>
+                    <li>안녕하세요 ${sessionScope.userName}님!</li>
+                        <li><a href="/orderContents">내정보 보기</a></li>
                     <li><a href="${path}/logout">로그아웃</a></li>
                         <li><a href="/cart">장바구니</a></li>
                     </c:otherwise>
                     </c:choose>
-                    <li><a href="">고객센터</a></li>
+                    <li><a href="/noticeList?id=공지">고객센터</a></li>
                 </ul>
             </div>
             <a href="/"><div class="logo">logo</div></a>

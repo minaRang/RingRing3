@@ -6,6 +6,46 @@
  <meta charset="UTF-8">
  <title>Insert title here</title>
   <link rel="stylesheet" href="css/notice_write.css">
+  <link rel="stylesheet" href="css/goodInsert.css">
+
+  <script type="text/javascript">
+   function doChange(srcE, targetId){
+    var val = srcE.options[srcE.selectedIndex].value;
+    var targetE = document.getElementById(targetId);
+    removeAll(targetE);
+
+    if(val == 'cookie'){
+     addOption('butter', targetE);
+     addOption('vegan', targetE);
+     addOption('pet', targetE);
+    }
+    else if(val == 'bread'){
+     addOption('bread', targetE);
+     addOption('cake', targetE);
+    }
+    else if(val == 'drink'){
+     addOption('juice', targetE);
+     addOption('alcohol', targetE);
+    }
+
+   }
+
+   function addOption(value, e){
+    var o = new Option(value);
+    try{
+     e.add(o);
+    }catch(ee){
+     e.add(o, null);
+    }
+   }
+
+   function removeAll(e){
+    for(var i = 0, limit = e.options.length; i < limit - 1; ++i){
+     e.remove(1);
+    }
+   }
+  </script>
+
  </head>
  <body>
 
@@ -18,14 +58,14 @@
      <table class="tt">
       <tr>
        <td class="tit">상품명</td>
-       <td class="sub title">
+       <td class="sub">
         <input type="text" name="name" value maxlength="16" label="이름" placeholder="상품명을 입력해주세요">
        </td>
       </tr>
 
       <tr>
       <td class="tit">가격</td>
-       <td>
+       <td class="sub">
         <input type="text" name="price" value maxlength="16" label="가격" placeholder="상품명을 입력해주세요">
        </td>
       </tr>
@@ -55,12 +95,23 @@
 
       <tr>
        <td class="tit">대분류</td>
-       <td><input type="text" name="category1" value maxlength="16" label="대분류" plaeholder="대분류 입력해주세요"></td>
+       <td>
+        <select name="category1" id="category1" onchange="doChange(this, 'category2')">
+         <option>===</option>
+         <option value="cookie">cookie</option>
+         <option value="bread">bread</option>
+         <option value="drink">drink</option>
+         <option value="etc">Etc</option>
+       </select>
       </tr>
 
       <tr>
        <td class="tit">소분류</td>
-       <td><input type="text" name="category2" value maxlength="16" label="소분류" plaeholder="소분류 입력해주세요"></td>
+       <td>
+        <select name="category2" id="category2">
+         <option>===</option>
+        </select>
+       </td>
       </tr>
 
       <tr>

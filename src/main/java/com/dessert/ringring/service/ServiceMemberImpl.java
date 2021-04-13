@@ -1,6 +1,7 @@
 package com.dessert.ringring.service;
 
 import java.io.UnsupportedEncodingException;
+import java.util.List;
 
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
@@ -114,9 +115,8 @@ public class ServiceMemberImpl implements ServiceMember{
 	}
 	
 	@Override
-	public int overLapId() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int overLapId(String id) {
+		return mapper.overlapId(id);
 	}
 	@Override
 	public int emailCheck() {
@@ -129,9 +129,13 @@ public class ServiceMemberImpl implements ServiceMember{
 		
 		return mapper.updateAct(id);
 	}
-	
 
-	
+	@Override
+	public List<DTOMember> allUserInfo() {
+		return mapper.allUserInfo();
+	}
+
+
 //			
 //	@Override
 //	public DTOMember loadUserByUsername(String username) throws UsernameNotFoundException {

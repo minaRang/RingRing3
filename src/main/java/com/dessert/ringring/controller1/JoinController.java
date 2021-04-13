@@ -13,9 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.dessert.ringring.domain.DTOMember;
@@ -44,15 +42,13 @@ public class JoinController {
 			return "redirect:mainForm";	
 			
 		}else {
-			
 			return "redirect:mainForm";
-
 		}
 	
 	}
 	
 	@PostMapping("/joinAction")
-	public String joinAction(@Valid HttpServletRequest req,Model model) throws MessagingException, UnsupportedEncodingException {
+	public String joinAction(@Valid HttpServletRequest req,RedirectAttributes redirect) throws MessagingException, UnsupportedEncodingException {
 		
 		serviceMember.joinMember(req);
 //		MailHandler sendMail=new MailHandler(mailSender);
@@ -65,13 +61,19 @@ public class JoinController {
 //		sendMail.setFrom("RingRingDessert@RingRing.com", "admin");
 //		sendMail.setTo(vo.getEmail());
 //		sendMail.send();
-		
-		model.addAttribute("msg","이메일 인증을 해주세요");
-		model.addAttribute("url","/");
-		
-		return "redirect";
+
+//		redirect.addAttribute("contentPage","/mainForm");
+
+		return "redirect:mainForm";
 	}
-	
+
+	@ResponseBody
+	@PostMapping("/idCheck")
+	public int idCheck(@RequestBody String memberId){
+		int count =0;
+		count=serviceMember.overLapId(memberId);
+		return count;
+	}
 
 	@GetMapping("/join/verify")
 	public String joinSuccess(@ModelAttribute("member")DTOMember member,Model model) {

@@ -57,6 +57,7 @@ public class ServiceBoardImpl implements ServiceBoard{
         board.setTitle(req.getParameter("title"));
         board.setContent(req.getParameter("content"));
         board.setBoardType(req.getParameter("boardType"));
+        board.setIdx(Integer.parseInt(req.getParameter("idx")));
 
         return boardMapper.updateBoard(board);
     }// 수정

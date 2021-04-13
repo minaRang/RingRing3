@@ -15,6 +15,6 @@ public interface ReviewMapper {
     List<DTOReview> selectMyReviewList(String id); //리뷰리스트아이디로조회
     DTOReview selectReviewDetail(long inx); //리뷰상세조회
     int updateReview(DTOReview review);//리뷰수정
-    int deleteReview(long idx, long productIdx);//리뷰삭제
+    int deleteReview(long idx);//리뷰삭제
 
 }

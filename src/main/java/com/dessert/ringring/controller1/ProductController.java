@@ -125,11 +125,9 @@ public class ProductController {
 
     //상품 수정
     @GetMapping("/modifyGoods")
-    String goodsModifyOpen(HttpServletRequest req,RedirectAttributes redirect){
-        int idx = Integer.parseInt(req.getParameter("idx"));
+    String goodsModifyOpen(@RequestParam(value = "idx",required = false) int idx,HttpServletRequest req,RedirectAttributes redirect){
         dtoGoods=goods.getInfoGoods(idx);
         req.getSession().setAttribute("goods",goods);
-
         redirect.addAttribute("contentPage","goods/goodsModify");
 
         return "redirect:mainForm";

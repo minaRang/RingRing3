@@ -15,10 +15,14 @@ font-family: 'Montserrat', sans-serif; */
 }
 .tt{
     font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
 }
-a:link{
-    color: rgb(246, 113, 114);
-    text-decoration: none;
+.st{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(161, 161, 161);
+}
+select{
+    outline: 0;
 }
 /* =======product=========== */
 #product{
@@ -33,7 +37,7 @@ a:link{
 #product_inner h2{
     font-size: 45px;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(246, 113, 114);
+    color: #df404a;
     text-align: center;
     padding-top: 40px;
 }
@@ -42,6 +46,8 @@ a:link{
     width: 600px;
     margin: 0 auto;
     display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 .product_list li{
     float: left;
@@ -50,14 +56,32 @@ a:link{
     font-size: 15px;
     margin: 50px 40px;
     padding: 5px 0;
-    border: 1px solid rgb(246, 113, 114);
+    border: 1px solid #df404a;
     border-radius: 85px;
     flex: 1;
 }
 .product_list li a{
-    color: rgb(246, 113, 114);
+    color: #df404a;
+    text-decoration: none;
 }
 .product_list::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+/* ===product .select===  */
+.select li{
+    float: left;
+    margin:0 0 10px 15px;
+}
+.select li a{
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+.select .select_first{
+    margin-left: 40px;
+}
+.select::after{
     content: '';
     clear: both;
     display: block;
@@ -83,47 +107,3 @@ a:link{
     clear: both;
     display: block;
 }
-/* ========dorpdown========== */
-.dropbtn {
-    background-color: white;
-    color: rgb(60, 60, 60);
-    padding: 5px 10px;
-    font-size: 13px;
-    border: 1px solid rgb(161, 161, 161);
-    cursor: pointer;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    position: relative;
-}
-/* .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-}  */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    font-size: 13px;
-    background-color: #f1f1f1;
-    /* min-width: 160px; */
-    overflow: auto;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-    z-index: 1;
-    top: 29px;
-    margin-left: 40px;
-    /* margin-top: 29px; */
-}
-  
-.dropdown-content a {
-    color: black;
-    width: 77px;
-    padding: 12px 0px;
-    text-decoration: none;
-    display: block;
-}
-  
-.dropdown a:hover {background-color: #ddd;}
-  
-.show {display: block;}

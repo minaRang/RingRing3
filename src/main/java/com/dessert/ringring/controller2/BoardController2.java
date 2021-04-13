@@ -2,6 +2,7 @@ package com.dessert.ringring.controller2;
 
 import com.dessert.ringring.domain.DTOBoard;
 import com.dessert.ringring.domain.DTOMember;
+import com.dessert.ringring.domain.DTOReview;
 import com.dessert.ringring.service.ServiceBoard;
 import com.dessert.ringring.service.ServiceMember;
 import com.dessert.ringring.util.PagingUtils;
@@ -32,13 +33,6 @@ public class BoardController2 {
     private DTOBoard board;
     @Autowired
     private DTOMember member;
-
-    /*게시판 목록*/
-    @GetMapping("/boardlist")
-    public String BoardList(RedirectAttributes redirect){
-        redirect.addAttribute("contentPage","board/boardList.jsp");
-        return "redirect:mainForm";
-    }
 
     /*리스트 출력*/
     @GetMapping("/noticeList")
@@ -102,15 +96,24 @@ public class BoardController2 {
 
     /*게시글 업데이트*/
     @GetMapping("/boardUpdate") //URL에 데이터를 붙여 전송하는 것.
-    public String boardUpdateOpen(RedirectAttributes redirect){
+    public String boardUpdateOpen(@RequestParam(value = "boardIdx",required = false) int boardIdx,HttpServletRequest req,RedirectAttributes redirect){
+        DTOBoard board=serviceBoard.getBoardDetail(boardIdx);
+        System.out.println(board);
+        req.getSession().setAttribute("board",board);
         redirect.addAttribute("contentPage","board/boardUpdate.jsp");
         return "redirect:mainForm";
     }
     @PostMapping("/boardUpdate") //데이터를 본문안에 전송한다.
     String boardUpdate(HttpServletRequest req,Model model){
-        serviceBoard.updateBoard(req);
-        model.addAttribute("msg","게시글이 수정되었습니다.");
-        model.addAttribute("url","/noticeList");
+        int result=serviceBoard.updateBoard(req);
+        String boardType=req.getParameter("boardType");
+        if(result>0) {
+            model.addAttribute("msg", "게시글이 수정되었습니다.");
+            model.addAttribute("url", "/noticeList?id=" + boardType);
+        }else{
+            model.addAttribute("msg", "게시글 수정에 실패하였습니다.");
+            model.addAttribute("url", "/noticeList?id=" + boardType);
+        }
         return "redirect";
     }
 

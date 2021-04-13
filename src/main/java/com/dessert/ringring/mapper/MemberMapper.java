@@ -40,4 +40,7 @@ public interface MemberMapper {
 	
 	//10.활동가능여부
 	public int updateAct(String id);
+
+	//11.모든 회원정보
+	List<DTOMember>allUserInfo();
 }

@@ -51,14 +51,14 @@
             <li><a href="/productList?category=${category}&sub=${subCategory}">${subCategory}</a></li>
             </c:forEach>
         </ul>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">추천순 <i class="fa fa-chevron-down"></i></button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#home">판매순</a>
-                <a href="#about">가격 낮은순</a>
-                <a href="#contact">가격 높은순</a>
-            </div>
-        </div>
+
+        <ul class="select tt">
+            <li class="select_first"><a href="">추천순</a></li>
+            <li><a href="">판매순</a></li>
+            <li><a href="">가격 낮은순</a></li>
+            <li><a href="">가격 높은순</a></li>
+        </ul>
+
         <ul class="product_img">
             <c:forEach var="list" items="${list}">
             <li>
