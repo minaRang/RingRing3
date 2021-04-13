@@ -24,19 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="0413">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller2/BoardController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller2/BoardController2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceBoardImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceBoardImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +64,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/mina" />
   </component>
   <component name="Git.Settings">
     <branch-grouping />
@@ -245,7 +236,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="" />
+      <changelist id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="0413" />
       <created>1611515841767</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -270,6 +261,7 @@
       <workItem from="1617673674601" duration="17472000" />
       <workItem from="1617783002564" duration="10715000" />
       <workItem from="1617980621770" duration="12497000" />
+      <workItem from="1618354660139" duration="660000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -334,7 +326,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618324534967</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="0413">
+      <created>1618354741865</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618354741865</updated>
+    </task>
+    <task id="LOCAL-00011" summary="0413">
+      <created>1618355214826</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1618355214826</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
