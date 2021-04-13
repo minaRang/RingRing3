@@ -38,8 +38,8 @@ com/dessert/ringring/service/ServiceCart.java
  com.dessert.ringring.service.ServiceCart
 com/dessert/ringring/service/ServiceCoupon.java
  com.dessert.ringring.service.ServiceCoupon
-com/dessert/ringring/config/DBConfig.java
- com.dessert.ringring.config.DBConfig
+com/dessert/ringring/service/ServicePerAsk.java
+ com.dessert.ringring.service.ServicePerAsk
 com/dessert/ringring/mapper/CartMapper.java
  com.dessert.ringring.mapper.CartMapper
 com/dessert/ringring/domain/DTOProductSheet.java
@@ -120,5 +120,5 @@ com/dessert/ringring/config/UploadFileUtils.java
  com.dessert.ringring.config.UploadFileUtils
 com/dessert/ringring/domain/DTOOrderSheet.java
  com.dessert.ringring.domain.DTOOrderSheet
-com/dessert/ringring/service/ServicePerAsk.java
- com.dessert.ringring.service.ServicePerAsk
+com/dessert/ringring/config/DBConfig.java
+ com.dessert.ringring.config.DBConfig
