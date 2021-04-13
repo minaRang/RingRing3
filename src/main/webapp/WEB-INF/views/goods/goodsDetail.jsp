@@ -155,6 +155,9 @@
                           <div class="hide_review">
                             <img src="${reviews.img}">
                             <p>${reviews.content}</p>
+                              <c:if test="${reviews.id eq sessionScope.member.id}">
+                              <p><a href="/ReviewUpdate?reviewIdx=${reviews.idx}">수정하기</a><a href="/ReviewDelete?reviewIdx=${reviews.idx}">삭제하기</a></p>
+                              </c:if>
                           </div>
                         </td>
                       </tr>

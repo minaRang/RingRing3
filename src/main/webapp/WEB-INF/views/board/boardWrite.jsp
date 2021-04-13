@@ -23,7 +23,7 @@
                                 <option value="공지">공지</option>
                                 <option value="이벤트">이벤트</option>
                                 <option value="질문">자주하는 질문</option>
-                            </select><br>
+                            </select>
                             <input type="text" name="title" placeholder="제목을 입력해주세요">
                         </td>
                     </tr>

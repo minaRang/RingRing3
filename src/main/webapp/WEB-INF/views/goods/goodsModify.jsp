@@ -1,67 +1,79 @@
 <%@ page import="com.dessert.ringring.domain.DTOGoods" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
- <%DTOGoods goods= (DTOGoods) session.getAttribute("goods");%>
- <!DOCTYPE html>
- <html>
- <head>
+<% DTOGoods goods=(DTOGoods) session.getAttribute("goods");
+ System.out.println(goods);
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
  <meta charset="UTF-8">
  <title>Insert title here</title>
- </head>
- <body>
- <form method="post"  action="/goods/goodsModify">
-  <div class="status"></div>
-  <table class="joinform">
+ <link rel="stylesheet" href="css/notice_write.css">
+ <link rel="stylesheet" href="css/goodInsert.css">
+</head>
+<body>
 
+<!--업데이트-->
+<div class="content">
+ <div id="notice">
+  <h3 class="tt">상품 등록하기</h3>
+  <form action="/insertGoods" method="POST" name="notice" enctype="multipart/form-data">
+   <div class="notice">
+    <table class="tt">
+     <tr>
+      <td class="tit">상품명</td>
+      <td class="sub">
+       <input type="text" name="name" value="${goods.name}" value maxlength="16" label="이름">
+      </td>
+     </tr>
 
-   <tr>
-    <th class="tt">이름</th>
-    <td>
-     <input type="text" name="name" value maxlength="16" label="이름">
-    </td>
-   </tr>
+     <tr>
+      <td class="tit">가격</td>
+      <td class="sub">
+       <input type="text" name="price" value="${goods.price}" value maxlength="16" label="가격">
+      </td>
+     </tr>
 
-   <tr>
-    <th class="tt">가격</th>
-    <td><input type="text" name="price" value maxlength="16" label="가격" placeholder="가격 입력해주세요"></td>
-   </tr>
+     <tr>
+      <td class="tit">중량</td>
+      <td>
+       <input type="text" name="weight" value="${goods.price}" value maxlength="16" label="중량">
+      </td>
+     </tr>
 
+     <tr>
+      <td class="tit">재고</td>
+      <td>
+       <input type="text" name="stock" value="${goods.stock}" value maxlength="16" label="재고" ></td>
+     </tr>
 
-   <tr>
-    <th class="tt">중량</th>
-    <td><input type="text" name="weight" value maxlength="16" label="중량" placeholder="중량을 입력해주세요"></td>
-   </tr>
+     <tr>
+      <td class="tit">설명</td>
+      <td><input type="text" name="detail" value="${goods.detail}" value maxlength="16" label="설명" ></td>
+     </tr>
 
+     <tr>
+      <td class="tit">짧은설명</td>
+      <td><input type="text" name="shortDetail" value="${goods.short_detail}" value maxlength="16" label="짧은설명" ></td>
+     </tr>
 
-   <tr>
-    <th class="tt">재고</th>
-    <td><input type="text" name="stock" value maxlength="16" label="재고" placeholder="숫자 입력해주세요"></td>
-   </tr>
+     <tr>
+      <td class="tit">대분류</td>
+      <td><input type="text" name="category1" value="${goods.category1}" value maxlength="16" label="대분류" ></td>
+     </tr>
 
-   <tr>
-    <th class="tt">설명</th>
-    <td><input type="text" name="detail" value maxlength="16" label="설명" placeholder="숫자 입력해주세요"></td>
-   </tr>
+     <tr>
+      <td class="tit">소분류</td>
+      <td><input type="text" name="category2" value="${goods.category2}" value maxlength="16" label="소분류" ></td>
+     </tr>
 
-   <tr>
-    <th class="tt">짧은설명</th>
-    <td><input type="text" name="shortDetail" value maxlength="16" label="짧은설명" plaeholder="숫자 입력해주세요"></td>
-   </tr>
-
-   <tr>
-    <th class="tt">대분류</th>
-    <td><input type="text" name="category1" value maxlength="16" label="대분류" plaeholder="대분류 입력해주세요"></td>
-   </tr>
-
-   <tr>
-    <th class="tt">소분류</th>
-    <td><input type="text" name="category2" value maxlength="16" label="소분류" plaeholder="소분류 입력해주세요"></td>
-   </tr>
-
-  </table>
-  <div id="formSubmit">
-   <button type="submit">등록하기</button>
-  </div>
- </form>
- </body>
- </html>
+    </table>
+   </div>
+   <button class="enroll_btn" type="submit">등록하기</button>
+  </form>
+ </div>
+</div>
+</body>
+</html>

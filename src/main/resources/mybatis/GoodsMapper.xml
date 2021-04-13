@@ -11,13 +11,19 @@
 		, #{weight}, #{category1}, #{category2})
 </insert>
 <!--	2.상품 개별 정보-->
-<select id="getInfoGoods" parameterType="INT" resultType="com.dessert.ringring.domain.DTOGoods">
+<select id="getInfoGoods" resultType="com.dessert.ringring.domain.DTOGoods">
 	SELECT * FROM product WHERE idx=#{idx}
 </select>
 <!--3.상품 리스트 가져오기-->
-<select id="listGoods" resultType="com.dessert.ringring.domain.DTOGoods">
+<select id="listGoods" parameterType="String" resultType="com.dessert.ringring.domain.DTOGoods">
 	SELECT * FROM product
+	<if test="category1!=null">
+		WHERE category1=#{category1}</if>
+	<if test="category2!=null">
+		and category2=#{category2}
+	</if>
 </select>
+
 <!--	4.등록된 상품 갯수-->
 	<select id="selectBoardTotalCount" parameterType="com.dessert.ringring.domain.DTOGoods" resultType="int">
 	SELECT count(*) from product

@@ -24,7 +24,7 @@ String authority=(String) session.getAttribute("authority");
 <div class="content">
     <form method="post">
         <div class="notice_section">
-            <h2 class="tt">공지사항</h2>
+            <h2 class="tt">${board.boardType}</h2>
 
             <!-- 공지사항 내용 -->
             <div class="notice_view">
@@ -47,10 +47,10 @@ String authority=(String) session.getAttribute("authority");
             </div>
 
             <!-- 목록 되돌아가기 버튼 -->
-            <button type="button" class="notice_btn tt"><a href="/noticeList">목록</a></button>
+            <button type="button" class="notice_btn tt"><a href="/noticeList?id=${board.boardType}">목록</a></button>
             <c:if test="${authority eq 'admin'}">
                 <!-- 수정하기 버튼 -->
-                <button type="button" class="notice_btn tt"><a href="/boardUpdate">수정</a></button>
+                <button type="button" class="notice_btn tt"><a href="/boardUpdate?boardIdx=${board.idx}">수정</a></button>
                 <!-- 삭제하기 버튼 -->
                 <button type="button" class="notice_btn tt"><a href="/boardDelete?idx=${board.idx}&boardType=${board.boardType}">삭제</a></button>
             </c:if>

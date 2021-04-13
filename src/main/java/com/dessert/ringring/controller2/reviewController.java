@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -35,37 +36,59 @@ public class reviewController {
         return "redirect:goods/goodsDetail";
     }
 
-    @GetMapping("/ReviewWrite")
-    public String ReviewWrite(HttpServletRequest req,RedirectAttributes redirect){
-        req.getSession().setAttribute("reviewPage","../review/reviewWrite.jsp");
-        int productIdx=(int)req.getSession().getAttribute("productIdx");
-        return "redirect:goodsDetail?idx="+productIdx;
-        //goodsDetail?idx=${list.idx}
+    @GetMapping("/reviewWrite")
+    public String ReviewWrite(@RequestParam(value = "idx",required = false) int idx, HttpServletRequest req, RedirectAttributes redirect){
+        req.getSession().setAttribute("productIdx",idx);
+        redirect.addAttribute("contentPage","review/reviewWrite.jsp");
+        return "redirect:mainForm";
     }
 
-    @PostMapping("/ReviewWrite")
+    @PostMapping("/reviewWrite")
     public String ReviewInsert (HttpServletRequest req, Model model, MultipartFile file) throws IOException {
         int result = serviceReview.insertReview(req, file);
         int productIdx=(int)req.getSession().getAttribute("productIdx");
         if (result > 0) {
-            model.addAttribute("msg", "게시글이 등록되었습니다.");
+            model.addAttribute("msg", "후기가 등록되었습니다.");
             model.addAttribute("url", "/goodsDetail?idx="+productIdx);
         } else {
-            model.addAttribute("msg", "게시글이 등록에 실패하였습니다.");
+            model.addAttribute("msg", "후기 등록에 실패하였습니다.");
             model.addAttribute("url", "/goodsDetail?idx="+productIdx);
         }
-        req.getSession().setAttribute("reviewPage",null);
+
         return "redirect";
     }
 
-    @GetMapping("/ReviewDelete")
-    String ReviewDelete(HttpServletRequest req,Model model){
+    @GetMapping("ReviewUpdate")
+    public String ReviewGet(@RequestParam(value = "reviewIdx",required = false) int idx,HttpServletRequest req,RedirectAttributes redirect){
+        DTOReview review=serviceReview.getReviewDetail(idx);
+        System.out.println(review);
+        req.getSession().setAttribute("review",review);
+        redirect.addAttribute("contentPage","review/reviewModify.jsp");
+        return "redirect:mainForm";
+    }
+    @PostMapping("/ReviewUpdate")
+    public String ReviewUpdate (HttpServletRequest req, Model model, MultipartFile file) throws IOException {
+        int result = serviceReview.updateReview(req, file);
         int productIdx=(int)req.getSession().getAttribute("productIdx");
-        int idx = Integer.parseInt(req.getParameter("idx"));
-        System.out.println("idx:"+idx+"pInx: "+productIdx);
-        boolean result=serviceReview.deleteReview(Integer.parseInt(req.getParameter("idx")),productIdx);
+        if (result > 0) {
+            model.addAttribute("msg", "후기가 수정되었습니다.");
+            model.addAttribute("url", "/goodsDetail?idx="+productIdx);
+        } else {
+            model.addAttribute("msg", "후기 수정에 실패하였습니다.");
+            model.addAttribute("url", "/goodsDetail?idx="+productIdx);
+        }
+
+        return "redirect";
+    }
+
+
+    @GetMapping("/ReviewDelete")
+    String ReviewDelete(@RequestParam(value = "reviewIdx",required = false) int idx,HttpServletRequest req,Model model){
+        int productIdx=(int)req.getSession().getAttribute("productIdx");
+        System.out.println("여기까지실행");
+        boolean result=serviceReview.deleteReview(idx);
         if (result==true){
-            model.addAttribute("msg","글이 삭제되었습니다");
+            model.addAttribute("msg","후기가 삭제되었습니다");
             model.addAttribute("url","/goodsDetail?idx="+productIdx);}
         else{
             model.addAttribute("msg","오류발생");

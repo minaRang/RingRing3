@@ -32,7 +32,7 @@ public class AdminSideBarController {
         dtoMember= (DTOMember) session.getAttribute("member");
         if(dtoMember.getAuthority().equals("admin")){
             log.debug("관리자 권한있음");
-            List<DTOGoods> goodsList=serviceGoods.listGoods();
+            List<DTOGoods> goodsList=serviceGoods.listGoods(null,null);
             req.getSession().setAttribute("goodsList",goodsList);
             redirect.addAttribute("contentPage","admin/adminProduct.jsp");
             return "redirect:mainForm";
@@ -41,8 +41,6 @@ public class AdminSideBarController {
             log.debug("관리자 권한없음");
             return "redirect:mainForm";
         }
-
-
     }
     @GetMapping("/adminUserInfo")
     public String openAdminUserInfo(HttpSession session,RedirectAttributes redirect,HttpServletRequest req){

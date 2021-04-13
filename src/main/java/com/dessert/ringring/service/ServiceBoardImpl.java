@@ -57,6 +57,7 @@ public class ServiceBoardImpl implements ServiceBoard{
         board.setTitle(req.getParameter("title"));
         board.setContent(req.getParameter("content"));
         board.setBoardType(req.getParameter("boardType"));
+        board.setIdx(Integer.parseInt(req.getParameter("idx")));
 
         return boardMapper.updateBoard(board);
     }// 수정
@@ -80,5 +81,11 @@ public class ServiceBoardImpl implements ServiceBoard{
         List<DTOBoard> boardList = Collections.emptyList();
         boardList = boardMapper.selectBoardList(id);
         return boardList;
+    }
+
+    //게시글 수 조회
+    @Override
+    public int countBoardList(String id){
+        return boardMapper.countBoard(id);
     }
 }

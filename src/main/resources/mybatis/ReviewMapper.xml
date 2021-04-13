@@ -31,14 +31,13 @@
     <select id="selectReviewDetail" parameterType="long" resultType="com.dessert.ringring.domain.DTOReview">
         SELECT *FROM review WHERE idx=#{idx}
     </select>
-
     <!--리뷰수정-->
     <update id="updateReview" parameterType="com.dessert.ringring.domain.DTOReview" >
         UPDATE review
         SET
             title = #{title}
           , content = #{content}
-          , do_secret = #{doSecret}
+        ,img=IFNULL(#{img}, NULL)
         WHERE
             idx = #{idx}
     </update>
@@ -46,7 +45,7 @@
     <!--리뷰삭제-->
     <delete id="deleteReview" parameterType="long">
         DELETE from review
-        where idx=#{idx} and product_Idx=#{productIdx}
+        where idx=#{idx}
     </delete>
 
 </mapper>

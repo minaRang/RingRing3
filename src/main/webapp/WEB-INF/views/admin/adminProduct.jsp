@@ -17,7 +17,7 @@
         <h3 class="tt">관리자메뉴</h3>
         <ul>
             <li class="select"><a href="/adminProduct">상품 관리</a></li>
-            <li><a href="/productReview">상품 등록</a></li>
+            <li><a href="/insertGoods">상품 등록</a></li>
             <li><a href="">주문내역 관리</a></li>
             <li><a href="">1:1 문의</a></li>
             <li class="last"><a href="/adminUserInfo">회원관리</a></li>
@@ -50,7 +50,7 @@
                     </tr>
                 </table>
             </div>
-            <button type="button" class="tt detail_btn"><a href="/perAsk">상품정보수정</a></button>
+            <button type="button" class="tt detail_btn"><a href="/modifyGoods?idx=${list.idx}">상품정보수정</a></button>
         </div>
     </div>
     </c:forEach>
