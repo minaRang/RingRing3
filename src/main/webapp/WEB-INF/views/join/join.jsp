@@ -165,7 +165,7 @@
                  </div>
              </form>
             <div class="secondary">
-                <button type="button" id="submit" disabled="disabled" class="btn btn_secondary tt" onclick="blank()">가입하기</button>
+                <button type="button" id="submit" disabled="disabled" class="btn btn_secondary tt" onclick="blank()">1가입하기</button>
             </div>
 
             <script src ="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -219,22 +219,27 @@
                 }
                 //회원가입 submit시 공란확인, 정규식 확인하는 function
                 function blank(){
-                    var regEmail=/^([0-9a-zA-Z_-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
-                    //특수문자,문자,숫자 포함 8~15자리 이내의 암호
-                    var pw=/^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+                    var CheckEmail=/^([0-9a-zA-Z_-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+                    //특수문자,대문자하나이상,소문자하나 이상 숫자 포함 8~15자리 이내의 암호
+                    var CheckPw=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}$/;
                     //핸드폰 번호는 01(0,1,9) - 0~9숫자 3,4개 - 0~9 숫자 4개, 구분자는 있어도 없어도 가능
-                    var phone=/^01([0|1|9])-?([0-9]{3,4})-?([0-9]{4})$/;
-                    //
-                    if(!pw.test($('#pw1'))){
-                        alert("핸드폰번호 입력을 확인해주세요")
+                    var CheckPhone=/^01([0|1|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+
+
+                    var pw=$('#pw1').val();
+                    var email=$('#email').val();
+                    var phone=$('#phone').val();
+
+                    if(!CheckPw.test(pw)){
+                        alert("비밀번호 입력을 확인해주세요")
                         return false;
                     }
 
-                    if(!phone.test($('#phone'))){
-                        alert("핸드폰번호 입력을 확인해주세요")
+                    if(!CheckPhone.test(phone)){
+                        alert("핸드폰번호 입력양식을 확인해주세요")
                         return false;
                     }
-                    if(!regEmail.test($('#email'))){
+                    if(!CheckEmail.test(email)){
                         alert("이메일 양식을 확인해주세요")
                         return false;
                     }

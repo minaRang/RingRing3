@@ -38,8 +38,8 @@ com/dessert/ringring/service/ServiceCart.java
  com.dessert.ringring.service.ServiceCart
 com/dessert/ringring/service/ServiceCoupon.java
  com.dessert.ringring.service.ServiceCoupon
-com/dessert/ringring/service/ServicePerAsk.java
- com.dessert.ringring.service.ServicePerAsk
+com/dessert/ringring/config/DBConfig.java
+ com.dessert.ringring.config.DBConfig
 com/dessert/ringring/mapper/CartMapper.java
  com.dessert.ringring.mapper.CartMapper
 com/dessert/ringring/domain/DTOProductSheet.java
@@ -50,8 +50,8 @@ com/dessert/ringring/controller1/homeController.java
  com.dessert.ringring.controller1.homeController
 com/dessert/ringring/mapper/CouponMapper.java
  com.dessert.ringring.mapper.CouponMapper
-com/dessert/ringring/controller1/PerAskController.java
- com.dessert.ringring.controller1.PerAskController
+com/dessert/ringring/service/ServicePerAsk.java
+ com.dessert.ringring.service.ServicePerAsk
 com/dessert/ringring/service/ServiceOrderSheetImpl.java
  com.dessert.ringring.service.ServiceOrderSheetImpl
 com/dessert/ringring/controller2/BoardController2.java
@@ -66,6 +66,8 @@ com/dessert/ringring/service/ServiceReviewImpl.java
  com.dessert.ringring.service.ServiceReviewImpl
 com/dessert/ringring/config/WebMvcConfiguration.java
  com.dessert.ringring.config.WebMvcConfiguration
+com/dessert/ringring/mapper/QnAMapper.java
+ com.dessert.ringring.mapper.QnAMapper
 com/dessert/ringring/exception/ExceptionHandler.java
  com.dessert.ringring.exception.ExceptionHandler
 com/dessert/ringring/mapper/ReviewMapper.java
@@ -78,8 +80,8 @@ com/dessert/ringring/service/ServiceCartImpl.java
  com.dessert.ringring.service.ServiceCartImpl
 com/dessert/ringring/domain/DTOPerAsk.java
  com.dessert.ringring.domain.DTOPerAsk
-com/dessert/ringring/controller1/ProductController.java
- com.dessert.ringring.controller1.ProductController
+com/dessert/ringring/controller1/PerAskController.java
+ com.dessert.ringring.controller1.PerAskController
 com/dessert/ringring/mapper/MemberMapper.java
  com.dessert.ringring.mapper.MemberMapper
 com/dessert/ringring/controller1/AdminSideBarController.java
@@ -114,11 +116,13 @@ com/dessert/ringring/service/ServicePoint.java
  com.dessert.ringring.service.ServicePoint
 com/dessert/ringring/domain/DTOCart.java
  com.dessert.ringring.domain.DTOCart
+com/dessert/ringring/util/PagingUtils.java
+ com.dessert.ringring.util.PagingUtils
 com/dessert/ringring/config/MvcConfiguration.java
  com.dessert.ringring.config.MvcConfiguration
 com/dessert/ringring/config/UploadFileUtils.java
  com.dessert.ringring.config.UploadFileUtils
 com/dessert/ringring/domain/DTOOrderSheet.java
  com.dessert.ringring.domain.DTOOrderSheet
-com/dessert/ringring/config/DBConfig.java
- com.dessert.ringring.config.DBConfig
+com/dessert/ringring/controller1/ProductController.java
+ com.dessert.ringring.controller1.ProductController

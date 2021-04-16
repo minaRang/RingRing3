@@ -127,8 +127,8 @@ public class ProductController {
     @GetMapping("/modifyGoods")
     String goodsModifyOpen(@RequestParam(value = "idx",required = false) int idx,HttpServletRequest req,RedirectAttributes redirect){
         dtoGoods=goods.getInfoGoods(idx);
-        req.getSession().setAttribute("goods",goods);
-        redirect.addAttribute("contentPage","goods/goodsModify");
+        req.getSession().setAttribute("goods",dtoGoods);
+        redirect.addAttribute("contentPage","goods/goodsModify.jsp");
 
         return "redirect:mainForm";
     }

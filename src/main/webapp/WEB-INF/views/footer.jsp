@@ -14,7 +14,7 @@
     <title>RingRing Dessert</title>
 </head>
 <body>
-<div id="footer">
+<div id="footer" style="width: 1000px;margin: auto">
     <div class="footer_inner">
         <div class="footer_left">
             <h1 class="tt">고객센터</h1>

@@ -32,11 +32,10 @@
 	</delete>
 
 	<!--게시글 목록 조회-->
-	<select id="selectBoardList" parameterType="com.dessert.ringring.domain.DTOBoard" resultType="com.dessert.ringring.domain.DTOBoard">
+	<select id="selectBoardList" parameterType="String" resultType="com.dessert.ringring.domain.DTOBoard">
 		SELECT * FROM board WHERE board_type = #{id}
 		ORDER BY
-		idx DESC,
-		date DESC <!--desc는 내림차순.-->
+		idx DESC,date DESC <!--desc는 내림차순.-->
 	</select>
 
 	<!--게시글 목록 조회 페이징-->

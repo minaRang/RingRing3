@@ -95,7 +95,7 @@ button{
     width: 950px; /* padding 때문에 width 950px 로 설정 */
     margin-top: 20px;
     padding: 20px 25px;
-    position: relative; /* detail btn 에 대한 relative */
+ /*   position: relative;  detail btn 에 대한 relative */
 }
 #detail::after{
     clear: both;
