@@ -86,25 +86,26 @@ public class AdminSideBarController {
 //        return
 //    }
 
-    @GetMapping("/adminOrderHistory")
-    public String openOrderHistory(HttpSession session,RedirectAttributes redirect,HttpServletRequest req){
-        dtoMember= (DTOMember) session.getAttribute("member");
-        if(dtoMember.getAuthority().equals("admin")){
-            List<DTOOrderSheet> orderSheetList=serviceOrderSheet.allOrderList();
-            req.getSession().setAttribute("orderList",orderSheetList);
-            redirect.addAttribute("contentPage","admin/adminOrderHistory.jsp");
+    @GetMapping({"/adminOrderHistory"})
+    public String openOrderHistory(HttpSession session, RedirectAttributes redirect, HttpServletRequest req) {
+        this.dtoMember = (DTOMember)session.getAttribute("member");
+        if (this.dtoMember.getAuthority().equals("admin")) {
+            List<DTOOrderSheet> orderSheetList = this.serviceOrderSheet.allOrderList();
+            req.getSession().setAttribute("orderList", orderSheetList);
+            redirect.addAttribute("contentPage", "admin/adminOrderHistory.jsp");
             return "redirect:mainForm";
+        } else {
+            return "redirct:mainForm";
         }
-
-        return "redirct:mainForm";
     }
+
     @ResponseBody
-    @PostMapping("/deliveryState")
-    public int changeDelivery(@RequestBody Map<String, Object> stateData){
-        String delivery = (String) stateData.get("delivery");
-        String orderNum = (String) stateData.get("orderNum");
-        String orderId= (String) stateData.get("orderId");
-        int count= serviceOrderSheet.modifyDeliveryState(delivery,orderNum,orderId);
+    @PostMapping({"/deliveryState"})
+    public int changeDelivery(@RequestBody Map<String, Object> stateData) {
+        String delivery = (String)stateData.get("delivery");
+        String orderNum = (String)stateData.get("orderNum");
+        String orderId = (String)stateData.get("orderId");
+        int count = this.serviceOrderSheet.modifyDeliveryState(delivery, orderNum, orderId);
         return count;
     }
 }
