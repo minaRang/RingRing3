@@ -94,7 +94,7 @@ button{
     border: 1px solid rgb(161, 161, 161);
     margin-top: 20px;
     padding: 20px 25px;
- /*   position: relative;  detail btn 에 대한 relative */
+    position: relative; /* detail btn 에 대한 relative */
 }
 #detail::after{
     clear: both;

@@ -36,7 +36,7 @@
                 <ul class="new_list">
                     <c:forEach var="list" items="${list}" begin="0" end="7" step="1">
                         <li>
-                            <a href="goodsDetail?idx=${list.idx}"><img src="${list.img}"></a>
+                            <a href="goodsDetail?idx=${list.idx}"><img src=${list.img}></a>
                             <h3 class="tt">${list.name}</h3>
                             <p class="tt">${list.price} 원</p>
                         </li>
