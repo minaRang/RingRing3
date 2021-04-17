@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/notice_write.css">
+    <link rel="stylesheet" href="css/goodInsert.css">
     <link rel="stylesheet" href="css/mypage_oderlist.css">
     <link rel="stylesheet" href="css/product_admin.css">
     <title>Document</title>
@@ -19,6 +21,7 @@
             <li class="select"><a href="/adminProduct">상품 관리</a></li>
             <li><a href="/insertGoods">상품 등록</a></li>
             <li><a href="">주문내역 관리</a></li>
+            <li><a href="/boardWrite">고객센터 관리</a></li>
             <li><a href="">1:1 문의</a></li>
             <li class="last"><a href="/adminUserInfo">회원관리</a></li>
         </ul>
@@ -52,8 +55,8 @@
             </div>
             <button type="button" class="tt detail_btn"><a href="/modifyGoods?idx=${list.idx}">상품정보수정</a></button>
         </div>
+        </c:forEach>
     </div>
-    </c:forEach>
 </div>
 </body>
 </html>

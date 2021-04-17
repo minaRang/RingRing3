@@ -72,6 +72,7 @@ button{
     width: 1000px;
     margin: 0 auto;
     position: relative;
+    /*height: 800px;*/
 }
 /* ========notice=========== */
 .review{
@@ -145,4 +146,15 @@ button{
     display: block;
     content: '';
     clear: both;
+}
+/* ===page=== */
+.page{
+    margin-top: 20px;
+    text-decoration: none;
+    margin-left: 440px;
+    font-size: 22px;
+}
+
+.page>a{
+    text-decoration: none;
 }

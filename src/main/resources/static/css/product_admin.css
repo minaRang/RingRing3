@@ -64,6 +64,7 @@ button{
     width: 1000px;
     height: auto;
     margin: 0 auto;
+    margin-bottom: 100px;
     position: relative;
 }
 /* =======oder-detail========= */
@@ -136,7 +137,7 @@ button{
     font-size: 14px;
     font-weight: 400;
 }
-.detail_btn a{
+.detail_btn a, .detail_btn a:visited{
     text-align: center;
     text-decoration: none;
     color: #df404a;

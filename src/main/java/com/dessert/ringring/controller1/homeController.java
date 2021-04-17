@@ -21,7 +21,7 @@ public class homeController {
 
 	 @GetMapping("/")
 	 public String main(HttpServletRequest req) {
-		 List<DTOGoods> goods = serviceGoods.listGoods(null,null); //상품 리스트 받아옴
+		 List<DTOGoods> goods = serviceGoods.listGoods(null,null,null,null); //상품 리스트 받아옴
 		 HttpSession session = req.getSession(); //세션 생성
 		 session.setAttribute("list",goods);
 	 	return "redirect:mainForm";

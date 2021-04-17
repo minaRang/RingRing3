@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
@@ -43,10 +44,10 @@ public class ProductController {
 
     //상품 리스트 불러오기
     @GetMapping("/productList")
-    public String productList(@RequestParam(value="category", required = false)String category,@RequestParam(value="sub", required = false)String sub,HttpServletRequest req, RedirectAttributes redirect) {
+    public String productList(@RequestParam(value="category", required = false)String category,@RequestParam(value="sub", required = false)String sub,@RequestParam(value="range", required = false)String range,@RequestParam(value="desc", required = false)String desc,HttpServletRequest req, RedirectAttributes redirect) {
         log.debug("openBoardList");
 
-        List<DTOGoods> goodsList=goods.listGoods(category,sub);
+        List<DTOGoods> goodsList=goods.listGoods(category,sub,range,desc);
         req.getSession().setAttribute("list",goodsList);
         if (category!=null){
             List<String> subList=new ArrayList<String>();
@@ -64,8 +65,12 @@ public class ProductController {
                 subList.add("Alcohol");
             }
             req.getSession().setAttribute("category",category);
-            req.getSession().setAttribute("subCategory",subList);
+            req.getSession().setAttribute("subCategoryList",subList);
         }
+        if (sub!=null){
+            req.getSession().setAttribute("subCategory",sub);
+        }
+        else req.getSession().setAttribute("subCategory",null);
 
 
         redirect.addAttribute("contentPage","goods/listGoods.jsp");
@@ -98,8 +103,9 @@ public class ProductController {
     }
 
     @PostMapping("/insertGoods")
-    String insertGoods(HttpServletRequest req, Model model, MultipartFile file) throws IOException {
-        log.debug(String.valueOf(file));
+    String insertGoods(HttpServletRequest req, Model model, MultipartHttpServletRequest mhsr) throws IOException {
+        List<MultipartFile> file = mhsr.getFiles("file");
+        System.out.println("파일은"+file);
         int result = goods.insertGoods(req,file);
         if (result>0){
             model.addAttribute("msg","상품이 등록되었습니다");
@@ -118,7 +124,7 @@ public class ProductController {
         goods.deleteGoods(idx);
 
         model.addAttribute("msg","상품삭제되었습니다");
-        model.addAttribute("url","goods/listGoods");
+        model.addAttribute("url","/adminProduct");
         return "redirect";
 
     }
@@ -127,8 +133,8 @@ public class ProductController {
     @GetMapping("/modifyGoods")
     String goodsModifyOpen(@RequestParam(value = "idx",required = false) int idx,HttpServletRequest req,RedirectAttributes redirect){
         dtoGoods=goods.getInfoGoods(idx);
-        req.getSession().setAttribute("goods",goods);
-        redirect.addAttribute("contentPage","goods/goodsModify");
+        req.getSession().setAttribute("goods",dtoGoods);
+        redirect.addAttribute("contentPage","goods/goodsModify.jsp");
 
         return "redirect:mainForm";
     }
@@ -137,7 +143,7 @@ public class ProductController {
     String goodsModify(HttpServletRequest req,Model model){
         goods.updateGoods(req);
         model.addAttribute("msg","상품수정되었습니다");
-        model.addAttribute("url","goods/listGoods");
+        model.addAttribute("url","/adminProduct");
         return "redirect";
     }
 

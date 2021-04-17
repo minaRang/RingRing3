@@ -30,8 +30,8 @@ public class LoginController {
 		
 		log.debug("로그아웃");
 		session.invalidate();
-	
-		return "redirect:mainForm";	
+
+		return "redirect:/";
 		}
 	
 	@GetMapping("/login")

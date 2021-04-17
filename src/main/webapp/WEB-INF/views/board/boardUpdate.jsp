@@ -6,6 +6,7 @@
     DTOBoard board=(DTOBoard) session.getAttribute("board");
     System.out.println(board);
 %>
+<c:set var="authority" value="${authority}"></c:set>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +18,17 @@
 </head>
 <body>
 <div class="content">
+    <div class="mycategory tt">
+        <h3 class="tt">고객센터</h3>
+        <ul>
+            <li><a href="/noticeList?id=공지">공지사항</a></li>
+            <li><a href="/noticeList?id=이벤트">이벤트</a></li>
+            <li><a href="/noticeList?id=질문">자주묻는 질문</a></li>
+            <c:if test="${authority eq 'admin'}">
+                <li class="last select" ><a href="/boardWrite">글쓰기</a></li>
+            </c:if>
+        </ul>
+    </div>
     <div id="notice">
         <h3 class="tt">글쓰기</h3>
         <form action="/boardUpdate" method="POST" name="notice" enctype="multipart/form-data">

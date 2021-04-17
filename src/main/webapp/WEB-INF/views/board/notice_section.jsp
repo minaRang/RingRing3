@@ -18,10 +18,22 @@ String authority=(String) session.getAttribute("authority");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/notice_section.css">
+    <link rel="stylesheet" href="css/my_review_list.css">
     <title>Document</title>
 </head>
 <body>
 <div class="content">
+    <div class="mycategory tt">
+        <h3 class="tt">고객센터</h3>
+        <ul>
+            <li <%if (board.getBoardType().equals("공지"))%>class="select"<%%>><a href="/noticeList?id=공지">공지사항</a></li>
+            <li <%if(board.getBoardType().equals("이벤트"))%>class="select"<%%>><a href="/noticeList?id=이벤트">이벤트</a></li>
+            <li class="<c:if test="${authority ne 'admin'}">last</c:if><%if(board.getBoardType().equals("질문"))%> select<%%>" ><a href="/noticeList?id=질문">자주묻는 질문</a></li>
+            <c:if test="${authority eq 'admin'}">
+                <li class="last" ><a href="/boardWrite">글쓰기</a></li>
+            </c:if>
+        </ul>
+    </div>
     <form method="post">
         <div class="notice_section">
             <h2 class="tt">${board.boardType}</h2>
@@ -47,6 +59,7 @@ String authority=(String) session.getAttribute("authority");
             </div>
 
             <!-- 목록 되돌아가기 버튼 -->
+            <div style="text-align: center;">
             <button type="button" class="notice_btn tt"><a href="/noticeList?id=${board.boardType}">목록</a></button>
             <c:if test="${authority eq 'admin'}">
                 <!-- 수정하기 버튼 -->
@@ -54,6 +67,7 @@ String authority=(String) session.getAttribute("authority");
                 <!-- 삭제하기 버튼 -->
                 <button type="button" class="notice_btn tt"><a href="/boardDelete?idx=${board.idx}&boardType=${board.boardType}">삭제</a></button>
             </c:if>
+            </div>
         </div>
     </form>
 

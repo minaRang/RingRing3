@@ -2,6 +2,7 @@ package com.dessert.ringring.service;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class ServiceGoodsImpl implements ServiceGoods {
 	DTOGoods goods;
 
 	@Override
-	public int insertGoods(HttpServletRequest req, MultipartFile file) throws IOException {
+	public int insertGoods(HttpServletRequest req, List<MultipartFile> files) throws IOException {
 		
 		goods.setName(req.getParameter("name"));
 		int price = Integer.parseInt(req.getParameter("price"));	
@@ -39,20 +40,26 @@ public class ServiceGoodsImpl implements ServiceGoods {
 		goods.setStock(stock);
 		goods.setWeight(req.getParameter("weight"));
 
-		//이미지 업로드------------------------------------------------------
-		//업로드 경로 설정
-		String uploadPath = ResourceUtils.getFile("classpath:static/upload/").toPath().toString();
-		uploadPath = uploadPath.replace("\\","/");
-		uploadPath=uploadPath.replace("/bin/main/static","/src/main/resource/static");
-		String ymdPath = UploadFileUtils.calcPath(uploadPath);
-		String filesName=null;
+		List<String> imgFile=new ArrayList<>();
+		for(MultipartFile file:files) {
+			//이미지 업로드------------------------------------------------------
+			//업로드 경로 설정
+			String uploadPath = ResourceUtils.getFile("classpath:static/upload/").toPath().toString();
+			uploadPath = uploadPath.replace("\\", "/");
+			uploadPath = uploadPath.replace("/bin/main/static", "/src/main/resource/static");
+			String ymdPath = UploadFileUtils.calcPath(uploadPath);
+			String filesName = null;
 
-		filesName = UploadFileUtils.fileUpload(uploadPath, file.getOriginalFilename(), file.getBytes(),ymdPath);
-		String img=(File.separator+"upload"+ymdPath+File.separator+filesName);
-		img=img.replace("\\","/");
-		String imgS=(File.separator+ "upload" + ymdPath + File.separator + "s" + File.separator + "s_" + filesName);
-		imgS.replace("\\","/");
-		goods.setImg(img);
+			filesName = UploadFileUtils.fileUpload(uploadPath, file.getOriginalFilename(), file.getBytes(), ymdPath);
+			String img = (File.separator + "upload" + ymdPath + File.separator + filesName);
+			img = img.replace("\\", "/");
+			String imgS = (File.separator + "upload" + ymdPath + File.separator + "s" + File.separator + "s_" + filesName);
+			imgS.replace("\\", "/");
+			imgFile.add(img);
+			System.out.println("fileName : "+filesName);
+		}
+		goods.setImg(imgFile.get(0));
+		goods.setImgDetail(imgFile.get(1));
 //
 //
 //		//input에 파일이 업로드되어 있다면,
@@ -69,7 +76,7 @@ public class ServiceGoodsImpl implements ServiceGoods {
 //
 //			goods.setImg(filesName);
 //		}
-		System.out.println("fileName : "+filesName);
+
 
 
 
@@ -83,11 +90,11 @@ public class ServiceGoodsImpl implements ServiceGoods {
 	}
 
 	@Override
-	public List<DTOGoods> listGoods(String category1, String category2) {
+	public List<DTOGoods> listGoods(String category1, String category2, String range,String desc) {
 		List<DTOGoods> goodsList= Collections.emptyList();
 		int boardTotalCount = mapper.selectBoardTotalCount();
 		if(boardTotalCount>0){
-			goodsList=mapper.listGoods(category1, category2);
+			goodsList=mapper.listGoods(category1, category2,range,desc);
 		}
 		return goodsList;
 	}
@@ -99,15 +106,19 @@ public class ServiceGoodsImpl implements ServiceGoods {
 
 	@Override
 	public int updateGoods(HttpServletRequest req) {
+		int idx=Integer.parseInt(req.getParameter("idx"));
+		goods.setIdx(idx);
 		goods.setName(req.getParameter("name"));
-		goods.setCategory1(req.getParameter("category1"));
-		goods.setCategory1(req.getParameter("category2"));
-		goods.setDetail(req.getParameter("detail"));
 		int price=Integer.parseInt(req.getParameter("price"));
 		goods.setPrice(price);
+		int stock=Integer.parseInt(req.getParameter("stock"));
+		goods.setStock(stock);
 		goods.setShortDetail(req.getParameter("shortDetail"));
+		goods.setDetail(req.getParameter("detail"));
 		goods.setWeight(req.getParameter("weight"));
 
+		goods.setCategory1(req.getParameter("category1"));
+		goods.setCategory2(req.getParameter("category2"));
 
 		return mapper.updateGoods(goods);
 	}
