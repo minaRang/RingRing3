@@ -24,8 +24,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="test 수정">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminOrderHistory.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPerQlist.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -33,48 +31,47 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/aop/LoggerAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/aop/LoggerAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/TemKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/TemKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/UploadFileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/config/UploadFileUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/AdminSideBarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/AdminSideBarController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/CartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/JoinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/JoinController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/MypageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/MypageController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/PerAskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/PerAskController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller1/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller2/BoardController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/controller2/BoardController2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOCoupon.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOCoupon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOGoods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOMember.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOOrderSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOOrderSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOPerAsk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOPerAsk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOProductSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOProductSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOReview.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/domain/DTOReview.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceBoardImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceBoardImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/OrderSheetMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/mapper/OrderSheetMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheetImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/service/ServiceOrderSheetImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/util/PagingUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dessert/ringring/util/PagingUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/mypage_oderlist.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/css/mypage_oderlist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/notice_write.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/css/notice_write.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/OrderSheetMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/OrderSheetMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/image/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/image/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/image/banner1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/image/banner1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/image/banner2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/image/banner2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/image/banner3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/image/banner3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/PerAskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/PerAskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/AdminSideBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/AdminSideBarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/MypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/MypageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/OrderSheetMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/OrderSheetMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceOrderSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceOrderSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceOrderSheetImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceOrderSheetImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/OrderSheetMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/OrderSheetMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/image/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/image/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/image/banner1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/image/banner1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/image/banner2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/image/banner2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/image/banner3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/image/banner3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminOrderHistory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminOrderHistory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminUserInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminUserInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsInsert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsInsert.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join/join.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myInfoModify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myInfoModify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPoint.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPoint.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderContents.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderContents.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/productReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/productReview.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/perAsk.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/perAsk.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/listPerAsk.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/replyPerAsk.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/replyPerAsk.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +145,9 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\minaring\Desktop\RingRing\ringring\src\main\webapp\WEB-INF\views\admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\minaring\Desktop\RingRing\ringring\src\main\resources" />
     </key>
@@ -242,7 +242,7 @@
       <workItem from="1618168293419" duration="7102000" />
       <workItem from="1618328544569" duration="453000" />
       <workItem from="1618331970420" duration="11200000" />
-      <workItem from="1618404265670" duration="9393000" />
+      <workItem from="1618404265670" duration="35685000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -433,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618341003186</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="test 수정">
+      <created>1618573526889</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1618573526889</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,10 +530,10 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618166130294" />
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1618166852150">
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1618574308688">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618166852150" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618574308688" />
     <state x="549" y="279" width="437" height="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618220693597">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
@@ -544,61 +551,61 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="646" y="309" key="Github.ShareDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612228301787" />
-    <state width="1876" height="192" key="GridCell.Tab.0.bottom" timestamp="1618410766859">
+    <state width="1876" height="192" key="GridCell.Tab.0.bottom" timestamp="1618633700438">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
     <state width="1492" height="180" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
-    <state width="1492" height="192" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618406681648" />
-    <state width="1876" height="192" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618410766859" />
+    <state width="1492" height="192" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618598717696" />
+    <state width="1876" height="192" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618633700438" />
     <state width="1492" height="192" key="GridCell.Tab.0.bottom/0.0.1536.826@0.0.1536.826" timestamp="1618402974630" />
-    <state width="1876" height="192" key="GridCell.Tab.0.center" timestamp="1618410766858">
+    <state width="1876" height="192" key="GridCell.Tab.0.center" timestamp="1618633700437">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
     <state width="1492" height="180" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681865" />
-    <state width="1492" height="192" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618406681648" />
-    <state width="1876" height="192" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618410766858" />
+    <state width="1492" height="192" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618598717695" />
+    <state width="1876" height="192" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618633700437" />
     <state width="1492" height="192" key="GridCell.Tab.0.center/0.0.1536.826@0.0.1536.826" timestamp="1618402974629" />
-    <state width="1876" height="192" key="GridCell.Tab.0.left" timestamp="1618410766856">
+    <state width="1876" height="192" key="GridCell.Tab.0.left" timestamp="1618633700436">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
     <state width="1492" height="180" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681865" />
-    <state width="1492" height="192" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618406681648" />
-    <state width="1876" height="192" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618410766856" />
+    <state width="1492" height="192" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618598717695" />
+    <state width="1876" height="192" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618633700436" />
     <state width="1492" height="192" key="GridCell.Tab.0.left/0.0.1536.826@0.0.1536.826" timestamp="1618402974627" />
-    <state width="1876" height="192" key="GridCell.Tab.0.right" timestamp="1618410766858">
+    <state width="1876" height="192" key="GridCell.Tab.0.right" timestamp="1618633700437">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
     <state width="1492" height="180" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681865" />
-    <state width="1492" height="192" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618406681648" />
-    <state width="1876" height="192" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618410766858" />
+    <state width="1492" height="192" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618598717695" />
+    <state width="1876" height="192" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618633700437" />
     <state width="1492" height="192" key="GridCell.Tab.0.right/0.0.1536.826@0.0.1536.826" timestamp="1618402974629" />
-    <state width="1876" height="192" key="GridCell.Tab.1.bottom" timestamp="1618410766860">
+    <state width="1876" height="192" key="GridCell.Tab.1.bottom" timestamp="1618633700439">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
     <state width="1492" height="180" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
-    <state width="1492" height="192" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618406681649" />
-    <state width="1876" height="192" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618410766860" />
+    <state width="1492" height="192" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618598717696" />
+    <state width="1876" height="192" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618633700439" />
     <state width="1492" height="192" key="GridCell.Tab.1.bottom/0.0.1536.826@0.0.1536.826" timestamp="1618402974631" />
-    <state width="1876" height="192" key="GridCell.Tab.1.center" timestamp="1618410766860">
+    <state width="1876" height="192" key="GridCell.Tab.1.center" timestamp="1618633700438">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
     <state width="1492" height="180" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
-    <state width="1492" height="192" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618406681649" />
-    <state width="1876" height="192" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618410766860" />
+    <state width="1492" height="192" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618598717696" />
+    <state width="1876" height="192" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618633700438" />
     <state width="1492" height="192" key="GridCell.Tab.1.center/0.0.1536.826@0.0.1536.826" timestamp="1618402974630" />
-    <state width="1876" height="192" key="GridCell.Tab.1.left" timestamp="1618410766859">
+    <state width="1876" height="192" key="GridCell.Tab.1.left" timestamp="1618633700438">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
     <state width="1492" height="180" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
-    <state width="1492" height="192" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618406681649" />
-    <state width="1876" height="192" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618410766859" />
+    <state width="1492" height="192" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618598717696" />
+    <state width="1876" height="192" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618633700438" />
     <state width="1492" height="192" key="GridCell.Tab.1.left/0.0.1536.826@0.0.1536.826" timestamp="1618402974630" />
-    <state width="1876" height="192" key="GridCell.Tab.1.right" timestamp="1618410766860">
+    <state width="1876" height="192" key="GridCell.Tab.1.right" timestamp="1618633700439">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
     <state width="1492" height="180" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
-    <state width="1492" height="192" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618406681649" />
-    <state width="1876" height="192" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618410766860" />
+    <state width="1492" height="192" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618598717696" />
+    <state width="1876" height="192" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1920.1032@1920.0.1920.1032" timestamp="1618633700439" />
     <state width="1492" height="192" key="GridCell.Tab.1.right/0.0.1536.826@0.0.1536.826" timestamp="1618402974631" />
     <state x="414" y="163" key="IDE.errors.dialog" timestamp="1618221063671">
       <screen x="0" y="0" width="1536" height="826" />
@@ -619,21 +626,25 @@
     </state>
     <state x="277" y="44" key="SettingsEditor/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616844850559" />
     <state x="277" y="0" key="SettingsEditor/0.0.1536.826@0.0.1536.826" timestamp="1617543381353" />
-    <state x="361" y="145" width="810" height="535" key="Vcs.Push.Dialog.v2" timestamp="1618338328971">
+    <state x="361" y="145" width="810" height="535" key="Vcs.Push.Dialog.v2" timestamp="1618573545744">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617603807805" />
-    <state x="361" y="145" width="810" height="535" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618338328971" />
+    <state x="361" y="145" width="810" height="535" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618573545744" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826@0.0.1536.826" timestamp="1618296163605" />
     <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1616842327372">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616842327372" />
-    <state x="0" y="103" width="1280" height="809" key="dock-window-1" timestamp="1618296131428">
-      <screen x="0" y="0" width="1536" height="826" />
+    <state x="2361" y="148" width="861" height="471" maximized="true" key="dock-window-1" timestamp="1618578986244">
+      <screen x="1920" y="0" width="1920" height="1032" />
     </state>
-    <state x="480" y="89" width="1056" height="647" key="dock-window-1/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618219316124" />
+    <state x="2361" y="148" width="861" height="471" maximized="true" key="dock-window-1/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618578986244" />
     <state x="0" y="103" width="1280" height="809" key="dock-window-1/0.0.1536.826@0.0.1536.826" timestamp="1618296131428" />
+    <state x="2102" y="237" width="861" height="471" maximized="true" key="dock-window-2" timestamp="1618589222922">
+      <screen x="1920" y="0" width="1920" height="1032" />
+    </state>
+    <state x="2102" y="237" width="861" height="471" maximized="true" key="dock-window-2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618589222922" />
     <state x="561" y="280" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1617554745774">
       <screen x="0" y="0" width="1536" height="826" />
     </state>

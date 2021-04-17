@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: 미나
@@ -22,7 +24,7 @@
         <ul>
             <li><a href="/orderContents">상품 관리</a></li>
             <li><a href="/productReview">상품 등록</a></li>
-            <li class="select"><a href="">주문내역 관리</a></li>
+            <li class="select"><a href="/adminOrderHistory">주문내역 관리</a></li>
             <li><a href="">1:1 문의</a></li>
             <li class="last"><a href="/myInfoModify">회원관리</a></li>
         </ul>
@@ -42,7 +44,10 @@
                     <li>배송 완료</li>
                 </ul>
             </div>
-            <table class="tt recruit">
+            <c:forEach items="${orderList}" var="list" varStatus="status">
+                <input type="hidden" name="orderId" value="${list.orderId}"/>
+                <input type="hidden" name="orderNum" value="${list.orderNum}"/>
+                <table class="tt recruit">
                 <tr>
                     <td class="first number">번호</td>
                     <td class="first date">주문일시</td>
@@ -52,29 +57,41 @@
                     <td class="first delivery">배송상태</td>
                 </tr>
                 <tr class="item">
-                    <td class="number">00</td>
-                    <td class="date">21-04-09</td>
-                    <td class="pro_number">1666232</td>
-                    <td class="product">녹차 쿠키</td>
-                    <td class="user">김다빈</td>
-                    <td class="delivery">배송완료</td>
+                    <td class="number" value="${list.idx}">${list.idx}</td>
+                    <td class="date"><fmt:formatDate value="${list.date}" pattern="yyyy-MM-dd"/></td>
+                    <td class="pro_number">${list.orderNum}</td>
+                    <td class="product">${list.thumnailName}외 ${list.countProduct}개</td>
+                    <td class="user" >${list.orderId}</td>
+                    <td class="delivery" id="deliveryState">${list.deliveryState}</td>
                 </tr>
                 <tr class="hide">
                     <td colspan="6">
                         <div class="hide_content">
-                            <img src="image/content3.jpg" alt="">
+                            <img src="${list.thumnail}" alt="">
                             <table class="hide_p">
                                 <tr>
                                     <td>상품이름</td>
-                                    <td>녹차쿠키</td>
+                                    <td>${list.thumnailName}외 ${list.countProduct}개</td>
                                 </tr>
                                 <tr>
                                     <td>결제금액</td>
-                                    <td>5,000원</td>
+                                    <td>${list.finalPrice}</td>
                                 </tr>
                                 <tr>
                                     <td>주문번호</td>
-                                    <td>1666232</td>
+                                    <td>${list.orderNum}</td>
+                                </tr>
+                                <tr>
+                                    <td>받는이</td>
+                                    <td>${list.toName}</td>
+                                </tr>
+                                <tr>
+                                    <td>결제수단</td>
+                                    <td>${list.payWith}</td>
+                                </tr>
+                                <tr>
+                                    <td>주문메세지</td>
+                                    <td>${list.memo}</td>
                                 </tr>
                             </table>
                             <div id="hide_save">
@@ -83,12 +100,13 @@
                                     <option value="배송중">배송중</option>
                                     <option value="배송완료">배송완료</option>
                                 </select>
-                                <button class="save tt" type="submit">저장</button>
+                                <button class="save tt" type="button" onclick="dd()">저장</button>
                             </div>
                         </div>
                     </td>
                 </tr>
             </table>
+            </c:forEach>
         </div>
         <!-- 아코디언 js -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
@@ -106,6 +124,36 @@
                     }
                 });
             });
+            function dd(){
+
+                var delivery=$("#hide_select option:selected").val();
+                // var orderId=$("#orderId").val();
+                var orderId=$('input[name=orderId]').val();
+                var orderNum=$("#orderNum").val();
+                alert(orderId);
+                var stateData={"orderId":orderId,"delivery":delivery,"orderNum":orderNum};
+                $.ajax({
+                    async:true,
+                    type:'POST',
+                    traditional:true,
+                    data:JSON.stringify(stateData),
+                    url:"/deliveryState",
+                    dataType:"json",
+                    contentType:"application/json; charset=UTF-8",
+                    success: function (orderSheet){
+                        if(count=0){
+                            alert("변경실패, 재시도 해주세요");
+                        }else{
+                            alert("변경되었습니다");
+
+                            $("#deliveryState").html(delivery);
+                        }
+                    },
+                    error:function (error){
+                        alert("통신오류, 재시도 해주세요");
+                    }
+                });
+            }
         </script>
     </div>
 </div>

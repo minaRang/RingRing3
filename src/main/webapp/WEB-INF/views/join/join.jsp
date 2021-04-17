@@ -165,7 +165,7 @@
                  </div>
              </form>
             <div class="secondary">
-                <button type="button" id="submit" disabled="disabled" class="btn btn_secondary tt" onclick="blank()">1가입하기</button>
+                <button type="button" id="submit" disabled="disabled" class="btn btn_secondary tt" onclick="blank()">가입하기</button>
             </div>
 
             <script src ="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

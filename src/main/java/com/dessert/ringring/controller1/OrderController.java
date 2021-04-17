@@ -42,7 +42,7 @@ import javax.servlet.http.HttpSession;
             //로그인이 안되있을 경우 login페이지로 redirect한다.
             if (id==null || id == ""){
                 redirect.addAttribute("contentPage","login/login.jsp");
-                return "redirect";
+                return "redirect:mainForm";
             }
             else {
                 member=serviceMember.getUserInfo(id);

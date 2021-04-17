@@ -9,6 +9,7 @@ public interface ServiceOrderSheet{
     void insertOrder(HttpServletRequest req);
     DTOOrderSheet getInfoOrder(DTOOrderSheet orderSheet);
     List<DTOOrderSheet> orderList(String id);
-    void modifyDeliveryState(HttpServletRequest req);
+    int modifyDeliveryState(String delivery,String orderNum,String orderId);
     DTOOrderSheet getInfoOrderIdx(int idx);
+    List<DTOOrderSheet> allOrderList();
 }

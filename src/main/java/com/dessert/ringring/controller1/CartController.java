@@ -24,16 +24,21 @@ public class CartController {
     ServiceCart cartMapper;
 
     @GetMapping("/cart")
-    public String OpenCart(RedirectAttributes redirect, HttpServletRequest req, HttpSession session){
-        member=(DTOMember)session.getAttribute("member");
-        String id=member.getId();
-        List<DTOCart> listCart=cartMapper.listCart(id);
+    public String OpenCart(@RequestParam(value = "member",required = false) DTOMember member,RedirectAttributes redirect, HttpServletRequest req){
+        if(member !=null) {
 
-        req.getSession().setAttribute("list",listCart);
-        redirect.addAttribute("contentPage","goods/cart.jsp");
+            String id = member.getId();
+            List<DTOCart> listCart = cartMapper.listCart(id);
 
-        return "redirect:mainForm";
-    }
+            req.getSession().setAttribute("list", listCart);
+            redirect.addAttribute("contentPage", "goods/cart.jsp");
+
+            return "redirect:mainForm";
+        }else{
+            return "redirect:mainForm";
+        }
+        }
+
 
     @ResponseBody
     @PostMapping("/deleteCart")
