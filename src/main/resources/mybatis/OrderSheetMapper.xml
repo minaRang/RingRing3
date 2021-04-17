@@ -37,7 +37,10 @@
 
 	<!--6.배달현황변경-->
 	<update id="modifyDelivery" parameterType="com.dessert.ringring.domain.DTOOrderSheet">
-		UPDATE productsheet SET delivery_state=#{deliveryState} WHERE id=#{id} and order_num=#{orderNum}
+		UPDATE ordersheet SET delivery_state=#{deliveryState} WHERE order_id=#{orderId} and order_num=#{orderNum}
 	</update>
-
+	<!--7.모든 주문 확인-->
+	<select id="allOrderSheet" resultType="com.dessert.ringring.domain.DTOOrderSheet">
+		SELECT * FROM ordersheet
+	</select>
 </mapper>

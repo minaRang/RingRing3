@@ -150,6 +150,8 @@
      </table>
     </div>
     <button class="enroll_btn" type="submit">등록하기</button>
+    <button class="enroll_btn" type="button" onclick="location.href='/adminProduct'">취소하기</button>
+
    </form>
   </div>
  </div>

@@ -44,7 +44,7 @@
 </select>
 
 <!-- 7.로그인 -->
-<select id="login" parameterType="com.dessert.ringring.domain.DTOMember" resultType="_int">
+<select id="login" parameterType="com.dessert.ringring.domain.DTOMember" resultType="int">
 	SELECT COUNT(*) FROM user WHERE id=#{id} AND pw=#{password}
 </select>
 
@@ -53,7 +53,7 @@
 <update id="pwReset"></update>
 
 <!-- 9.권한찾기 -->
-<select id="readAuthority" parameterType="com.dessert.ringring.domain.DTOMember" resultType="_int">	
+<select id="readAuthority" parameterType="com.dessert.ringring.domain.DTOMember" resultType="int">
 	select authority FROM user where id=#{id}
 </select>
 

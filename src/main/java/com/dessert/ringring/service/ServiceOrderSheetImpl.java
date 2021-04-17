@@ -84,15 +84,22 @@ public class ServiceOrderSheetImpl implements ServiceOrderSheet{
     }
 
     @Override
-    public void modifyDeliveryState(HttpServletRequest req) {
-        orderSheet.setDeliveryState(req.getParameter("delivery"));
-        orderSheet.setOrderNum(req.getParameter("orderNum"));
-        orderSheet.setOrderId(req.getParameter("orderId"));
-        orderSheetMapper.modifyDelivery(orderSheet);
+    public int modifyDeliveryState(String delivery,String orderNum,String orderId) {
+        orderSheet.setDeliveryState(delivery);
+        orderSheet.setOrderNum(orderNum);
+        orderSheet.setOrderId(orderId);
+        return orderSheetMapper.modifyDelivery(orderSheet);
+
     }
 
     @Override
     public DTOOrderSheet getInfoOrderIdx(int idx) {
         return orderSheetMapper.getOrderInfoIdx(idx);
+    }
+
+    //모든 주문서 조회
+    @Override
+    public List<DTOOrderSheet> allOrderList() {
+        return orderSheetMapper.allOrderSheet();
     }
 }

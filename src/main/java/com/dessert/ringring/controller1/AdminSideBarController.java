@@ -1,14 +1,16 @@
 package com.dessert.ringring.controller1;
 
-import com.dessert.ringring.domain.DTOBoard;
 import com.dessert.ringring.domain.DTOGoods;
 import com.dessert.ringring.domain.DTOMember;
+import com.dessert.ringring.domain.DTOOrderSheet;
 import com.dessert.ringring.service.ServiceGoods;
 import com.dessert.ringring.service.ServiceMember;
+import com.dessert.ringring.service.ServiceOrderSheet;
 import com.dessert.ringring.util.PagingUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,6 +19,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Map;
+
 @Slf4j
 @Controller
 public class AdminSideBarController {
@@ -32,6 +36,8 @@ public class AdminSideBarController {
     private PagingUtils pagingUtils;
 
 
+    @Autowired
+    ServiceOrderSheet serviceOrderSheet;
     @GetMapping("/adminProduct")
     public String openAdminProduct(HttpSession session, HttpServletRequest req, RedirectAttributes redirect){
         dtoMember= (DTOMember) session.getAttribute("member");
@@ -79,4 +85,26 @@ public class AdminSideBarController {
 //
 //        return
 //    }
+
+    @GetMapping("/adminOrderHistory")
+    public String openOrderHistory(HttpSession session,RedirectAttributes redirect,HttpServletRequest req){
+        dtoMember= (DTOMember) session.getAttribute("member");
+        if(dtoMember.getAuthority().equals("admin")){
+            List<DTOOrderSheet> orderSheetList=serviceOrderSheet.allOrderList();
+            req.getSession().setAttribute("orderList",orderSheetList);
+            redirect.addAttribute("contentPage","admin/adminOrderHistory.jsp");
+            return "redirect:mainForm";
+        }
+
+        return "redirct:mainForm";
+    }
+    @ResponseBody
+    @PostMapping("/deliveryState")
+    public int changeDelivery(@RequestBody Map<String, Object> stateData){
+        String delivery = (String) stateData.get("delivery");
+        String orderNum = (String) stateData.get("orderNum");
+        String orderId= (String) stateData.get("orderId");
+        int count= serviceOrderSheet.modifyDeliveryState(delivery,orderNum,orderId);
+        return count;
+    }
 }

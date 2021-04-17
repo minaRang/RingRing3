@@ -148,27 +148,37 @@ public class ProductController {
     }
 
     @PostMapping("/addCart")
-    public String addCart(HttpSession session,HttpServletRequest req,Model model){
-        member=(DTOMember)session.getAttribute("member");
-        String id=member.getId();
-        int productIdx=Integer.parseInt(req.getParameter("productIdx"));
-        int check=cart.checkCart(id,productIdx);
-        int result=0;
-        if(member != null && check==0){
-            cart.insertCart(req,member);
-            result=1;
-        }
-        if(result==1) {
-            model.addAttribute("msg", "상품이 담겼습니다");
-            model.addAttribute("url", "/productList");
-        }
-        if(result==0) {
-            model.addAttribute("msg", "이미 담긴 상품입니다");
-            model.addAttribute("url", "/productList");
-        }
+    public String addCart(@RequestParam(value = "member",required = false)DTOMember member,HttpServletRequest req,Model model){
+        log.debug("addcart 불러오시나요 ..? ");
+        int productIdx = Integer.parseInt(req.getParameter("productIdx"));
+        if(member!=null) {
+            log.debug(member.getId());
+            log.debug("멤버가 널값인가?");
+            String id = member.getId();
+            int check = cart.checkCart(id, productIdx);
+            int result = 0;
+            if (check == 0) {
+                cart.insertCart(req, member);
+                result = 1;
+            }
+            if (result == 1) {
+                model.addAttribute("msg", "상품이 담겼습니다");
+                model.addAttribute("url", "/goodsDetail?idx="+productIdx);
+            }
+            if (result == 0) {
+                model.addAttribute("msg", "이미 담긴 상품입니다");
+                model.addAttribute("url", "/goodsDetail?idx="+productIdx);
+            }
 
-    return "redirect";
+            return "redirect";
+        }else{
+            log.debug("addcart널값임 ㅠ");
+            model.addAttribute("msg", "로그인해주세요");
+            model.addAttribute("url", "/goodsDetail?idx="+productIdx);
+        return "redirect";
+        }
     }
+
 
     @PostMapping("/search")
     public String searchGoods(HttpServletRequest req,RedirectAttributes redirect){

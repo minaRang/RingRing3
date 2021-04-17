@@ -21,9 +21,6 @@
   <link rel="stylesheet" href="css/product_section.css">
   <title>product_section</title>
  </head>
-
-
-
  <body>
  <div class="status"></div>
  <div id="product_section">
@@ -114,7 +111,7 @@
               <li class="goods_view">
                   <a href="" class="goods_view_information">상품설명</a>
               </li>
-              <li class="goods_view" id="active">
+              <li class="goods_view">
                   <a href="" class="goods_view_information">상세정보</a>
               </li>
               <li class="goods_view">
@@ -163,7 +160,7 @@
               <li class="goods_view">
                   <a href="" class="goods_view_information">상세정보</a>
               </li>
-              <li class="goods_view" id="active">
+              <li class="goods_view">
                   <a href="" class="goods_view_information">고객후기</a>
               </li>
           </ul>
@@ -199,7 +196,7 @@
 
 
           <!-- 아코디언 js -->
-          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<%--          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>--%>
           <script type="text/javascript">
               $(function(){
                   var article = (".recruit .show");
@@ -213,6 +210,27 @@
                           $(myArticle).addClass('hide').removeClass('show');
                       }
                   });
+              });
+
+              $(".plus").on("click",(function(){
+                  var num = $(".numBox").val();
+                  var plusNum = Number(num) + 1;
+
+                  if(plusNum >= 100) {
+                      $(".numBox").val(num);
+                  } else {
+                      $(".numBox").val(plusNum);
+                  }
+              }));
+              $(".minus").click(function(){
+                  var num = $(".numBox").val();
+                  var minusNum = Number(num) - 1;
+
+                  if(minusNum <= 1) {
+                      $(".numBox").val(num);
+                  } else {
+                      $(".numBox").val(minusNum);
+                  }
               });
           </script>
  </div>
