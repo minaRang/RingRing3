@@ -125,7 +125,7 @@ public class ProductController {
         goods.deleteGoods(idx);
 
         model.addAttribute("msg","상품삭제되었습니다");
-        model.addAttribute("url","goods/listGoods");
+        model.addAttribute("url","goods/listGoods.jsp");
         return "redirect";
 
     }
@@ -144,7 +144,7 @@ public class ProductController {
     String goodsModify(HttpServletRequest req,Model model){
         goods.updateGoods(req);
         model.addAttribute("msg","상품수정되었습니다");
-        model.addAttribute("url","goods/listGoods");
+        model.addAttribute("url","goods/listGoods.jsp");
         return "redirect";
     }
 

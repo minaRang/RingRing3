@@ -120,3 +120,16 @@ button{
     line-height: 30px;
     height: 30px;
 }
+/* ===답변=== */
+.answer h3{
+    font-size: 17px;
+    padding: 10px 0 0 10px;
+}
+.answer h3 i{
+    margin-right: 10px;
+    color: #df404a;
+}
+.answer p{
+    padding: 20px 10px 25px;
+    font-weight: 300;
+}

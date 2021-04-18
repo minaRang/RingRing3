@@ -155,7 +155,7 @@
                 <li><a href="/adminProduct">상품 관리</a></li>
                 <li><a href="/productReview">상품 등록</a></li>
                 <li><a href="/adminOrderHistory">주문내역 관리</a></li>
-                <li><a href="">1:1 문의</a></li>
+                <li><a href="/listPerAsk">1:1 문의</a></li>
                 <li class="last select"><a href="/adminUserInfo">회원관리</a></li>
             </ul>
         </div>
@@ -166,7 +166,7 @@
             <ul>
                 <li><a href="/orderContents">주문 내역</a></li>
                 <li><a href="/productReview">상품 후기</a></li>
-                <li><a href="">적립금</a></li>
+                <li><a href="/point">적립금</a></li>
                 <li><a href="/listPerAsk">내 1:1 문의</a></li>
                 <li class="last"><a href="/myInfoModify">개인 정보 수정</a></li>
             </ul>

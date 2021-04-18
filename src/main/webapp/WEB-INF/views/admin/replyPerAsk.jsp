@@ -45,7 +45,7 @@
             <!-- 목록 되돌아가기 버튼 -->
             <button type="button" class="notice_btn tt"><a href="/listPerAsk">목록</a></button>
         </div>
-        <c:if test="${'Y' ne sessionScope.getPerAsk.doAnswer}">
+        <c:if test="${'Y' ne sessionScope.getPerAsk.doAnswer and 'admin' eq sessionScope.member.authority}">
         <div class="comment tt">
             <div class="status"></div>
             <table>

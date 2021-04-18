@@ -24,34 +24,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="0418(2)">
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/css/goodInsert.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/AdminSideBarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/AdminSideBarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/homeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller2/BoardController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller2/BoardController2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/domain/DTOGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/domain/DTOGoods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/mapper/GoodsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/mapper/GoodsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/service/ServiceGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/service/ServiceGoods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/service/ServiceGoodsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/service/ServiceGoodsImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/mybatis/CartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/mybatis/CartMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/mybatis/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/mybatis/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/mybatis/ProductSheetMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/mybatis/ProductSheetMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/my_review_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/my_review_list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/mypage_oderlist.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/mypage_oderlist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/notice_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/notice_section.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/product_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/product_admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/product_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/product_section.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/userModify.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/userModify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/question_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/question_section.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/GoodsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/ProductSheetMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/ProductSheetMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsInsert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsInsert.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsModify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsModify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminUserInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminUserInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/replyPerAsk.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/replyPerAsk.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myInfoModify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myInfoModify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPerQlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPerQlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPoint.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPoint.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderContents.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderContents.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/productReview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/productReview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/productReviewDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/productReviewDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/perAsk.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userService/perAsk.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +79,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -114,6 +104,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -136,6 +127,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.RingringApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DBConfig.testByApplicationContext" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -197,7 +199,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="" />
+      <changelist id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="0418(2)" />
       <created>1611515841767</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -219,6 +221,7 @@
       <workItem from="1618404265670" duration="35685000" />
       <workItem from="1618682184449" duration="197000" />
       <workItem from="1618682387742" duration="8421000" />
+      <workItem from="1618762085404" duration="2324000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>

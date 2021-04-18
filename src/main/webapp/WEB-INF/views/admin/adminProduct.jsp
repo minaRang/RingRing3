@@ -19,7 +19,7 @@
             <li class="select"><a href="/adminProduct">상품 관리</a></li>
             <li><a href="/insertGoods">상품 등록</a></li>
             <li><a href="/adminOrderHistory">주문내역 관리</a></li>
-            <li><a href="">1:1 문의</a></li>
+            <li><a href="/listPerAsk">1:1 문의</a></li>
             <li class="last"><a href="/adminUserInfo">회원관리</a></li>
         </ul>
     </div>
@@ -29,7 +29,7 @@
         <!-- detail-box -->
         <c:forEach items="${sessionScope.goodsList}" var="list">
         <div id="detail">
-            <h3 class="tt detail_neme"><a style="text-decoration: none" href="adminProductDetail?idx=${list.idx}">${list.name}</a>
+            <h3 class="tt detail_neme"><a style="text-decoration: none">${list.name}</a>
                     ${list.category1}-${list.category2}
             </h3>
             <div class="status s_status"></div>
@@ -38,7 +38,7 @@
                 <table>
                     <tr>
                         <td>상품판매액</td>
-                        <td>2100214100원</td>
+                        <td>${list.price}</td>
                     </tr>
                     <tr>
                         <td>재고수량</td>
