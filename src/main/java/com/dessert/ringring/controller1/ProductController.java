@@ -150,6 +150,7 @@ public class ProductController {
     @PostMapping({"/addCart"})
     public String addCart(@RequestParam(value = "member",required = false) DTOMember member, HttpServletRequest req, Model model) {
         log.debug("addcart 불러오시나요 ..? ");
+        System.out.println(member);
         int productIdx = Integer.parseInt(req.getParameter("productIdx"));
         if (member != null) {
             log.debug(member.getId());
