@@ -16,13 +16,12 @@
 <body>
     <div class="content">
         <div class="notice_section">
-            <h2 class="tt">공지사항</h2>
-            <!-- 공지사항 내용 -->
+            <h2 class="tt">1:1문의</h2>
             <div class="notice_view">
                 <table class="notice_table tt">
                     <tr>
                         <td>제목</td>
-                        <td>${sessionScope.getPerAsk.title}}</td>
+                        <td>${sessionScope.getPerAsk.title}</td>
                     </tr>
                     <tr>
                         <td>작성자</td>
@@ -35,9 +34,18 @@
                 </table>
                 <p class="notice_p tt">${sessionScope.getPerAsk.img} ${sessionScope.getPerAsk.content}</p>
             </div>
+            <c:if test="${'Y' eq sessionScope.getPerAsk.doAnswer}">
+            <div class="answer">
+                <h3 class="tt"><i class="fa fa-check-square-o"></i>RingRing 님의 답변</h3>
+                <p class="tt">${sessionScope.getPerAsk.reContent}</p>
+                <p>작성일 : ${sessionScope.getPerAsk.reDate}</p>
+                <div class="status"></div>
+            </div>
+            </c:if>
             <!-- 목록 되돌아가기 버튼 -->
             <button type="button" class="notice_btn tt"><a href="/listPerAsk">목록</a></button>
         </div>
+        <c:if test="${'Y' ne sessionScope.getPerAsk.doAnswer}">
         <div class="comment tt">
             <div class="status"></div>
             <table>
@@ -53,7 +61,8 @@
                 </tr>
             </table>
             <div class="status"></div>
-        </div> 
+        </div>
+        </c:if>
     </div>
 </body>
 </html>

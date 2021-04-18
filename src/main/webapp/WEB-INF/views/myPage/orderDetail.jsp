@@ -61,16 +61,16 @@
         <div class="delivery_ing tt">
             <c:choose>
                 <c:when test="${'상품준비' eq sessionScope.orderDetail.deliveryState}">
-                    <img src="image/0.jpg" alt="">
-                </c:when>
-                <c:when test="${'상품출고' eq sessionScope.orderDetail.deliveryState}">
                     <img src="image/1.jpg" alt="">
                 </c:when>
-                <c:when test="${'배송지도착' eq sessionScope.orderDetail.deliveryState}">
+                <c:when test="${'상품출고' eq sessionScope.orderDetail.deliveryState}">
                     <img src="image/2.jpg" alt="">
                 </c:when>
-                <c:otherwise>
+                <c:when test="${'배송지도착' eq sessionScope.orderDetail.deliveryState}">
                     <img src="image/3.jpg" alt="">
+                </c:when>
+                <c:otherwise>
+                    <img src="image/4.jpg" alt="">
                 </c:otherwise>
             </c:choose>
         </div>
