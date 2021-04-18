@@ -23,19 +23,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="사이드바 매핑">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/config/MvcConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/config/MvcConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/service/ServiceGoodsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/service/ServiceGoodsImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/MvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/MvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/UploadFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/UploadFileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceGoodsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/service/ServiceGoodsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="썸네일제거" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +206,7 @@
       <workItem from="1618682184449" duration="197000" />
       <workItem from="1618682387742" duration="8421000" />
       <workItem from="1618762085404" duration="3067000" />
-      <workItem from="1618767083219" duration="3961000" />
+      <workItem from="1618767083219" duration="4142000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -423,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618764435652</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="썸네일제거">
+      <created>1618771160544</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1618771160544</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +491,8 @@
     <MESSAGE value="test 수정" />
     <MESSAGE value="0418(2)" />
     <MESSAGE value="사이드바 매핑" />
-    <option name="LAST_COMMIT_MESSAGE" value="사이드바 매핑" />
+    <MESSAGE value="썸네일제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="썸네일제거" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
