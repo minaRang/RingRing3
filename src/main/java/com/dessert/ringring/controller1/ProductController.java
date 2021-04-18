@@ -15,8 +15,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
@@ -44,10 +44,10 @@ public class ProductController {
 
     //상품 리스트 불러오기
     @GetMapping("/productList")
-    public String productList(@RequestParam(value="category", required = false)String category,@RequestParam(value="sub", required = false)String sub,@RequestParam(value="range", required = false)String range,@RequestParam(value="desc", required = false)String desc,HttpServletRequest req, RedirectAttributes redirect) {
+    public String productList(@RequestParam(value="category", required = false)String category,@RequestParam(value="sub", required = false)String sub,HttpServletRequest req, RedirectAttributes redirect) {
         log.debug("openBoardList");
 
-        List<DTOGoods> goodsList=goods.listGoods(category,sub,range,desc);
+        List<DTOGoods> goodsList=goods.listGoods(category,sub);
         req.getSession().setAttribute("list",goodsList);
         if (category!=null){
             List<String> subList=new ArrayList<String>();
@@ -65,12 +65,8 @@ public class ProductController {
                 subList.add("Alcohol");
             }
             req.getSession().setAttribute("category",category);
-            req.getSession().setAttribute("subCategoryList",subList);
+            req.getSession().setAttribute("subCategory",subList);
         }
-        if (sub!=null){
-            req.getSession().setAttribute("subCategory",sub);
-        }
-        else req.getSession().setAttribute("subCategory",null);
 
 
         redirect.addAttribute("contentPage","goods/listGoods.jsp");
@@ -103,9 +99,8 @@ public class ProductController {
     }
 
     @PostMapping("/insertGoods")
-    String insertGoods(HttpServletRequest req, Model model, MultipartHttpServletRequest mhsr) throws IOException {
-        List<MultipartFile> file = mhsr.getFiles("file");
-        System.out.println("파일은"+file);
+    String insertGoods(HttpServletRequest req, Model model, MultipartFile file) throws IOException {
+        log.debug(String.valueOf(file));
         int result = goods.insertGoods(req,file);
         if (result>0){
             model.addAttribute("msg","상품이 등록되었습니다");
@@ -124,7 +119,7 @@ public class ProductController {
         goods.deleteGoods(idx);
 
         model.addAttribute("msg","상품삭제되었습니다");
-        model.addAttribute("url","/adminProduct");
+        model.addAttribute("url","goods/listGoods");
         return "redirect";
 
     }
@@ -143,51 +138,48 @@ public class ProductController {
     String goodsModify(HttpServletRequest req,Model model){
         goods.updateGoods(req);
         model.addAttribute("msg","상품수정되었습니다");
-        model.addAttribute("url","/adminProduct");
+        model.addAttribute("url","goods/listGoods");
         return "redirect";
     }
 
-    @PostMapping({"/addCart"})
-    public String addCart(@RequestParam(value = "member",required = false) DTOMember member, HttpServletRequest req, Model model) {
-        log.debug("addcart 불러오시나요 ..? ");
-        System.out.println(member);
+    @PostMapping("/addCart")
+    public String addCart(@SessionAttribute(value = "member",required = false)DTOMember member, HttpServletRequest req, Model model){
         int productIdx = Integer.parseInt(req.getParameter("productIdx"));
-        if (member != null) {
-            log.debug(member.getId());
-            log.debug("멤버가 널값인가?");
+        log.debug(member.getId());
+        if(member!=null) {
             String id = member.getId();
-            int check = this.cart.checkCart(id, productIdx);
-            boolean result = false;
+            int check = cart.checkCart(id, productIdx);
+            int result = 0;
             if (check == 0) {
-                this.cart.insertCart(req, member);
-                result = true;
+                cart.insertCart(req, member);
+                result = 1;
             }
-
-            if (result) {
+            if (result == 1) {
                 model.addAttribute("msg", "상품이 담겼습니다");
-                model.addAttribute("url", "/goodsDetail?idx=" + productIdx);
+                model.addAttribute("url", "/goodsDetail?idx="+productIdx);
             }
-
-            if (!result) {
+            if (result == 0) {
                 model.addAttribute("msg", "이미 담긴 상품입니다");
-                model.addAttribute("url", "/goodsDetail?idx=" + productIdx);
+                model.addAttribute("url", "/goodsDetail?idx="+productIdx);
             }
 
             return "redirect";
-        } else {
+        }else{
             log.debug("addcart널값임 ㅠ");
             model.addAttribute("msg", "로그인해주세요");
-            model.addAttribute("url", "/goodsDetail?idx=" + productIdx);
-            return "redirect";
+            model.addAttribute("url", "/goodsDetail?idx="+productIdx);
+        return "redirect";
         }
     }
 
-    @PostMapping({"/search"})
-    public String searchGoods(HttpServletRequest req, RedirectAttributes redirect) {
-        String param = req.getParameter("search");
-        List<DTOGoods> list = this.goods.searchGoods(param);
-        req.getSession().setAttribute("list", list);
-        redirect.addAttribute("contentPage", "goods/searchGoods.jsp");
+
+    @PostMapping("/search")
+    public String searchGoods(HttpServletRequest req,RedirectAttributes redirect){
+        String param=req.getParameter("search");
+        List<DTOGoods> list=goods.searchGoods(param);
+        req.getSession().setAttribute("list",list);
+        redirect.addAttribute("contentPage","goods/searchGoods.jsp");
+
         return "redirect:mainForm";
     }
 }

@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@300;500&display=swap');
+
+
+/* 폰트 위계 */
+
+/* font-family: 'Nerko One', cursive;
+font-family: 'Noto Sans KR', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.tt{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.st{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(161, 161, 161);
+}
+button{
+    border: 0;
+    outline: 0;
+}
+/* ======header============================ */
+#header{
+    padding-top: 20px;
+}
+/* =====logo========== */
+.logo{
+    margin: 0 auto;
+    width: 260px;
+    height: 90px;
+    text-indent: -999em;
+    background-image: url(../image/RingRing_logo.PNG);
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+    background-size: cover;
+}
+/* =======container======================== */
+/* ========content========== */
+#content{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* ====joinhead====== */
+.joinhead h2{
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 0 20px;
+}
+/* ====status======= */
+.status{
+    width: 1000px;
+    background-color: #df404a;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+}
+/* =======joinform======== */
+.joinform{
+    margin: 0 auto;
+}
+.joinform th, td{
+    padding: 20px 0;
+}
+.joinform th{
+    padding-right: 15px;
+}
+.joinform input{
+    width: 250px;
+    padding: 15px 20px; /* 글씨는 세로축에서 가운데로 써질수있게 */
+    border: 1px solid rgb(161, 161, 161);
+}
+::placeholder{
+    font-size: 13px;
+}
+.joinform .btn{
+    /* border: 1px solid rgb(60, 60, 60); */
+    border: 1px solid #df404a; 
+    /*===border,color 홈페이지 주조색이랑 맞춤 별로면 위에 rgb 색으로 바꾸면 됨=== */
+
+    margin-left: 5px; /* 10px 에서 5px 로 수정 */
+    padding: 10px 20px;
+    font-size: 15px;  
+    text-decoration: none;
+    /* color: rgb(60, 60, 60); */
+    color: #df404a; 
+}
+.default{
+    font-weight: 700; /* 400에서 700으로 수정 */
+}
+.joinform .addressSearch{
+    /* border: 1px solid rgb(60, 60, 60); */
+    border: 1px solid #df404a;
+    padding: 14px 50px;
+    margin-left: 5px;
+    font-weight: 700; /* .default 랑 font-weight 똑같이 */
+    font-size: 13px;
+    text-decoration: none;
+    background-color: white;
+    /* color: rgb(60, 60, 60); */
+    color: #df404a;
+}
+.joinform .addressSearch .fa-search{
+    padding-right: 5px;
+}
+#address1{
+    width: 100px;
+}
+#address2,#address3{
+    margin-top: 10px;
+}
+/* ===========checkbox_group========== */
+.checkbox_group{
+    width: 500px;
+    margin: 25px 250px;
+    position: relative;
+}
+.btn_agreement{
+    position: absolute;
+    padding-left: 20px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/* =========가입하기 버튼============= */
+.secondary{
+    margin-top: 60px;
+    text-align: center;
+}
+.btn_secondary{
+    width: 200px;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-weight: 400;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #df404a;
+}

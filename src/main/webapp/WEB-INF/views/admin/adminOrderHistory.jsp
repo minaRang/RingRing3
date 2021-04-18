@@ -22,11 +22,11 @@
     <div class="admincategory">
         <h3 class="tt">관리자메뉴</h3>
         <ul>
-            <li><a href="/orderContents">상품 관리</a></li>
-            <li><a href="/productReview">상품 등록</a></li>
+            <li><a href="/adminProduct">상품 관리</a></li>
+            <li><a href="/insertGoods">상품 등록</a></li>
             <li class="select"><a href="/adminOrderHistory">주문내역 관리</a></li>
-            <li><a href="">1:1 문의</a></li>
-            <li class="last"><a href="/myInfoModify">회원관리</a></li>
+            <li><a href="/listPerAsk">1:1 문의</a></li>
+            <li class="last"><a href="/adminUserInfo">회원관리</a></li>
         </ul>
     </div>
     <div id="oder_history">
@@ -44,9 +44,6 @@
                     <li>배송 완료</li>
                 </ul>
             </div>
-            <c:forEach items="${orderList}" var="list" varStatus="status">
-                <input type="hidden" name="orderId" value="${list.orderId}"/>
-                <input type="hidden" name="orderNum" value="${list.orderNum}"/>
                 <table class="tt recruit">
                 <tr>
                     <td class="first number">번호</td>
@@ -56,8 +53,11 @@
                     <td class="first user">주문자</td>
                     <td class="first delivery">배송상태</td>
                 </tr>
+                    <c:forEach items="${orderList}" var="list" varStatus="status">
+                    <input type="hidden" name="orderId" value="${list.orderId}"/>
+                    <input type="hidden" name="orderNum" value="${list.orderNum}"/>
                 <tr class="item">
-                    <td class="number" value="${list.idx}">${list.idx}</td>
+                    <td class="number">${list.idx}</td>
                     <td class="date"><fmt:formatDate value="${list.date}" pattern="yyyy-MM-dd"/></td>
                     <td class="pro_number">${list.orderNum}</td>
                     <td class="product">${list.thumnailName}외 ${list.countProduct}개</td>
@@ -95,18 +95,18 @@
                                 </tr>
                             </table>
                             <div id="hide_save">
-                                <select name="" id="hide_select">
+                                <select name="select" id="hide_select">
                                     <option value="배송대기">배송대기</option>
                                     <option value="배송중">배송중</option>
-                                    <option value="배송완료">배송완료</option>
+                                    <option value="배송완료">배송완료</option>s
                                 </select>
-                                <button class="save tt" type="button" onclick="dd()">저장</button>
+                                <button class="save tt" type="button" onclick="dd(${status.index})">저장</button>
                             </div>
                         </div>
                     </td>
                 </tr>
-            </table>
-            </c:forEach>
+                    </c:forEach>
+                </table>
         </div>
         <!-- 아코디언 js -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
@@ -124,13 +124,27 @@
                     }
                 });
             });
-            function dd(){
+            function dd(number){
+                var orderNumLength=$("input[name=orderNum]").length;
+                var orderIdLength=$("input[name=orderId]").length;
+                var deliverLength=$("select[name=select]").length;
+                var orderNumArr=new Array(orderNumLength);
+                for(var i=0;i<orderNumLength;i++){
+                    orderNumArr[i]=$("input[name=orderNum]").eq(i).val();
+                }
+                var orderIdArr=new Array(orderNumLength);
+                for(var i=0;i<orderIdLength;i++){
+                    orderIdArr[i]=$("input[name=orderId]").eq(i).val();
+                }
+                var deliveryArr=new Array(deliverLength);
+                for(var i=0;i<deliverLength;i++){
+                    deliveryArr[i]=$("select[name=select]").eq(i).val();
+                }
+                var delivery=deliveryArr[number];
+                var orderId=orderIdArr[number];
+                var orderNum=orderNumArr[number];
 
-                var delivery=$("#hide_select option:selected").val();
-                // var orderId=$("#orderId").val();
-                var orderId=$('input[name=orderId]').val();
-                var orderNum=$("#orderNum").val();
-                alert(orderId);
+
                 var stateData={"orderId":orderId,"delivery":delivery,"orderNum":orderNum};
                 $.ajax({
                     async:true,
@@ -145,8 +159,7 @@
                             alert("변경실패, 재시도 해주세요");
                         }else{
                             alert("변경되었습니다");
-
-                            $("#deliveryState").html(delivery);
+                            window.location.reload(true);
                         }
                     },
                     error:function (error){

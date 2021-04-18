@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+/* 폰트 위계 */
+
+/*font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.tt{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.st{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(161, 161, 161);
+}
+input{
+    border: 0;
+    outline: 0;
+}
+button{
+    border: 0;
+    outline: 0;
+}
+.status{
+    background-color: #df404a;
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+/* ===============content================== */
+/* =============.notice_section============= */
+.notice_section{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+.notice_section h2{
+    font-size: 25px;
+}
+/* ==========.notice_view============= */
+.notice_view{
+    border-top: 2px solid #df404a;
+    border-bottom: 2px solid #df404a;
+    margin-top: 50px;
+}
+/* =============.notice_table========= */
+.notice_table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.notice_table td{
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding: 10px 15px;
+    font-weight: 300;
+    font-size: 14px;
+}
+/* ==========.notice_p============= */
+.notice_p{
+    font-weight: 300;
+    padding: 35px 10px;
+}
+/* ==========.notice_btn============= */
+.notice_btn{
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    /* float: right; */
+    margin-left: 450px;
+    background-color: #df404a;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.notice_btn a{
+    text-decoration: none;
+    color: white;
+}
+/* ===comment=== */
+.comment{
+    width: 1000px;
+    height: 100px;
+    margin: 40px auto;
+}
+.comment table{
+    width: 800px;
+    height: 100px;
+    margin: 20px 0 20px 100px;
+}
+.comment .firsttd{
+    font-size: 15px;
+    height: 100px;
+    line-height: 100px;
+    width: 100px;
+}
+.comment textarea{
+    resize: none;
+    height: 100px;
+    width: 600px;
+}
+.comment button{
+    width: 60px;
+    border:none;
+    background-color: #df404a;
+    color: white;
+    font-weight: 300;
+    /* border-radius: 2px; */
+    text-align: center;
+    font-size:14px;
+    line-height: 30px;
+    height: 30px;
+}

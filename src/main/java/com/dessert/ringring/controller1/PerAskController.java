@@ -15,6 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
+import java.util.Objects;
+
 @Slf4j
 @Controller
 public class PerAskController {
@@ -54,22 +56,34 @@ public class PerAskController {
         String idx=req.getParameter("idx");
         perAsk=servicePerAsk.getInfoOnePerAsk(req);
         req.getSession().setAttribute("getPerAsk",perAsk);
-        redirect.addAttribute("contentPage","userService/replyPerAsk.jsp");
+        redirect.addAttribute("contentPage","admin/replyPerAsk.jsp");
         return "redirect:mainForm";
     }
     @PostMapping("/replyPerAsk")
     public String replyPerAsk(HttpServletRequest req,Model model){
+        String idx=req.getParameter("idx");
+        log.debug(idx);
         servicePerAsk.answerPerAsk(req);
-        model.addAttribute("contentsPage","/ListReplyPerAsk");
+        model.addAttribute("contentsPage","/replyPerAsk?idx="+idx);
         return "redirect:mainForm";
     }
 
     @GetMapping("/listPerAsk")
     public String openUserPerAskList(RedirectAttributes redirect,HttpServletRequest req,HttpSession session){
         String id= (String) session.getAttribute("userId");
-        List<DTOPerAsk> list=servicePerAsk.getListUserPerAsk(id);
-        req.getSession().setAttribute("userList",list);
-        redirect.addAttribute("contentPage","myPage/myPerQlist.jsp");
+        if(Objects.equals(id,"admin")){
+            log.debug("여기로가나?");
+            List<DTOPerAsk> list=servicePerAsk.listAllPerAsk();
+            req.getSession().setAttribute("userList", list);
+            redirect.addAttribute("contentPage", "myPage/myPerQlist.jsp");
+        }else {
+            log.debug("저기로가나?");
+            log.debug("관리자 권한있음");
+
+            List<DTOPerAsk> list = servicePerAsk.getListUserPerAsk(id);
+            req.getSession().setAttribute("userList", list);
+            redirect.addAttribute("contentPage", "myPage/myPerQlist.jsp");
+        }
         return "redirect:mainForm";
     }
 }

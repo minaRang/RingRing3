@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+/* 폰트 위계 */
+
+/*font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.tt{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.st{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(161, 161, 161);
+}
+button{
+    border: 0;
+    outline: 0;
+}
+/* =============admincategory================ */
+.admincategory{
+    width: 170px;
+    position: absolute;
+    /* top: 50px; */
+    left: -200px;
+}
+.admincategory h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+.admincategory ul{
+    margin-top: 20px;
+}
+.admincategory li{
+    list-style: none;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 10px 20px;
+    border-bottom: none;
+}
+.admincategory .last{
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+.admincategory li a{
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+    font-weight: 400;
+}
+/* =====sidebar전용 .select class============= */
+.select{
+    background-color: rgba(161, 161, 161, .2);
+}
+/* ====content================= */
+.content{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+/* =======oder-detail========= */
+.oder-detail{
+    width: 1000px;
+    margin-top: 50px;
+}
+.oder-detail h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.oder-detail .top-status{
+    margin-top: 35px;
+}
+/* =====#detail========= */
+#detail{
+    border: 1px solid rgb(161, 161, 161);
+    width: 950px; /* padding 때문에 width 950px 로 설정 */
+    margin-top: 20px;
+    padding: 20px 25px;
+    position: relative; /* detail btn 에 대한 relative */
+}
+#detail::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+#detail h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+#detail h3 a{
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+#detail .s_status{
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: rgb(161, 161, 161);
+}
+#detail img{
+    margin-top: 15px;
+    width: 80px;
+    height: 100px;
+    float: left;
+}
+.detail-iname{
+    font-size: 14px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.detail-iname table{
+    width: 200px;
+}
+.detail-iname td{
+    padding-top: 5px;
+}
+.detail_btn{
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    padding: 10px;
+    width: 120px;
+    border: 2px solid #df404a;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+.detail_btn a{
+    text-align: center;
+    text-decoration: none;
+    color: #df404a;
+}

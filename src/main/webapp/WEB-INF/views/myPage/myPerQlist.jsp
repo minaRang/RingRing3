@@ -147,21 +147,36 @@
 
 <body>
 <div class="content">
-    <div class="mycategory">
-        <h3 class="tt">마이링링</h3>
-        <ul>
-            <li><a href="/orderContents">주문 내역</a></li>
-            <li><a href="/productReview">상품 후기</a></li>
-            <li><a href="">적립금</a></li>
-            <li><a href="/listPerAsk">내 1:1 문의</a></li>
-            <li class="last"><a href="/myInfoModify">개인 정보 수정</a></li>
-        </ul>
-    </div>
+    <c:choose>
+        <c:when test="${'admin' eq sessionScope.member.authority}">
+        <div class="mycategory">
+            <h3 class="tt">관리자메뉴</h3>
+            <ul>
+                <li><a href="/adminProduct">상품 관리</a></li>
+                <li><a href="/productReview">상품 등록</a></li>
+                <li><a href="/adminOrderHistory">주문내역 관리</a></li>
+                <li><a href="">1:1 문의</a></li>
+                <li class="last select"><a href="/adminUserInfo">회원관리</a></li>
+            </ul>
+        </div>
+        </c:when>
+        <c:when test="${'member' eq sessionScope.member.authority}">
+        <div class="mycategory">
+            <h3 class="tt">마이링링</h3>
+            <ul>
+                <li><a href="/orderContents">주문 내역</a></li>
+                <li><a href="/productReview">상품 후기</a></li>
+                <li><a href="">적립금</a></li>
+                <li><a href="/listPerAsk">내 1:1 문의</a></li>
+                <li class="last"><a href="/myInfoModify">개인 정보 수정</a></li>
+            </ul>
+        </div>
+        </c:when>
+    </c:choose>
     <div class="oder-detail">
-        <h3 class="tt">내 1:1문의</h3>
-        <div class="status top-status"></div>
+        <h3 class="tt">1:1문의</h3>
         <div class="notice">
-            <h2 class="tt">${id}</h2>
+<%--            <h2 class="tt">${id}</h2>--%>
             <div class="notice_list">
                 <table class="notice_table">
                     <tr>
