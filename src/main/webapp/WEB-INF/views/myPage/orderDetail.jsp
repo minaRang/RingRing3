@@ -59,7 +59,20 @@
         <h3 class="tt">배송조회</h3>
         <div class="status"></div>
         <div class="delivery_ing tt">
-            <p>배송중 단계부터 배송상태 확인이 가능합니다.</p>
+            <c:choose>
+                <c:when test="${'상품준비' eq sessionScope.orderDetail.deliveryState}">
+                    <img src="image/0.jpg" alt="">
+                </c:when>
+                <c:when test="${'상품출고' eq sessionScope.orderDetail.deliveryState}">
+                    <img src="image/1.jpg" alt="">
+                </c:when>
+                <c:when test="${'배송지도착' eq sessionScope.orderDetail.deliveryState}">
+                    <img src="image/2.jpg" alt="">
+                </c:when>
+                <c:otherwise>
+                    <img src="image/3.jpg" alt="">
+                </c:otherwise>
+            </c:choose>
         </div>
     </div>
     <!-- 결제정보 -->

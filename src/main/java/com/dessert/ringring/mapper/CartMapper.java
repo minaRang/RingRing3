@@ -19,7 +19,7 @@ public interface CartMapper {
     int updateCart(int idx);
     int deleteCart(DTOCart cart);
     int sumMoney(String userId);
-    int deleteAll(String userId);
+    int deleteAll(@Param("id") String id);
     int countCart(String userId);
 
     

@@ -165,7 +165,6 @@ public class ProductController {
 
             return "redirect";
         }else{
-            log.debug("addcart널값임 ㅠ");
             model.addAttribute("msg", "로그인해주세요");
             model.addAttribute("url", "/goodsDetail?idx="+productIdx);
         return "redirect";
