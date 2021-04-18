@@ -57,7 +57,7 @@
     <ul>
      <li><a href="/adminProduct">상품 관리</a></li>
      <li class="select"><a href="/insertGoods">상품 등록</a></li>
-     <li><a href="">주문내역 관리</a></li>
+     <li><a href="/adminOrderHistory">주문내역 관리</a></li>
      <li><a href="">1:1 문의</a></li>
      <li class="last"><a href="/adminUserInfo">회원관리</a></li>
     </ul>

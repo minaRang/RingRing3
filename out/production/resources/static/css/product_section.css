@@ -29,6 +29,7 @@ button{
 /* ========product_section======== */
 #product_section{
     width: 100%;
+    height: auto;
 }
 .section_inner{
     width: 1000px;
@@ -51,7 +52,7 @@ button{
     float: left;
 }
 .view_p {
-    width: 520px; 
+    width: 520px;
     float: right;
 }
 .view_p h2{
@@ -137,7 +138,7 @@ button{
     border-radius: 10px;
     background-color: #df404a;
 }
-/* =========================section_relation==================== */
+/* =========================section_relation(하단)============================= */
 .section_relation{
     width: 1000px;
     margin-top: 100px;
@@ -168,15 +169,29 @@ button{
     clear: both;
     content: '';
 }
-.goods_img{
-    width: 100%;
+/* ====상세정보 css==== */
+.section_info{
+    width: 1000px;
+    margin: 50px 0;
+}
+.section_info #section{
+    width: 1000px;
     height: 200px;
-    background-color: rosybrown;
-    margin-top: 10px;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+.section_info #section td{
+    border: 1px solid rgb(161 , 161, 161);
+    padding: 10px;
+}
+.section_info #section .tit{
+    background-color: rgba(161 , 161, 161,.3);
+    width: 150px;
 }
 /* ====고객후기 css==== */
 .customer_review{
     width: 1000px;
+    margin:15px 0;
 }
 .customer_review table{
     width: 1000px;
@@ -219,4 +234,42 @@ button{
 .customer_review .item td{
     cursor: pointer;
 }
-
+/* ===리뷰 삭제버튼=== */
+.review_del{
+    width: 60px;
+    height: 25px;
+    font-size: 13px;
+    background-color: #df404a;
+    border-radius: 2px;
+    border: none;
+    margin-top: 5px;
+    float: right;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+}
+.review_del::after{
+    clear: both;
+    content: '';
+    display: block;
+}
+/* ===리뷰 쓰기 버튼=== */
+.review_write{
+    width: 100px;
+    height: 30px;
+    background-color: #df404a;
+    border-radius: 2px;
+    border: none;
+    margin-top: 5px;
+    float: right;
+}
+.review_write a{
+    text-decoration: none;
+    color: white;
+    line-height: 30px; /* 줄간격 */
+}
+.review_write::after{
+    clear: both;
+    content: '';
+    display: block;
+}

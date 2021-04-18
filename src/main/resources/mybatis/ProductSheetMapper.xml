@@ -26,7 +26,7 @@
 
     <!-- 1. 상품주문서 삽입 -->
     <insert id="insertProductSheet" parameterType="com.dessert.ringring.domain.DTOProductSheet">
-	insert into productsheet (product_idx,price,amount,id,order_num) select product_idx,price,amount,#{id},#{orderNum} from cart where id=#{id};
+	insert into productsheet (product_idx,price,amount,id,order_num) select product_idx,price,amount,#{id},#{orderNum} from cart where id=#{id}
 </insert>
 
 

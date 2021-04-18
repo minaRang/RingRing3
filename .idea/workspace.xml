@@ -23,22 +23,35 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="sql ip">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/question_section.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="0418(2)">
+      <change afterPath="$PROJECT_DIR$/out/production/resources/static/css/goodInsert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/PerAskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/PerAskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/AdminSideBarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/AdminSideBarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller1/homeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller2/BoardController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/controller2/BoardController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/domain/DTOGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/domain/DTOGoods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/mapper/GoodsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/mapper/GoodsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/service/ServiceGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/service/ServiceGoods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/service/ServiceGoodsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/service/ServiceGoodsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/mybatis/CartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/mybatis/CartMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/mybatis/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/mybatis/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/mybatis/ProductSheetMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/mybatis/ProductSheetMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/my_review_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/my_review_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/mypage_oderlist.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/mypage_oderlist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/notice_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/notice_section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/product_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/product_admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/product_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/product_section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/userModify.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/userModify.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/controller1/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/CartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/CartMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/mapper/GoodsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminOrderHistory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminOrderHistory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/replyPerAsk.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/replyPerAsk.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPerQlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPerQlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/ProductSheetMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/ProductSheetMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsInsert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsInsert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsModify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsModify.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +121,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
@@ -123,17 +136,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.RingringApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DBConfig.testByApplicationContext" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -468,7 +470,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
-      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/ringring" />
     </ignored-roots>
     <MESSAGE value="호냥냥" />
     <MESSAGE value="initial commit 입니다!" />
@@ -485,7 +487,8 @@
     <MESSAGE value="배포2" />
     <MESSAGE value="sql ip" />
     <MESSAGE value="test 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="test 수정" />
+    <MESSAGE value="0418(2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="0418(2)" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
