@@ -5,9 +5,9 @@
 <!--	1.상품 등록-->
 <insert id="insertGoods" parameterType="com.dessert.ringring.domain.DTOGoods" useGeneratedKeys="true" keyProperty="idx">
 	insert into product 
-		(name, price, stock, img, short_detail, detail, weight, category1, category2)
+		(name, price, stock, img,img_detail, short_detail, detail, weight, category1, category2)
 		values 
-		(#{name}, #{price}, #{stock}, IFNULL(#{img}, NULL) , IFNULL(#{shortDetail}, NULL), IFNULL(#{detail}, NULL)
+		(#{name}, #{price}, #{stock}, IFNULL(#{img}, NULL),IFNULL(#{imgDetail}, NULL), IFNULL(#{shortDetail}, NULL), IFNULL(#{detail}, NULL)
 		, #{weight}, #{category1}, #{category2})
 </insert>
 <!--	2.상품 개별 정보-->
@@ -18,10 +18,22 @@
 <select id="listGoods" parameterType="list" resultType="com.dessert.ringring.domain.DTOGoods">
 	SELECT * FROM product
 	<if test="category1!=null">
-		WHERE category1=#{category1}</if>
+		WHERE category1=#{category1}
+	</if>
 	<if test="category2!=null">
 		and category2=#{category2}
 	</if>
+	<if test="range!=null">
+		ORDER BY
+		<choose>
+			<when test="range=='price'">price</when>
+			<when test="range=='stock'">stock</when>
+		</choose>
+	</if>
+	<if test="desc!=null">
+		DESC
+	</if>
+
 </select>
 
 <!--	4.등록된 상품 갯수-->
@@ -29,7 +41,18 @@
 	SELECT count(*) from product
 	</select>
 <!--	5.상품수정-->
-	<update id="updateGoods" parameterType="com.dessert.ringring.domain.DTOGoods"></update>
+	<update id="updateGoods" parameterType="com.dessert.ringring.domain.DTOGoods">
+	UPDATE product
+	SET name =#{name}
+	,price=#{price}
+	,stock=#{stock}
+	,short_detail=#{shortDetail}
+	,detail=#{detail}
+	,weight=#{weight}
+	,category1=#{category1}
+	,category2=#{category2}
+	WHERE idx=#{idx}
+	</update>
 <!--	6.상품삭제-->
 <delete id="deleteGoods" parameterType="com.dessert.ringring.domain.DTOGoods">
 	DELETE FROM USER WHERE idx=#{idx}

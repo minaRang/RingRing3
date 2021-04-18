@@ -3,6 +3,8 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
+<%int pageNum=(int) session.getAttribute("pageNum");
+    int now=(int)session.getAttribute("now");%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,8 +25,8 @@
         <h3 class="tt">관리자메뉴</h3>
         <ul>
             <li><a href="/adminProduct">상품 관리</a></li>
-            <li><a href="/productReview">상품 등록</a></li>
-            <li><a href="/adminOrderHistory">주문내역 관리</a></li>
+            <li><a href="/insertGoods">상품 등록</a></li>
+            <li><a href="">주문내역 관리</a></li>
             <li><a href="">1:1 문의</a></li>
             <li class="last select"><a href="/adminUserInfo">회원관리</a></li>
         </ul>
@@ -33,7 +35,7 @@
         <!-- h3 고객정보에서 회원관리로 이름 바꿨어용 -->
         <h3 class="tt">회원관리</h3>
         <div class="status top-status"></div>
-        <div class="customer_review tt">
+        <div class="customer_review tt" >
             <table class="tt recruit">
                 <tr>
                     <td class="first number">idx</td>
@@ -63,15 +65,23 @@
                                         <select style="margin: 10px;" name="isEnable" id="title_select">
                                             <option value="Y">Y</option>
                                             <option value="N">N</option>
-                                        </select><button type="submit" style="margin-left: 5px; padding: 3px; color: white;border-radius: 3px; background-color:rgb(228, 90, 90);"> 변경하기 </button></p></form>
+                                        </select><button type="submit" style="margin-left: 5px; padding: 3px; color: white;border-radius: 3px; background-color:rgb(228, 90, 90);"> 변경하기 </button>
+                                    </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
                 </c:forEach>
             </table>
         </div>
-
-
+    </div>
+    <div class="page">
+        <%for(int i=1;i<=pageNum;i++){
+            System.out.println(i);
+            if (i==now){%>
+        <a style="color:#df404a" href="/adminUserInfoPage?button=<%=i%>"><%=i%></a>
+        <%;} else {%><a href="/adminUserInfoPage?button=<%=i%>"><%=i%></a><%;}}%>
+    </div>
         <!-- 아코디언 js -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script type="text/javascript">
@@ -89,5 +99,6 @@
                 });
             });
         </script>
+</div>
 </body>
 </html>

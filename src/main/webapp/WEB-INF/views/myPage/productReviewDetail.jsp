@@ -15,10 +15,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/notice_section.css">
+    <link rel="stylesheet" href="css/my_review_list.css">
     <title>Document</title>
 </head>
 <body>
 <div class="content">
+    <div class="mycategory tt">
+        <h3 class="tt">마이링링</h3>
+        <ul>
+            <li><a href="/orderContents">주문 내역</a></li>
+            <li><a href="/productReview">상품 후기</a></li>
+            <li><a href="">적립금</a></li>
+            <li><a href="/listPerAsk">내 1:1 문의</a></li>
+            <li class="last"><a href="/myInfoModify">개인 정보 수정</a></li>
+        </ul>
+    </div>
     <form method="post">
         <div class="notice_section">
             <div class="notice_view">

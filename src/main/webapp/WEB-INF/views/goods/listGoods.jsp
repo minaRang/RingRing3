@@ -5,7 +5,8 @@
  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%ArrayList<DTOGoods> list= (ArrayList<DTOGoods>) session.getAttribute("list");
     String category=(String)session.getAttribute("category");
-    ArrayList<String> subCategory=(ArrayList<String>) session.getAttribute("subCategory");
+    String subCategory=(String)session.getAttribute("subCategory");
+    ArrayList<String> subCategoryList=(ArrayList<String>) session.getAttribute("subCategoryList");
 %>
 
 <!DOCTYPE html>
@@ -47,16 +48,16 @@
     <div id="product_inner">
         <h2>${category}</h2>
         <ul class="product_list tt">
-            <c:forEach var="subCategory" items="${subCategory}">
-            <li><a href="/productList?category=${category}&sub=${subCategory}">${subCategory}</a></li>
+            <c:forEach var="subCategoryList" items="${subCategoryList}">
+            <li><a href="/productList?category=${category}&sub=${subCategoryList}">${subCategoryList}</a></li>
             </c:forEach>
         </ul>
 
         <ul class="select tt">
-            <li class="select_first"><a href="">추천순</a></li>
-            <li><a href="">판매순</a></li>
-            <li><a href="">가격 낮은순</a></li>
-            <li><a href="">가격 높은순</a></li>
+            <li class="select_first"><a href="/productList?category=${category}<c:if test="${not empty subCategory}">&sub=${subCategory}</c:if>">추천순</a></li>
+            <li><a href="/productList?category=${category}<c:if test="${not empty subCategory}">&sub=${subCategory}</c:if> &range=stock">판매순</a></li>
+            <li><a href="/productList?category=${category}<c:if test="${not empty subCategory}">&sub=${subCategory}</c:if>&range=price">가격 낮은순</a></li>
+            <li><a href="/productList?category=${category}<c:if test="${not empty subCategory}">&sub=${subCategory}</c:if>&range=price&desc=y">가격 높은순</a></li>
         </ul>
 
         <ul class="product_img">

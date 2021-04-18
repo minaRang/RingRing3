@@ -54,10 +54,7 @@
                     </tr>
                 </table>
             </div>
-            <div id="detail_btn">
-            <button type="button" class="tt detail_btn"><a href="mypage-review_write.html">후기쓰기</a></button>
             <button type="button" class="tt detail_btn"><a href="/perAsk">1:1문의</a></button>
-            </div>
         </div>
         </c:forEach>
     </div>

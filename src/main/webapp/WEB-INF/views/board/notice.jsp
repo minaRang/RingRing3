@@ -7,10 +7,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%List<DTOBoard> list= (List<DTOBoard>) session.getAttribute("list");
 String id=(String)session.getAttribute("boardId");
-int pageNum=(int) session.getAttribute("pageNum");%>
+int pageNum=(int) session.getAttribute("pageNum");
+int now=(int)session.getAttribute("now");
+%>
+<c:set var="authority" value="${authority}"></c:set>
 <% System.out.println(list);
     System.out.println(id);
-    System.out.println(pageNum);%>
+    System.out.println(pageNum);
+    System.out.println(now);%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,13 +35,17 @@ int pageNum=(int) session.getAttribute("pageNum");%>
         <div class="mycategory tt">
             <h3 class="tt">고객센터</h3>
             <ul>
-                <li><a href="/noticeList?id=공지">공지사항</a></li>
-                <li><a href="/noticeList?id=이벤트">이벤트</a></li>
-                <li class="last"><a href="/noticeList?id=질문">자주묻는 질문</a></li>
+                <li <%if(id.equals("공지"))%>class="select"<%%>><a href="/noticeList?id=공지">공지사항</a></li>
+                <li <%if(id.equals("이벤트"))%>class="select"<%%>><a href="/noticeList?id=이벤트">이벤트</a></li>
+                <li class="<c:if test="${authority ne 'admin'}">last</c:if><%if(id.equals("질문"))%> select<%%>" ><a href="/noticeList?id=질문">자주묻는 질문</a></li>
+                <c:if test="${authority eq 'admin'}">
+                    <li class="last" ><a href="/boardWrite">글쓰기</a></li>
+                </c:if>
             </ul>
+
         </div>
     <div class="notice">
-        <h2 class="tt">${id}</h2>
+        <h2 class="tt"><%=id%></h2>
         <div class="notice_list">
             <table class="notice_table">
                 <tr>
@@ -53,14 +61,14 @@ int pageNum=(int) session.getAttribute("pageNum");%>
                     <td class="fourth tt"><fmt:formatDate value="${list.date}" pattern="yyyy-MM-dd"/></td>
                 </tr>
                 </c:forEach>
-                <tr>
-                    <td>
-                        <%for(int i=1;i<=pageNum;i++){%>
-                        <a href="/noticePage?button=<%=i%>"><%=i%></a>
-                        <%}%>
-                    </td>
-                </tr>
             </table>
+        </div>
+        <div class="page">
+            <%for(int i=1;i<=pageNum;i++){
+                System.out.println(i);
+                if (i==now){%>
+            <a style="color:#df404a" href="/noticePage?button=<%=i%>"><%=i%></a>
+            <%;} else {%><a href="/noticePage?button=<%=i%>"><%=i%></a><%;}}%>
         </div>
     </div>
 </div>

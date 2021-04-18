@@ -75,7 +75,7 @@ button{
     cursor: pointer;
 
 }
-/* ================================================== */
+/* =============admincategory================ */
 .admincategory{
     width: 170px;
     position: absolute;
@@ -127,4 +127,16 @@ button{
 }
 .oder-detail .top-status{
     margin-top: 32px;
+}
+/* ===page=== */
+.page{
+    margin-top: 20px;
+    text-decoration: none;
+    margin-left: 440px;
+    font-size: 22px;
+    /* text-align: center; */
+}
+
+.page>a{
+    text-decoration: none;
 }

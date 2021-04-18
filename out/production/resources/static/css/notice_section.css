@@ -74,7 +74,7 @@ button{
     height: 35px;
     margin-top: 20px;
     /* float: right; */
-    margin-left: 450px;
+    /*argin-left: 450px;*/
     background-color: #df404a;
     color: white;
     text-align: center;
@@ -82,7 +82,8 @@ button{
     font-size: 14px;
     font-weight: 300;
 }
-.notice_btn a{
+.notice_btn a, .notice_btn a:visited{
     text-decoration: none;
     color: white;
+
 }

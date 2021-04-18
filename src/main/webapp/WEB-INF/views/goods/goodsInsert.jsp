@@ -7,7 +7,8 @@
  <title>Insert title here</title>
   <link rel="stylesheet" href="css/notice_write.css">
   <link rel="stylesheet" href="css/goodInsert.css">
-
+  <link rel="stylesheet" href="css/mypage_oderlist.css">
+  <link rel="stylesheet" href="css/product_admin.css">
   <script type="text/javascript">
    function doChange(srcE, targetId){
     var val = srcE.options[srcE.selectedIndex].value;
@@ -51,6 +52,16 @@
 
 <!--업데이트-->
  <div class="content">
+   <div class="admincategory">
+    <h3 class="tt">관리자메뉴</h3>
+    <ul>
+     <li><a href="/adminProduct">상품 관리</a></li>
+     <li class="select"><a href="/insertGoods">상품 등록</a></li>
+     <li><a href="/adminOrderHistory">주문내역 관리</a></li>
+     <li><a href="">1:1 문의</a></li>
+     <li class="last"><a href="/adminUserInfo">회원관리</a></li>
+    </ul>
+   </div>
   <div id="notice">
    <h3 class="tt">상품 등록하기</h3>
    <form action="/insertGoods" method="POST" name="notice" enctype="multipart/form-data">
@@ -130,7 +141,7 @@
        <td>
         <!--파일 선택-->
         <div class="custom-file">
-         <input type="file" class="custom-file-input" id="" aria-describedby="inputGroupFileAddon01">
+         <input type="file" name="file" class="custom-file-input" id="" aria-describedby="inputGroupFileAddon01">
          <label class="custom-file" for="inputGroupFile01"></label>
         </div>
        </td>

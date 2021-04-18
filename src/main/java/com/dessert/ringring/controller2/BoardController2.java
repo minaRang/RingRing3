@@ -43,6 +43,7 @@ public class BoardController2 {
 
         HttpSession session = req.getSession(); //세션 생성
         session.setAttribute("list",(List<DTOBoard>)pagingUtils.getPaging(1));//게시글리스트 받아옴
+        session.setAttribute("now",1);
         session.setAttribute("boardId",id);
         session.setAttribute("pageNum",(int)Math.ceil(pagingUtils.countPaging()/10.0));
         redirect.addAttribute("contentPage","board/notice.jsp");
@@ -53,6 +54,7 @@ public class BoardController2 {
         System.out.println("버튼 항목은"+button);
         HttpSession session = req.getSession(); //세션 생성
         session.setAttribute("list",(List<DTOBoard>)pagingUtils.getPaging(button));//게시글리스트 받아옴
+        session.setAttribute("now",button);
         redirect.addAttribute("contentPage","board/notice.jsp");
         return "redirect:mainForm";
     }

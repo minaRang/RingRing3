@@ -9,11 +9,11 @@ import com.dessert.ringring.domain.DTOGoods;
 import org.springframework.web.multipart.MultipartFile;
 
 public interface ServiceGoods {
-	public int insertGoods(HttpServletRequest req, MultipartFile files) throws IOException;
+	public int insertGoods(HttpServletRequest req, List<MultipartFile> files) throws IOException;
 
 	public DTOGoods getInfoGoods(int idx);
 	
-	public List<DTOGoods> listGoods(String category1, String category2);
+	public List<DTOGoods> listGoods(String category1, String category2,String range,String desc);
 	
 	public int deleteGoods(int idx);
 

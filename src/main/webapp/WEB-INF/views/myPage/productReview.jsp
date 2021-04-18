@@ -49,7 +49,6 @@
                 </c:forEach>
             </table>
         </div>
-        <button type="button" id="write" class="tt"><a href="">글쓰기</a></button>
     </div>
 </div>
 </body>
