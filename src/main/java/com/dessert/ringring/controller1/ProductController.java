@@ -106,7 +106,7 @@ public class ProductController {
     @PostMapping("/insertGoods")
     String insertGoods(HttpServletRequest req, Model model, MultipartHttpServletRequest mhsr) throws IOException {
         List<MultipartFile> file = mhsr.getFiles("file");
-        System.out.println("파일은"+file);
+        System.out.println("------------------------------파일은"+file);
         int result = goods.insertGoods(req,file);
         if (result>0){
             model.addAttribute("msg","상품이 등록되었습니다");

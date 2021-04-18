@@ -44,19 +44,22 @@ public class ServiceGoodsImpl implements ServiceGoods {
 		for(MultipartFile file:files) {
 			//이미지 업로드------------------------------------------------------
 			//업로드 경로 설정
+
 			String uploadPath = ResourceUtils.getFile("classpath:static/upload/").toPath().toString();
 			uploadPath = uploadPath.replace("\\", "/");
 			uploadPath = uploadPath.replace("/bin/main/static", "/src/main/resource/static");
 			String ymdPath = UploadFileUtils.calcPath(uploadPath);
 			String filesName = null;
 
+			String original=file.getOriginalFilename();
+
 			filesName = UploadFileUtils.fileUpload(uploadPath, file.getOriginalFilename(), file.getBytes(), ymdPath);
 			String img = (File.separator + "upload" + ymdPath + File.separator + filesName);
 			img = img.replace("\\", "/");
-			String imgS = (File.separator + "upload" + ymdPath + File.separator + "s" + File.separator + "s_" + filesName);
-			imgS.replace("\\", "/");
+//			String imgS = (File.separator + "upload" + ymdPath + File.separator + "s" + File.separator + "s_" + filesName);
+//			imgS.replace("\\", "/");
 			imgFile.add(img);
-			System.out.println("fileName : "+filesName);
+			System.out.println("fileName : "+img);
 		}
 		goods.setImg(imgFile.get(0));
 		goods.setImgDetail(imgFile.get(1));
