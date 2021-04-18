@@ -52,9 +52,9 @@
             </div>
             <button type="button" class="tt detail_btn"><a href="/modifyGoods?idx=${list.idx}">상품정보수정</a></button>
         </div>
+        </c:forEach>
     </div>
 </div>
-</c:forEach>
 
 </body>
 </html>

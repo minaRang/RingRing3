@@ -24,7 +24,7 @@ public class CartController {
     ServiceCart cartMapper;
 
     @GetMapping("/cart")
-    public String OpenCart(@RequestParam(value = "member",required = false) DTOMember member,RedirectAttributes redirect, HttpServletRequest req){
+    public String OpenCart(@SessionAttribute(value = "member",required = false) DTOMember member,RedirectAttributes redirect, HttpServletRequest req){
         if(member !=null) {
 
             String id = member.getId();

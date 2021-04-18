@@ -15,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -142,12 +143,10 @@ public class ProductController {
     }
 
     @PostMapping("/addCart")
-    public String addCart(@RequestParam(value = "member",required = false)DTOMember member,HttpServletRequest req,Model model){
-        log.debug("addcart 불러오시나요 ..? ");
+    public String addCart(@SessionAttribute(value = "member",required = false)DTOMember member, HttpServletRequest req, Model model){
         int productIdx = Integer.parseInt(req.getParameter("productIdx"));
+        log.debug(member.getId());
         if(member!=null) {
-            log.debug(member.getId());
-            log.debug("멤버가 널값인가?");
             String id = member.getId();
             int check = cart.checkCart(id, productIdx);
             int result = 0;

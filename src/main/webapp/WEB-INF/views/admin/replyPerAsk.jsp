@@ -1,56 +1,59 @@
- <%@ page language="java" contentType="text/html; charset=UTF-8"
-     pageEncoding="UTF-8"%>
- <!DOCTYPE html>
- <html lang="en">
- <head>
- <meta charset="UTF-8">
- <title>Insert title here</title>
- </head>
- <body>
- <form method="post" id="authForm" action="/replyPerAsk">
-  <div class="status"></div>
-  <table class="joinform">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<input type="hidden" name="idx" value="${sessionScope.getPerAsk.idx}">
-   <tr>
-    <th class="tt">id</th>
-    <td>
-     <input type="text"  value="${sessionScope.getPerAsk.id}" label="이름" readonly>
-    </td>
-   </tr>
-
-   <tr>
-    <th class="tt">title</th>
-    <td><input type="text" readonly value="${sessionScope.getPerAsk.title}" ></td>
-   </tr>
-
-
-   <tr>
-    <th class="tt">내용</th>
-    <td><input type="text"  value="${sessionScope.getPerAsk.content}" readonly ></td>
-   </tr>
-
-
-   <tr>
-    <th class="tt">질문유형</th>
-    <td><input type="text" readonly value="${sessionScope.getPerAsk.askType}" ></td>
-   </tr>
-
-   <tr>
-    <th class="tt">title</th>
-    <td><input type="text" name="title" label="제목" readonly value="${sessionScope.getPerAsk.title}" ></td>
-   </tr>
-   <tr>
-
-    <th class="tt">답변등록</th>
-    <td><input type="text" id="reContent" name="reContent"></td>
-   </tr>
-
-  </table>
-  <div id="formSubmit">
-   <button type="submit">등록하기</button>
-  </div>
- </form>
-
- </body>
- </html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/question_section.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="notice_section">
+            <h2 class="tt">공지사항</h2>
+            <!-- 공지사항 내용 -->
+            <div class="notice_view">
+                <table class="notice_table tt">
+                    <tr>
+                        <td>제목</td>
+                        <td>${sessionScope.getPerAsk.title}}</td>
+                    </tr>
+                    <tr>
+                        <td>작성자</td>
+                        <td>${sessionScope.getPerAsk.id}</td>
+                    </tr>
+                    <tr>
+                        <td>작성일</td>
+                        <td><fmt:formatDate value="${sessionScope.getPerAsk.date}" pattern="yyyy-MM-dd"/></td>
+                    </tr>
+                </table>
+                <p class="notice_p tt">${sessionScope.getPerAsk.img} ${sessionScope.getPerAsk.content}</p>
+            </div>
+            <!-- 목록 되돌아가기 버튼 -->
+            <button type="button" class="notice_btn tt"><a href="/listPerAsk">목록</a></button>
+        </div>
+        <div class="comment tt">
+            <div class="status"></div>
+            <table>
+                <tr>
+                    <td class="firsttd">답변쓰기</td>
+                    <form method="post" action="/replyPerAsk">
+                    <td>
+                        <input type="hidden" name="idx" value="${sessionScope.getPerAsk.idx}">
+                        <textarea name="reContent" id="comment" cols="30" rows="10"></textarea>
+                    </td>
+                    <td><button type="submit" class="tt">등록</button></td>
+                    </form>
+                </tr>
+            </table>
+            <div class="status"></div>
+        </div> 
+    </div>
+</body>
+</html>
