@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@300;500&display=swap');
+
+
+/* 폰트 위계 */
+
+/*font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.tt{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.st{
+    color: rgb(161, 161, 161);
+}
+input{
+    /* border: 0; */
+    outline: 0;
+}
+button{
+    /* border: 0; */
+    outline: 0;
+}
+.status{
+    background-color: #df404a;
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+/* =====sidebar전용 .select class============= */
+.select{
+    background-color: rgba(161, 161, 161, .2);
+}
+/* ==========sidebar : mycategory ============ */
+.mycategory{
+    width: 170px;
+    position: absolute;
+    /* top: 50px; */
+    left: -200px;
+}
+.mycategory h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+.mycategory ul{
+    margin-top: 20px;
+}
+.mycategory li{
+    list-style: none;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 10px 20px;
+    border-bottom: none;
+}
+.mycategory .last{
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+.mycategory li a{
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(60, 60, 60);
+    font-weight: 400;
+}
+/* ==============content==================== */
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+/* ============주문내역 css================== */
+#oderlist_section{
+    margin-top: 50px;
+}
+#oderlist_section h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+#oderlist_section .oder_item{
+    margin-top: 25px;
+}
+#oderlist_section .oder_item h3{
+    font-size: 17px;
+    color: rgb(161, 161, 161);
+    margin-bottom: 15px; /* 주문내역,배송조회,결제정보,주문정보 h3에 공통 적용 */
+}
+#oderlist_section .oder_item #item{
+    margin-top: 15px;
+}
+.oder_item #item h4{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.oder_item #item .item_se{
+    border-top:1px solid rgb(161, 161, 161);
+    border-bottom:1px solid rgb(161, 161, 161);
+    padding: 15px 0;
+}
+.oder_item #item .item_se img{
+    width: 80px;
+    height: 100px;
+    float: left;
+}
+.oder_item #item .item_se .item_name{
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.oder_item #item .item_se .item_name p{
+    font-size: 20px;
+}
+.oder_item #item .item_se .item_name .price_name{
+    font-size: 13px;
+}
+.oder_item #item .item_se::after{
+    clear: both;
+    content: '';
+    display: block;
+}
+#item .item_se .delivery{
+    float: left;
+    margin-top: 35px;
+    margin-left: 450px;
+}
+#item .item_se .item_btn{
+    float: right;
+    width: 140px;
+    margin-top: 5px;
+}
+#item .item_se .item_btn button{
+    width: 140px;
+    height: 40px;
+    border: 1px solid #df404a;
+    background-color: white;
+}
+#item .item_se .item_btn button a{
+    color: #df404a;
+    font-weight: 400;
+    text-decoration: none;
+}
+#item .item_se .item_btn .review_btn{
+    margin-bottom: 10px;
+}
+/* ========상품취소버튼 css================= */
+#cancel_btn{
+    margin: 30px auto 0;
+    width: 536px;
+}
+#cancel_btn button{
+    width: 250px;
+    height: 50px;
+    border: 2px solid #df404a;
+    background-color: white;
+}
+#cancel_btn button a{
+    color: #df404a;
+    text-decoration: none;
+    font-weight: 400;
+}
+#cancel_btn .all_basket{
+    margin-right: 30px;
+}
+/* ==========배송조회 css================ */
+#delivery_lookup{
+    margin-top: 50px;
+    font-weight: 400;
+}
+#delivery_lookup h3{
+    font-size: 17px;
+    margin-bottom: 15px; /* 주문내역,배송조회,결제정보,주문정보 h3에 공통 적용 */
+    font-weight: 400;
+}
+#delivery_lookup .delivery_ing{
+    width: 1000px;
+    height: 200px;
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+#delivery_lookup .delivery_ing p{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 200px; /* .delivery_ing 이랑 height가 같아야 글씨가 정중앙에 써짐(줄간격) */
+}
+/* ==========결제정보 css==================== */
+#payment_info{
+    margin-top: 50px;
+}
+#payment_info h3{
+    font-weight: 400;
+    margin-bottom: 15px; /* 주문내역,배송조회,결제정보,주문정보 h3에 공통 적용 */
+    font-size: 17px;
+}
+#payment_info .pay_info{
+    /* margin-top: 15px; */
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+#payment_info .pay_info table{
+    padding: 15px 0;
+}
+#payment_info .pay_info td{
+    width: 200px;
+    /* margin:10px 0; */
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+/* ===========주문정보 css================== */
+#oder_info{
+    margin-top: 50px;
+}
+#oder_info h3{
+    font-weight: 400;
+    margin-bottom: 15px; /* 주문내역,배송조회,결제정보,주문정보 h3에 공통 적용 */
+    font-size: 17px;
+}
+#oder_info .od_info{
+    /* margin-top: 15px; */ 
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+#oder_info .od_info table{
+    padding: 15px 0; /* padding 값으로(15px) .od_info margin-top 값은 생략 */
+}
+#oder_info .od_info td{
+    width: 200px;
+    /* margin:10px 0; */
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: 400;
+}

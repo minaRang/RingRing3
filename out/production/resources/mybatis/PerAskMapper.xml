@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dessert.ringring.mapper.PerAskMapper">
+
+<!--    1.질문하기-->
+    <insert id="insertPerAsk" parameterType="com.dessert.ringring.domain.DTOPerAsk" useGeneratedKeys="true" keyProperty="idx">
+        INSERT INTO per_ask
+            (date, title, content, img,re_content, re_date, ask_type, id) values
+            (now(), #{title}, #{content}, IFNULL(#{img}, null), IFNULL(#{reContent}, null), IFNULL(#{reDate}, null), #{askType}, #{id})
+    </insert>
+
+<!--    2.게시물 한개의 정보 갖고오기-->
+    <select id="getInfoOnePerAsk" parameterType="com.dessert.ringring.domain.DTOPerAsk" resultType="com.dessert.ringring.domain.DTOPerAsk">
+        SELECT * FROM per_ask WHERE idx=#{idx}
+    </select>
+
+<!--    3.유저 한명의 1:1질문 가져오기-->
+    <select id="getListUserPerAsk" resultType="com.dessert.ringring.domain.DTOPerAsk">
+        SELECT * FROM per_ask where id=#{id}
+    </select>
+
+<!--    4.모든 1:1질문들 가져오기 : admin-->
+    <select id="listAllPerAsk" resultType="com.dessert.ringring.domain.DTOPerAsk">
+        SELECT * FROM per_ask
+    </select>
+
+<!--    5.답변이 없는 질문들만 가져오기-->
+    <select id="noReplyPerAsk" resultType="com.dessert.ringring.domain.DTOPerAsk">
+        SELECT * FROM per_ask where do_answer='N'
+    </select>
+
+<!--   6.답변달기-->
+    <update id="replyPerAsk" parameterType="com.dessert.ringring.domain.DTOPerAsk">
+    update per_ask set re_date=now(), re_content=#{reContent}, do_answer='Y' where idx=#{idx}
+    </update>
+
+<!--    7. 1:1문의 삭제하기-->
+    <delete id="deletePerAsk" parameterType="int">
+        delete from per_ask where idx=#{idx}
+    </delete>
+</mapper>

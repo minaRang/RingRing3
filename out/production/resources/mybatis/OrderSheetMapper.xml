@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dessert.ringring.mapper.OrderSheetMapper">
+
+    <!-- insert into 테이블명 db속성값 values java파일 변수명 -->
+    <!-- 1. 주문서 -->
+    <insert id="insertOrder" parameterType="com.dessert.ringring.domain.DTOOrderSheet" useGeneratedKeys="true" keyProperty="idx">
+	insert into ordersheet
+		(to_name, to_address1, to_address2, to_address3, order_id, memo, order_num, pay_with, final_price, thumnail, count_product, thumnail_name)
+		values
+		(#{toName}, #{toAddress1}, #{toAddress2}, #{toAddress3}, #{orderId} ,IFNULL(#{memo}, null), #{orderNum}, #{payWith}
+		,#{finalPrice}, #{thumnail}, #{countProduct},#{thumnailName})
+</insert>
+
+
+    <!-- 2. 주문서 수정 -->
+    <update id="modifyOrder" ></update>
+
+
+
+    <!-- 3. 주문서 조회 -->
+    <select id="getOrderInfo" parameterType="com.dessert.ringring.domain.DTOOrderSheet" resultType="com.dessert.ringring.domain.DTOOrderSheet">
+	SELECT * FROM ordersheet WHERE order_id=#{orderId} and order_num=#{orderNum}
+</select>
+
+<!--	3-1 주문서 조회idx-->
+	<select id="getOrderInfoIdx" parameterType="com.dessert.ringring.domain.DTOOrderSheet" resultType="com.dessert.ringring.domain.DTOOrderSheet">
+		SELECT * FROM ordersheet where idx=#{idx}
+	</select>
+
+	<!-- 4. 주문서 삭제-->
+
+	<!-- 5. 주문서 리스트-->
+	<select id="orderList" resultType="com.dessert.ringring.domain.DTOOrderSheet">
+		SELECT * FROM ordersheet where order_id=#{id}
+	</select>
+
+	<!--6.배달현황변경-->
+	<update id="modifyDelivery" parameterType="com.dessert.ringring.domain.DTOOrderSheet">
+		UPDATE ordersheet SET delivery_state=#{deliveryState} WHERE order_id=#{orderId} and order_num=#{orderNum}
+	</update>
+	<!--7.모든 주문 확인-->
+	<select id="allOrderSheet" resultType="com.dessert.ringring.domain.DTOOrderSheet">
+		SELECT * FROM ordersheet
+	</select>
+</mapper>
