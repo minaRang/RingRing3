@@ -30,8 +30,8 @@ public class LoginController {
 		
 		log.debug("로그아웃");
 		session.invalidate();
-	
-		return "redirect:mainForm";	
+
+		return "redirect:/";
 		}
 	
 	@GetMapping("/login")
@@ -59,8 +59,7 @@ public class LoginController {
 		int result = serviceMember.login(req);
 		
 		
-		if(result<=0 ) {
-			System.out.println(member.getId());
+		if(result<=0 ||member.equals(null)) {
 			log.debug("로그인 실패");
 			model.addAttribute("msg","로그인 실패-아이디나 암호를 확인해주세요");
 			model.addAttribute("url","/login");
@@ -73,7 +72,6 @@ public class LoginController {
 			
 		}
 		else {
-
 			HttpSession session=req.getSession();
 			session.setAttribute("member",member);
 			session.setAttribute("userId",member.getId());

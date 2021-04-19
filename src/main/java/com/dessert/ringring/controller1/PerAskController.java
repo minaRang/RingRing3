@@ -15,6 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
+import java.util.Objects;
+
 @Slf4j
 @Controller
 public class PerAskController {
@@ -23,12 +25,13 @@ public class PerAskController {
     @Autowired
     DTOPerAsk perAsk;
 
+    //문의글 쓰는 페이지
     @GetMapping("/perAsk")
     public String openPerAsk(RedirectAttributes redirect) {
         redirect.addAttribute("contentPage","userService/perAsk.jsp");
         return "redirect:mainForm";
     }
-
+    //문의글 post
     @PostMapping("/perAsk")
     public String sendPerAsk(Model model, HttpServletRequest req, HttpSession session, MultipartFile file) throws IOException {
         String id= (String) session.getAttribute("userId");
@@ -38,28 +41,49 @@ public class PerAskController {
         return "redirect";
     }
 
+    //(관리자)모든 문의글 열람
     @GetMapping("/ListReplyPerAsk")
     public String openReplyPekAskList(RedirectAttributes redirect,HttpServletRequest req){
         List<DTOPerAsk> list=servicePerAsk.listAllPerAsk();
-        System.out.println(list);
         req.getSession().setAttribute("list",list);
         redirect.addAttribute("contentPage","userService/listPerAsk.jsp");
         return "redirect:mainForm";
     }
 
+    //문의글 하나 열람
     @GetMapping("/replyPerAsk")
     public String openReplyPekAsk(RedirectAttributes redirect,HttpServletRequest req){
         String idx=req.getParameter("idx");
-        System.out.println(idx);
         perAsk=servicePerAsk.getInfoOnePerAsk(req);
         req.getSession().setAttribute("getPerAsk",perAsk);
-        redirect.addAttribute("contentPage","userService/replyPerAsk.jsp");
+        redirect.addAttribute("contentPage","admin/replyPerAsk.jsp");
         return "redirect:mainForm";
     }
     @PostMapping("/replyPerAsk")
     public String replyPerAsk(HttpServletRequest req,Model model){
+        String idx=req.getParameter("idx");
+        log.debug(idx);
         servicePerAsk.answerPerAsk(req);
-        model.addAttribute("contentsPage","/ListReplyPerAsk");
+        model.addAttribute("contentsPage","/replyPerAsk?idx="+idx);
+        return "redirect:mainForm";
+    }
+
+    @GetMapping("/listPerAsk")
+    public String openUserPerAskList(RedirectAttributes redirect,HttpServletRequest req,HttpSession session){
+        String id= (String) session.getAttribute("userId");
+        if(Objects.equals(id,"admin")){
+            log.debug("여기로가나?");
+            List<DTOPerAsk> list=servicePerAsk.listAllPerAsk();
+            req.getSession().setAttribute("userList", list);
+            redirect.addAttribute("contentPage", "myPage/myPerQlist.jsp");
+        }else {
+            log.debug("저기로가나?");
+            log.debug("관리자 권한있음");
+
+            List<DTOPerAsk> list = servicePerAsk.getListUserPerAsk(id);
+            req.getSession().setAttribute("userList", list);
+            redirect.addAttribute("contentPage", "myPage/myPerQlist.jsp");
+        }
         return "redirect:mainForm";
     }
 }

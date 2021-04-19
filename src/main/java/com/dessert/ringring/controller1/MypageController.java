@@ -98,4 +98,10 @@ public class MypageController {
         redirect.addAttribute("contentPage","myPage/productReviewDetail.jsp");
         return "redirect:mainForm";
     }
+    //적립금페이지
+    @GetMapping("/point")
+    public String openPoint(RedirectAttributes redirect){
+        redirect.addAttribute("contentPage","myPage/myPoint.jsp");
+        return "redirect:mainForm";
+    }
 }

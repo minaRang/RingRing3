@@ -70,9 +70,39 @@ public class ServiceReviewImpl implements ServiceReview{
     }
 
     @Override
-    public boolean deleteReview(long idx,long productIdx){
+    public boolean deleteReview(long idx){
         int queryResult = 0;
-        queryResult = reviewMapper.deleteReview(idx,productIdx);
+        queryResult = reviewMapper.deleteReview(idx);
         return (queryResult == 1) ? true : false;
+    }
+
+    @Override
+    public int updateReview(HttpServletRequest req,MultipartFile file) throws IOException{
+        review.setTitle(req.getParameter("title"));
+        review.setContent(req.getParameter("content"));
+        review.setIdx(Integer.parseInt(req.getParameter("idx")));
+
+        //이미지 업로드----------------------------------
+        //업로드 경로 설정
+        if(file.getOriginalFilename().equals(""))
+            System.out.println("파일없음");
+        else {
+            String uploadPath = ResourceUtils.getFile("classpath:static/upload/").toPath().toString();
+            uploadPath = uploadPath.replace("\\", "/");
+            uploadPath = uploadPath.replace("/bin/main/static", "/src/main/resource/static");
+            String ymdPath = UploadFileUtils.calcPath(uploadPath);
+            String filesName = null;
+
+            filesName = UploadFileUtils.fileUpload(uploadPath, file.getOriginalFilename(), file.getBytes(), ymdPath);
+            String img = (File.separator + "upload" + ymdPath + File.separator + filesName);
+            img = img.replace("\\", "/");
+            String imgS = (File.separator + "upload" + ymdPath + File.separator + "s" + File.separator + "s_" + filesName);
+            imgS.replace("\\", "/");
+            review.setImg(img);
+            //-----------------------------------------
+
+            System.out.println("fileName : " + filesName);
+        }
+        return reviewMapper.updateReview(review);
     }
 }

@@ -131,7 +131,7 @@
             </tr>
         </table>
         <div class="total_btn">
-            <button type="button" class="put_btn" onclick="location.href='/orderForm'">주문하기</button>
+            <button type="button" class="put_btn" onclick="check()">주문하기</button>
         </div>
     </div>
 </div>
@@ -181,40 +181,14 @@
             $(".numBox").val(minusNum);
         }
     });
-    //위에꺼 안될때 대비
-    // function change(num) {
-    //     var x = document.form;
-    //     var y = Number(count.value) + num;
-    //     if (y < 1)y = 1;
-    //     x.count.value = y;
-    // }
+    function check(){
+        if(${sessionScope.list.isEmpty()}){
+            alert("상품을 담아주세요");
+        }else{
+            location.href="/orderForm";
+        }
 
-    //onclick alert
-    // <%--$(".delete_${list.cartIdx}_btn").click(function(){--%>
-    // <%--   var confirm_val=confirm("삭제하시겠습니까?")--%>
-    // <%--    if(confirm_val) {--%>
-    // <%--        var checkArr = new Array();--%>
-
-    // <%--        // 체크된 체크박스의 갯수만큼 반복--%>
-    // <%--        $("input[class='chBox']:checked").each(function(){--%>
-    // <%--            checkArr.push($(this).attr("data-cartNum"));  // 배열에 데이터 삽입--%>
-    // <%--        });--%>
-
-    // <%--        $.ajax({--%>
-    // <%--            url : "/deleteCart",--%>
-    // <%--            type : "post",--%>
-    // <%--            data : { chbox : checkArr },--%>
-    // <%--            success : function(result){--%>
-
-    // <%--                if(result == 1) {--%>
-    // <%--                    location.href = "/cart";--%>
-    // <%--                } else {--%>
-    // <%--                    alert("삭제 실패");--%>
-    // <%--                }--%>
-    // <%--            }--%>
-    // <%--        });--%>
-    // <%--    }--%>
-    // });
+    }
 </script>
 
 </body>

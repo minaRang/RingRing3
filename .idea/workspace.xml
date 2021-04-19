@@ -23,29 +23,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="sql ip">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.dessert.ringring.db.DBConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.dessert.ringring.db.DBConfig.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.dessert.ringring.db.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.dessert.ringring.db.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.dessert.ringring.db.DBConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.dessert.ringring.db.DBConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dessert/ringring/db/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dessert/ringring/db/DBConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="썸네일제거" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,11 +48,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="dabin" />
   </component>
   <component name="Git.Settings">
     <branch-grouping />
@@ -85,6 +61,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -94,18 +71,22 @@
     </option>
   </component>
   <component name="ProjectId" id="1nWpju7CcYOkorzjoCA9ZlGzPLx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -120,15 +101,23 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\minaring\Desktop\RingRing\ringring\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage" />
+      <recent name="C:\Users\minaring\Desktop\RingRing\ringring\src\main\webapp\WEB-INF\views\admin" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.DBConfig.testByApplicationContext">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.RingringApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,7 +138,30 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RingringApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.dessert.ringring.RingringApplicationTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="RingringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -163,6 +175,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RingringApplicationTests" />
         <item itemvalue="Gradle.DBConfig.testByApplicationContext" />
       </list>
     </recent_temporary>
@@ -170,7 +183,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="89030725-9518-408c-a3cc-886c8176fe03" name="Default Changelist" comment="" />
+      <changelist id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="0418(2)" />
       <created>1611515841767</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -188,7 +201,12 @@
       <workItem from="1618164615945" duration="3234000" />
       <workItem from="1618168293419" duration="7102000" />
       <workItem from="1618328544569" duration="453000" />
-      <workItem from="1618331970420" duration="802000" />
+      <workItem from="1618331970420" duration="11200000" />
+      <workItem from="1618404265670" duration="35685000" />
+      <workItem from="1618682184449" duration="197000" />
+      <workItem from="1618682387742" duration="8421000" />
+      <workItem from="1618762085404" duration="3067000" />
+      <workItem from="1618767083219" duration="4142000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -344,7 +362,63 @@
       <option name="project" value="LOCAL" />
       <updated>1618332138530</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="sql ip">
+      <created>1618332820013</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1618332820013</updated>
+    </task>
+    <task id="LOCAL-00024" summary="test 수정">
+      <created>1618333751375</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1618333751375</updated>
+    </task>
+    <task id="LOCAL-00025" summary="test 수정">
+      <created>1618338043046</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1618338043050</updated>
+    </task>
+    <task id="LOCAL-00026" summary="test 수정">
+      <created>1618338263950</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1618338263950</updated>
+    </task>
+    <task id="LOCAL-00027" summary="test 수정">
+      <created>1618341003186</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1618341003186</updated>
+    </task>
+    <task id="LOCAL-00028" summary="test 수정">
+      <created>1618573526889</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1618573526889</updated>
+    </task>
+    <task id="LOCAL-00029" summary="사이드바 매핑">
+      <created>1618764435652</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1618764435652</updated>
+    </task>
+    <task id="LOCAL-00030" summary="썸네일제거">
+      <created>1618771160544</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1618771160544</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,9 +469,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
-      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/ringring" />
     </ignored-roots>
     <MESSAGE value="호냥냥" />
     <MESSAGE value="initial commit 입니다!" />
@@ -413,135 +488,21 @@
     <MESSAGE value="배포" />
     <MESSAGE value="배포2" />
     <MESSAGE value="sql ip" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql ip" />
+    <MESSAGE value="test 수정" />
+    <MESSAGE value="0418(2)" />
+    <MESSAGE value="사이드바 매핑" />
+    <MESSAGE value="썸네일제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="썸네일제거" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="395" y="91" key="#Inspections" timestamp="1612229566716">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="395" y="91" key="#Inspections/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612229566716" />
-    <state x="361" y="53" key="#Plugins" timestamp="1618164564901">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="361" y="53" key="#Plugins/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618164564901" />
-    <state x="249" y="0" key="#Project_Structure" timestamp="1617541637484">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.826@0.0.1536.826" timestamp="1617541637484" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618166130294">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618166130294" />
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1618166852150">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618166852150" />
-    <state x="549" y="279" width="437" height="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618220693597">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="549" y="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618220693597" />
-    <state x="549" y="279" width="437" height="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.826@0.0.1536.826" timestamp="1617696661885" />
-    <state x="381" y="0" key="CommitChangelistDialog2" timestamp="1617604895905">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="381" y="0" key="CommitChangelistDialog2/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617604895905" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1618168475809">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618168475809" />
-    <state x="646" y="309" key="Github.ShareDialog" timestamp="1612228301787">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="646" y="309" key="Github.ShareDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1612228301787" />
-    <state width="1492" height="192" key="GridCell.Tab.0.bottom" timestamp="1618332695624">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="1492" height="180" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
-    <state width="1492" height="192" key="GridCell.Tab.0.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695624" />
-    <state width="1492" height="192" key="GridCell.Tab.0.bottom/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
-    <state width="1492" height="192" key="GridCell.Tab.0.center" timestamp="1618332695622">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="1492" height="180" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681865" />
-    <state width="1492" height="192" key="GridCell.Tab.0.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695622" />
-    <state width="1492" height="192" key="GridCell.Tab.0.center/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
-    <state width="1492" height="192" key="GridCell.Tab.0.left" timestamp="1618332695620">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="1492" height="180" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681865" />
-    <state width="1492" height="192" key="GridCell.Tab.0.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695620" />
-    <state width="1492" height="192" key="GridCell.Tab.0.left/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
-    <state width="1492" height="192" key="GridCell.Tab.0.right" timestamp="1618332695623">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="1492" height="180" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681865" />
-    <state width="1492" height="192" key="GridCell.Tab.0.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695623" />
-    <state width="1492" height="192" key="GridCell.Tab.0.right/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
-    <state width="1492" height="192" key="GridCell.Tab.1.bottom" timestamp="1618332695625">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="1492" height="180" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
-    <state width="1492" height="192" key="GridCell.Tab.1.bottom/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695625" />
-    <state width="1492" height="192" key="GridCell.Tab.1.bottom/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
-    <state width="1492" height="192" key="GridCell.Tab.1.center" timestamp="1618332695624">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="1492" height="180" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
-    <state width="1492" height="192" key="GridCell.Tab.1.center/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695624" />
-    <state width="1492" height="192" key="GridCell.Tab.1.center/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
-    <state width="1492" height="192" key="GridCell.Tab.1.left" timestamp="1618332695624">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="1492" height="180" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
-    <state width="1492" height="192" key="GridCell.Tab.1.left/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695624" />
-    <state width="1492" height="192" key="GridCell.Tab.1.left/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
-    <state width="1492" height="192" key="GridCell.Tab.1.right" timestamp="1618332695625">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state width="1492" height="180" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617606681866" />
-    <state width="1492" height="192" key="GridCell.Tab.1.right/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332695625" />
-    <state width="1492" height="192" key="GridCell.Tab.1.right/0.0.1536.826@0.0.1536.826" timestamp="1618301788555" />
-    <state x="414" y="163" key="IDE.errors.dialog" timestamp="1618221063671">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="414" y="163" key="IDE.errors.dialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618221063671" />
-    <state x="399" y="173" width="940" height="480" key="MultipleFileMergeDialog" timestamp="1617638927526">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="399" y="173" width="940" height="480" key="MultipleFileMergeDialog/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617605048552" />
-    <state x="399" y="173" key="MultipleFileMergeDialog/0.0.1536.826@0.0.1536.826" timestamp="1617638927526" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1617543381353">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="277" y="44" key="SettingsEditor/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616844850559" />
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.826@0.0.1536.826" timestamp="1617543381353" />
-    <state x="361" y="145" width="810" height="535" key="Vcs.Push.Dialog.v2" timestamp="1618332179257">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617603807805" />
-    <state x="361" y="145" width="810" height="535" key="Vcs.Push.Dialog.v2/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618332179257" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.826@0.0.1536.826" timestamp="1618296163605" />
-    <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1616842327372">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="100" y="101" width="1336" height="625" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1616842327372" />
-    <state x="0" y="103" width="1280" height="809" key="dock-window-1" timestamp="1618296131428">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="480" y="89" width="1056" height="647" key="dock-window-1/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618219316124" />
-    <state x="0" y="103" width="1280" height="809" key="dock-window-1/0.0.1536.826@0.0.1536.826" timestamp="1618296131428" />
-    <state x="561" y="280" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1617554745774">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="561" y="280" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.826/1920.0.1366.720@0.0.1536.826" timestamp="1617554745774" />
-    <state x="180" y="73" key="new project wizard" timestamp="1618168477391">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="180" y="73" key="new project wizard/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618168477391" />
-    <state x="431" y="147" width="672" height="678" key="search.everywhere.popup" timestamp="1618166004040">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="431" y="147" width="672" height="678" key="search.everywhere.popup/0.0.1536.826/1920.0.1920.1032@0.0.1536.826" timestamp="1618166004040" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.ibatis.binding.BindingException" package="org.apache.ibatis.binding" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

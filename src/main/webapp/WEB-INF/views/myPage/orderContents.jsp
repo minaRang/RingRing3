@@ -22,8 +22,8 @@
             <ul>
                 <li><a href="/orderContents">주문 내역</a></li>
                 <li><a href="/productReview">상품 후기</a></li>
-                <li><a href="">적립금</a></li>
-                <li><a href="">쿠폰</a></li>
+                <li><a href="/point">적립금</a></li>
+                <li><a href="/listPerAsk">내 1:1 문의</a></li>
                 <li class="last"><a href="/myInfoModify">개인 정보 수정</a></li>
             </ul>
         </div>
@@ -54,13 +54,10 @@
                     </tr>
                 </table>
             </div>
-            <div id="detail_btn">
-            <button type="button" class="tt detail_btn"><a href="mypage-review_write.html">후기쓰기</a></button>
             <button type="button" class="tt detail_btn"><a href="/perAsk">1:1문의</a></button>
-            </div>
         </div>
+        </c:forEach>
     </div>
-    </c:forEach>
 </div>
 </body>
 </html>

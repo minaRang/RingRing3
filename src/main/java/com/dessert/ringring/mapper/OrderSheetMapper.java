@@ -12,6 +12,8 @@ public interface OrderSheetMapper {
     int insertOrder(DTOOrderSheet order);
     DTOOrderSheet getOrderInfo(DTOOrderSheet order);
     List<DTOOrderSheet> orderList(String id);
-    void modifyDelivery(DTOOrderSheet orderSheet);
+    int modifyDelivery(DTOOrderSheet orderSheet);
     DTOOrderSheet getOrderInfoIdx(int idx);
+    //모든 주문서 read
+    List<DTOOrderSheet> allOrderSheet();
 }

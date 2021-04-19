@@ -20,8 +20,8 @@
         <ul>
             <li><a href="/orderContents">주문 내역</a></li>
             <li><a href="/productReview">상품 후기</a></li>
-            <li><a href="">적립금</a></li>
-            <li><a href="">쿠폰</a></li>
+            <li><a href="/point">적립금</a></li>
+            <li><a href="/listPerAsk">내 1:1 문의</a></li>
             <li class="last select"><a href="/myInfoModify">개인 정보 수정</a></li>
         </ul>
     </div>

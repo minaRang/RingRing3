@@ -14,5 +14,6 @@ public interface ServiceReview {
     public List<DTOReview> getReviewList(long productIdx);//상품인덱스 넘기면 그 상품의 리뷰 출력
     public List<DTOReview> getMyReviewList(String id);
     public DTOReview getReviewDetail(long idx);
-    public boolean deleteReview(long idx, long productIdx);
+    public int updateReview(HttpServletRequest req,MultipartFile file) throws IOException;
+    public boolean deleteReview(long idx);
 }

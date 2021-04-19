@@ -14,9 +14,10 @@ import org.springframework.context.ApplicationContext;
 import com.dessert.ringring.domain.DTOMember;
 import com.dessert.ringring.mapper.MemberMapper;
 import com.dessert.ringring.service.ServiceMember;
+import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.util.List;
-
+@WebAppConfiguration
 @SpringBootTest
 public class DBConfig {
 //	@Autowired

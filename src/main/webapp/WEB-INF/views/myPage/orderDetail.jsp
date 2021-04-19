@@ -19,8 +19,8 @@
         <ul>
             <li><a href="/orderContents">주문 내역</a></li>
             <li><a href="/productReview">상품 후기</a></li>
-            <li><a href="">적립금</a></li>
-            <li><a href="">쿠폰</a></li>
+            <li><a href="/point">적립금</a></li>
+            <li><a href="/listPerAsk">내 1:1 문의</a></li>
             <li class="last"><a href="/myInfoModify">개인 정보 수정</a></li>
         </ul>
     </div>
@@ -41,8 +41,9 @@
                     </div>
                     <p class="delivery">${sessionScope.orderDetail.deliveryState}</p>
                     <div class="item_btn">
-                        <button class="review_btn tt"><a href="">후기쓰기</a></button>
-                        <button class="basket_btn tt"><a href="">장바구니 담기</a></button>
+                        <c:if test="${sessionScope.orderDetail.deliveryState eq '배송완료'}">
+                        <button class="review_btn tt"><a href=/reviewWrite?idx=${list.dtoGoods.idx}>후기쓰기</a></button>
+                        </c:if>
                     </div>
                 </div>
             </div>
@@ -51,7 +52,6 @@
     </c:forEach>
     <!--상품 취소 버튼 -->
     <div id="cancel_btn">
-        <button class="all_basket tt"><a href="">전체 상품 다시 담기</a></button>
         <button class="all_cancel tt"><a href="">전체 상품 주문 취소</a></button>
     </div>
     <!-- 배송조회 -->
@@ -59,7 +59,20 @@
         <h3 class="tt">배송조회</h3>
         <div class="status"></div>
         <div class="delivery_ing tt">
-            <p>배송중 단계부터 배송상태 확인이 가능합니다.</p>
+            <c:choose>
+                <c:when test="${'상품준비' eq sessionScope.orderDetail.deliveryState}">
+                    <img src="image/1.jpg" alt="">
+                </c:when>
+                <c:when test="${'상품출고' eq sessionScope.orderDetail.deliveryState}">
+                    <img src="image/2.jpg" alt="">
+                </c:when>
+                <c:when test="${'배송지도착' eq sessionScope.orderDetail.deliveryState}">
+                    <img src="image/3.jpg" alt="">
+                </c:when>
+                <c:otherwise>
+                    <img src="image/4.jpg" alt="">
+                </c:otherwise>
+            </c:choose>
         </div>
     </div>
     <!-- 결제정보 -->

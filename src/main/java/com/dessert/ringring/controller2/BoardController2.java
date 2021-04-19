@@ -2,8 +2,10 @@ package com.dessert.ringring.controller2;
 
 import com.dessert.ringring.domain.DTOBoard;
 import com.dessert.ringring.domain.DTOMember;
+import com.dessert.ringring.domain.DTOReview;
 import com.dessert.ringring.service.ServiceBoard;
 import com.dessert.ringring.service.ServiceMember;
+import com.dessert.ringring.util.PagingUtils;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,29 +27,34 @@ public class BoardController2 {
     private ServiceBoard serviceBoard;
     @Autowired
     private ServiceMember serviceMember;
-
     @Autowired
-    DTOBoard board;
+    private PagingUtils pagingUtils;
     @Autowired
-    DTOMember member;
-
-    /*게시판 목록*/
-    @GetMapping("/boardlist")
-    public String BoardList(RedirectAttributes redirect){
-        redirect.addAttribute("contentPage","board/boardList.jsp");
-        return "redirect:mainForm";
-    }
+    private DTOBoard board;
+    @Autowired
+    private DTOMember member;
 
     /*리스트 출력*/
     @GetMapping("/noticeList")
-    public String BoardNotice(@RequestParam(value = "id",required = false) String id, HttpServletRequest req, RedirectAttributes redirect) {
+    public String BoardNotice(@RequestParam(value = "id",required = false) String id,HttpServletRequest req, RedirectAttributes redirect) {
         //HttpServletRequest = 클라이언트의 요청 정보를 확인하기 위함.
         System.out.println("게시판 항목은"+id);
-        List<DTOBoard> boardList=serviceBoard.getBoardList(id); //게시글리스트 받아옴
-        System.out.println(boardList);
+        pagingUtils.setPaging(10,serviceBoard.getBoardList(id));
+
         HttpSession session = req.getSession(); //세션 생성
-        session.setAttribute("list",boardList);
+        session.setAttribute("list",(List<DTOBoard>)pagingUtils.getPaging(1));//게시글리스트 받아옴
+        session.setAttribute("now",1);
         session.setAttribute("boardId",id);
+        session.setAttribute("pageNum",(int)Math.ceil(pagingUtils.countPaging()/10.0));
+        redirect.addAttribute("contentPage","board/notice.jsp");
+        return "redirect:mainForm";
+    }
+    @GetMapping("/noticePage")
+    public String pagingNotice(@RequestParam(value = "button",required = false) int button,HttpServletRequest req, RedirectAttributes redirect){
+        System.out.println("버튼 항목은"+button);
+        HttpSession session = req.getSession(); //세션 생성
+        session.setAttribute("list",(List<DTOBoard>)pagingUtils.getPaging(button));//게시글리스트 받아옴
+        session.setAttribute("now",button);
         redirect.addAttribute("contentPage","board/notice.jsp");
         return "redirect:mainForm";
     }
@@ -91,15 +98,24 @@ public class BoardController2 {
 
     /*게시글 업데이트*/
     @GetMapping("/boardUpdate") //URL에 데이터를 붙여 전송하는 것.
-    public String boardUpdateOpen(RedirectAttributes redirect){
+    public String boardUpdateOpen(@RequestParam(value = "boardIdx",required = false) int boardIdx,HttpServletRequest req,RedirectAttributes redirect){
+        DTOBoard board=serviceBoard.getBoardDetail(boardIdx);
+        System.out.println(board);
+        req.getSession().setAttribute("board",board);
         redirect.addAttribute("contentPage","board/boardUpdate.jsp");
         return "redirect:mainForm";
     }
     @PostMapping("/boardUpdate") //데이터를 본문안에 전송한다.
     String boardUpdate(HttpServletRequest req,Model model){
-        serviceBoard.updateBoard(req);
-        model.addAttribute("msg","게시글이 수정되었습니다.");
-        model.addAttribute("url","/noticeList");
+        int result=serviceBoard.updateBoard(req);
+        String boardType=req.getParameter("boardType");
+        if(result>0) {
+            model.addAttribute("msg", "게시글이 수정되었습니다.");
+            model.addAttribute("url", "/noticeList?id=" + boardType);
+        }else{
+            model.addAttribute("msg", "게시글 수정에 실패하였습니다.");
+            model.addAttribute("url", "/noticeList?id=" + boardType);
+        }
         return "redirect";
     }
 

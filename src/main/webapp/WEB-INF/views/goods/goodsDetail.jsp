@@ -21,9 +21,6 @@
   <link rel="stylesheet" href="css/product_section.css">
   <title>product_section</title>
  </head>
-
-
-
  <body>
  <div class="status"></div>
  <div id="product_section">
@@ -109,21 +106,53 @@
                   <a href="" class="goods_view_information">고객후기</a>
               </li>
           </ul>
-          <div class="goods_img"></div>
+          <div class=><img src="${goods.imgDetail}"></div>
           <ul class="goods_information tt">
               <li class="goods_view">
                   <a href="" class="goods_view_information">상품설명</a>
               </li>
-              <li class="goods_view" id="active">
+              <li class="goods_view">
                   <a href="" class="goods_view_information">상세정보</a>
               </li>
               <li class="goods_view">
                   <a href="" class="goods_view_information">고객후기</a>
               </li>
           </ul>
-
+          <div class="section_info tt">
+              <table id="section">
+                  <tr>
+                      <td class="tit">제품명</td>
+                      <td class="sub">녹차 쿠키</td>
+                      <td class="tit">식품의 유형</td>
+                      <td class="sub">과자</td>
+                  </tr>
+                  <tr>
+                      <td class="tit">생산자 및 소재자</td>
+                      <td class="sub">링링디저트</td>
+                      <td class="tit">제조연원일,유통기한</td>
+                      <td class="sub">제품 별도 라벨 표기 참조</td>
+                  </tr>
+                  <tr>
+                      <td class="tit">포장 단위별 내용물의 용량</td>
+                      <td class="sub">옵션 별 상이</td>
+                      <td class="tit">원재료명 및 함량</td>
+                      <td class="sub">상품설명 및 상품이미지 참조</td>
+                  </tr>
+                  <tr>
+                      <td class="tit">영양성분</td>
+                      <td class="sub">상품설명 및 상품이미지 참조</td>
+                      <td class="tit">유전자변형 식품에 해당하는 경우의 표시</td>
+                      <td class="sub">상품 설명 및 상품이미지 참조</td>
+                  </tr>
+                  <tr>
+                      <td class="tit">소비자 안전을 위한 주의사항</td>
+                      <td class="sub">상품설명 및 상품이미지 참조</td>
+                      <td class="tit">소비자 상담관련 전화번호</td>
+                      <td class="sub">링링디저트 고객센터 (0000-0000)</td>
+                  </tr>
+              </table>
+          </div>
 <!--             후기                 -->
-          <div class="goods_img"></div>
           <ul class="goods_information tt">
               <li class="goods_view">
                   <a href="" class="goods_view_information">상품설명</a>
@@ -131,7 +160,7 @@
               <li class="goods_view">
                   <a href="" class="goods_view_information">상세정보</a>
               </li>
-              <li class="goods_view" id="active">
+              <li class="goods_view">
                   <a href="" class="goods_view_information">고객후기</a>
               </li>
           </ul>
@@ -155,6 +184,9 @@
                           <div class="hide_review">
                             <img src="${reviews.img}">
                             <p>${reviews.content}</p>
+                              <c:if test="${reviews.id eq sessionScope.member.id}">
+                              <p><a href="/ReviewUpdate?reviewIdx=${reviews.idx}">수정하기</a><a href="/ReviewDelete?reviewIdx=${reviews.idx}">삭제하기</a></p>
+                              </c:if>
                           </div>
                         </td>
                       </tr>
@@ -164,7 +196,7 @@
 
 
           <!-- 아코디언 js -->
-          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<%--          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>--%>
           <script type="text/javascript">
               $(function(){
                   var article = (".recruit .show");
@@ -178,6 +210,27 @@
                           $(myArticle).addClass('hide').removeClass('show');
                       }
                   });
+              });
+
+              $(".plus").on("click",(function(){
+                  var num = $(".numBox").val();
+                  var plusNum = Number(num) + 1;
+
+                  if(plusNum >= 100) {
+                      $(".numBox").val(num);
+                  } else {
+                      $(".numBox").val(plusNum);
+                  }
+              }));
+              $(".minus").click(function(){
+                  var num = $(".numBox").val();
+                  var minusNum = Number(num) - 1;
+
+                  if(minusNum <= 1) {
+                      $(".numBox").val(num);
+                  } else {
+                      $(".numBox").val(minusNum);
+                  }
               });
           </script>
  </div>
