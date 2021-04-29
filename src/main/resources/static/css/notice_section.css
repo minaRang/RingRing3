@@ -41,7 +41,7 @@ button{
 .notice_section{
     width: 1000px;
     height: auto;
-    margin: 0 auto;
+    margin: 50px auto 100px;
 }
 .notice_section h2{
     font-size: 25px;
@@ -50,7 +50,7 @@ button{
 .notice_view{
     border-top: 2px solid #df404a;
     border-bottom: 2px solid #df404a;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 /* =============.notice_table========= */
 .notice_table{

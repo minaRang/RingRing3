@@ -15,7 +15,7 @@
     <div class="mycategory tt">
         <h3 class="tt">마이링링</h3>
         <ul>
-            li><a href="/orderContents">주문 내역</a></li>
+            <li><a href="/orderContents">주문 내역</a></li>
             <li><a href="/productReview">상품 후기</a></li>
             <li><a href="/point">적립금</a></li>
             <li><a href="/listPerAsk">내 1:1 문의</a></li>

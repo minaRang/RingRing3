@@ -132,6 +132,7 @@
         .oder-detail{
             width: 1000px;
             margin-top: 50px;
+            margin-bottom: 100px;
         }
         .oder-detail h3{
             font-size: 20px;

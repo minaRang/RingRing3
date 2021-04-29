@@ -128,7 +128,18 @@ button{
 }
 .detail_btn{
     position: absolute;
-    top: 100px;
+    top: 120px;
+    right: 25px;
+    padding: 10px;
+    width: 120px;
+    border: 2px solid #df404a;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+.del_btn{
+    position: absolute;
+    top: 60px;
     right: 25px;
     padding: 10px;
     width: 120px;
@@ -138,6 +149,11 @@ button{
     font-weight: 400;
 }
 .detail_btn a, .detail_btn a:visited{
+    text-align: center;
+    text-decoration: none;
+    color: #df404a;
+}
+.del_btn a, .del_btn a:visited{
     text-align: center;
     text-decoration: none;
     color: #df404a;

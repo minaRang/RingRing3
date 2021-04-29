@@ -9,7 +9,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/question_section.css">
     <title>Document</title>
 </head>
@@ -43,7 +42,7 @@
             </div>
             </c:if>
             <!-- 목록 되돌아가기 버튼 -->
-            <button type="button" class="notice_btn tt"><a href="/listPerAsk">목록</a></button>
+            <button type="button" class="notice_btn tt"><a href="/listPerAsk" style="color: white">목록</a></button>
         </div>
         <c:if test="${'Y' ne sessionScope.getPerAsk.doAnswer and 'admin' eq sessionScope.member.authority}">
         <div class="comment tt">

@@ -98,6 +98,7 @@ button{
 }
 .gnbMenu .gnb li a{
     color:#df404a;
+    font-size: 22px;
 }
 /*========== cookie =========== */
 .cookie{
@@ -231,6 +232,7 @@ button{
 .new_list li{
     float: left;
     padding-left: 40px;
+    padding-bottom: 60px;
 }
 .new_list li:last-child{
     padding-right: 0;
@@ -270,7 +272,7 @@ button{
 
 .footer_inner{
     width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto 0;
     background-color:white;
     display: flex;
 }
@@ -308,6 +310,9 @@ button{
     border: 2px solid  #df404a;
     border-radius: 50%;
     margin-right: 20px;
+}
+.footer_left .sns li a{
+    color: rgb(60,60,60);
 }
 .footer_left .sns .fa-facebook{
     padding: 1px 3px;

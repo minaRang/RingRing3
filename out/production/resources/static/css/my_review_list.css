@@ -77,9 +77,8 @@ button{
 /* ========notice=========== */
 .review{
     width: 1000px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 50px;
+    height: 650px;
+    margin: 50px auto 100px;
 }
 .review h3{
     font-size: 20px;

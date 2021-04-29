@@ -41,7 +41,7 @@ button{
 .notice{
     width: 1000px;
     height: auto;
-    margin: 0 auto;
+    margin: 30px auto 100px;
 }
 .notice h2{
     font-size: 25px;
@@ -50,7 +50,7 @@ button{
 .notice_list{
     border-top: 2px solid #df404a;
     border-bottom: 2px solid #df404a;
-    margin-top: 10px;
+    margin-top: 27px;
 }
 /* =========notice_table============ */
 .notice_table{

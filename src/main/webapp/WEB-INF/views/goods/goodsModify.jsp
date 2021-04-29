@@ -102,12 +102,12 @@
 
      <tr>
       <td class="tit">설명</td>
-      <td><input type="text" name="detail" value="${goods.detail}" value maxlength="16" label="설명" ></td>
+      <td><input type="text" name="detail" value="${goods.detail}" label="설명" ></td>
      </tr>
 
      <tr>
       <td class="tit">짧은설명</td>
-      <td><input type="text" name="shortDetail" value="${goods.shortDetail}" value maxlength="16" label="짧은설명" ></td>
+      <td><input type="text" name="shortDetail" value="${goods.shortDetail}"  label="짧은설명" ></td>
      </tr>
 
      <tr>

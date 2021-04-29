@@ -47,6 +47,5 @@
     </div>
 </div>
 <div style="height: 200px"></div>
-<span class="status"></span>
 </body>
 </html>

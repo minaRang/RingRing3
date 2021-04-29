@@ -96,12 +96,12 @@
 
       <tr>
        <td class="tit">설명</td>
-       <td><input type="text" name="detail" value maxlength="16" label="설명" placeholder="설명 입력해주세요"></td>
+       <td><input type="text" name="detail" label="설명" placeholder="설명 입력해주세요"></td>
       </tr>
 
       <tr>
        <td class="tit">짧은설명</td>
-       <td><input type="text" name="shortDetail" value maxlength="16" label="짧은설명" plaeholder="짧은설명 입력해주세요"></td>
+       <td><input type="text" name="shortDetail" label="짧은설명" placeholder="짧은설명 입력해주세요"></td>
       </tr>
 
       <tr>

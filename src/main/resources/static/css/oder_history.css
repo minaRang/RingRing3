@@ -82,6 +82,7 @@ select{
 /* ====주문내역관리 css==== */
 #oder_history{
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 #oder_history h3{
     font-size: 20px;

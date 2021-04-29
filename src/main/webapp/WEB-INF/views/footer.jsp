@@ -14,6 +14,7 @@
     <title>RingRing Dessert</title>
 </head>
 <body>
+<div class="status"></div>
 <div id="footer" style="width: 1000px;margin: auto">
     <div class="footer_inner">
         <div class="footer_left">
@@ -24,7 +25,7 @@
                     <td>
                         <div class="center">
                             <h4>365 고객센터</h4>
-                            <p>오전 7시-오후 7시</p>
+                            <p>오전 7시-오후 10시</p>
                         </div>
                     </td>
                 </tr>

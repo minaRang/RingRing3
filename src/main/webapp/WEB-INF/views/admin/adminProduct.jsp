@@ -51,6 +51,7 @@
                 </table>
             </div>
             <button type="button" class="tt detail_btn"><a href="/modifyGoods?idx=${list.idx}">상품정보수정</a></button>
+            <button type="button" class="tt del_btn"><a href="/modifyGoods?idx=${list.idx}">상품삭제</a></button>
         </div>
         </c:forEach>
     </div>

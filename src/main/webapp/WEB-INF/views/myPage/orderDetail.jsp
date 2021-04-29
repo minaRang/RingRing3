@@ -25,8 +25,8 @@
         </ul>
     </div>
     <!-- 주문내역 -->
-    <h3 class="tt">주문 내역 상세</h3>
-    <h3>주문번호 ${sessionScope.orderDetail.orderNum}</h3>
+    <h3 class="tt title">주문 내역 상세</h3>
+    <h3 class="tt sub">주문번호 ${sessionScope.orderDetail.orderNum}</h3>
     <c:forEach var="list" items="${sessionScope.productList}">
     <div id="oderlist_section">
         <div class="oder_item tt">

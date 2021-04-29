@@ -82,6 +82,7 @@ select{
 /* ===#point=== */
 #point{
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 #point h3{
     font-size: 20px;

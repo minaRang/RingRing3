@@ -37,6 +37,9 @@ button{
     display: block;
 }
 /* ===============content================== */
+.content{
+    margin: 50px auto 200px;
+}
 /* =============.notice_section============= */
 .notice_section{
     width: 1000px;

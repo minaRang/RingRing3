@@ -25,18 +25,18 @@ public class UploadFileUtils {
         //구분하기 쉽게+중복방지위해 년월일폴더경로지정
         String imgPath=uploadPath+ymdPath;
 
-//        //썸네일용 이미지 생성성
-//        File target=new File(imgPath,newFileName);
-//        FileCopyUtils.copy(fileData, target);
-//        FileCopyUtils.copy(fileData,target);
-//
-//        String thumbFileName="s_"+newFileName;
-//        File image=new File(imgPath+File.separator+newFileName);
-//        File thumbnail=new File(imgPath+File.separator+"s"+File.separator+thumbFileName);
-//        if(image.exists()){
-//            thumbnail.getParentFile().mkdirs();
-//            Thumbnails.of(image).size(THUMB_WIDTH,THUMB_HEIGH).toFile(thumbnail);
-//        }
+        //썸네일용 이미지 생성성
+        File target=new File(imgPath,newFileName);
+        FileCopyUtils.copy(fileData, target);
+        FileCopyUtils.copy(fileData,target);
+
+        String thumbFileName="s_"+newFileName;
+        File image=new File(imgPath+File.separator+newFileName);
+        File thumbnail=new File(imgPath+File.separator+"s"+File.separator+thumbFileName);
+        if(image.exists()){
+            thumbnail.getParentFile().mkdirs();
+            Thumbnails.of(image).size(THUMB_WIDTH,THUMB_HEIGH).toFile(thumbnail);
+        }
 
         return newFileName;
     }

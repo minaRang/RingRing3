@@ -1,4 +1,25 @@
 .tt td {
-    height: 40px;
-
+    height: 70px;
+}
+.tt td input{
+    font-size: 17px;
+    margin-left: 25px;
+}
+#category1{
+    margin-left: 25px;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+#category2{
+    margin-left: 25px;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+#inputGroupFile01put{
+    margin-left: 0;
+}
+.custom-file-inputom{
+    margin-left: 0;
 }

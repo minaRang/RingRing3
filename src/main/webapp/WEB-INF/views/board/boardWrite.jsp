@@ -41,7 +41,7 @@
                     </tr>
                     <tr>
                         <td class="tit"> 이미지</td>
-                        <td>
+                        <td class="sub img">
                             <!--파일 선택-->
                             <div class="custom-file">
                                 <input type="file" name="file" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">

@@ -26,7 +26,8 @@ button{
     border: 0;
     outline: 0;
 }
-
+/* ===content=== */
+.content
 /* ====고객후기 css==== */
 .customer_review{
     width: 1000px;
@@ -112,7 +113,7 @@ button{
 .content{
     width: 1000px;
     height: auto;
-    margin: 0 auto;
+    margin: 50px auto 100px;
     position: relative;
 }
 /* =======oder-detail========= */

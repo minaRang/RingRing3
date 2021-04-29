@@ -23,7 +23,59 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="썸네일제거" />
+    <list default="true" id="1dae604a-3ed4-40c9-9e1b-66b2525abd73" name="Default Changelist" comment="썸네일제거">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/config/UploadFileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/dessert/ringring/config/UploadFileUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/goodInsert.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/goodInsert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/join.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/join.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/joinjoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/joinjoin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/my_review_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/my_review_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/mypage_modifyinfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/mypage_modifyinfo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/mypage_oderlist.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/mypage_oderlist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/mypage_oderlist_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/mypage_oderlist_section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/mypage_point.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/mypage_point.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/notice.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/notice.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/notice_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/notice_section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/notice_write.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/notice_write.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/oder_history.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/oder_history.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/product_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/product_admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/product_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/product_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/question_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/question_section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/shop-basket.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/shop-basket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/shop-basket11.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/shop-basket11.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/userModify.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/userModify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/UploadFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dessert/ringring/config/UploadFileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/goodInsert.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/goodInsert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/join.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/join.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/joinjoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/joinjoin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/my_review_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/my_review_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/mypage_modifyinfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/mypage_modifyinfo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/mypage_oderlist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/mypage_oderlist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/mypage_oderlist_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/mypage_oderlist_section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/mypage_point.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/mypage_point.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/notice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/notice.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/notice_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/notice_section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/notice_write.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/notice_write.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/oder_history.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/oder_history.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/product_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/product_admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/product_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/product_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/question_section.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/question_section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/shop-basket.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/shop-basket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/shop-basket11.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/shop-basket11.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/userModify.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/userModify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/replyPerAsk.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/replyPerAsk.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardWrite.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardWrite.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cmMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cmMain.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsInsert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsInsert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsModify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/goodsModify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPerQlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPerQlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPoint.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/myPoint.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/myPage/orderDetail.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +114,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -109,19 +169,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.RingringApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DBConfig.testByApplicationContext" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -207,6 +254,9 @@
       <workItem from="1618682387742" duration="8421000" />
       <workItem from="1618762085404" duration="3067000" />
       <workItem from="1618767083219" duration="4142000" />
+      <workItem from="1618771243496" duration="23411000" />
+      <workItem from="1619189446249" duration="1000" />
+      <workItem from="1619573518947" duration="1846000" />
     </task>
     <task id="LOCAL-00001" summary="호냥냥">
       <created>1612232266659</created>
@@ -418,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618771160544</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="썸네일제거">
+      <created>1618771247333</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1618771247333</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

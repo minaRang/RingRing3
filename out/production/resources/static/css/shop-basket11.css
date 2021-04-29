@@ -39,7 +39,7 @@ button{
 /* ======content========== */
 .content{
     width: 1000px;
-    margin: 0 auto;
+    margin: 50px auto 100px;
 }
 /* =======checkbox_group=========== */
 .checkbox_group{
@@ -187,4 +187,9 @@ button{
     font-weight: 700;
     border-radius: 3px;
     background-color: #df404a;
+}
+.content::after{
+    display: block;
+    clear: both;
+    content: '';
 }
